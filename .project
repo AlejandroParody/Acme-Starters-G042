@@ -39,6 +39,11 @@
 			<type>2</type>
 			<locationURI>WORKSPACE_LOC/Frameworks/Acme-Framework-26.1.0/target/classes</locationURI>
 		</link>
+		<link>
+			<name>target/classes</name>
+			<type>2</type>
+			<location>//C:/Users/gaful/Documents/Uni/DP2/Proyecto/Workspace-26/Projects/Acme-Starters-G042/target/classes/</location>
+		</link>
 	</linkedResources>
 	<filteredResources>
 		<filter>
