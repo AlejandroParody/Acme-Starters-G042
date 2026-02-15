@@ -23,7 +23,7 @@
 	
 	<artifactId>Acme-Starters</artifactId>
 	<!-- Omit the version tag below unless it's different from the Acme Framework version -->
-	<version>G042</version> 
+	<version>C</version> 
 	<packaging>war</packaging>
 	
 	<parent>
