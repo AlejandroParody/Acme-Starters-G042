@@ -1,15 +1,16 @@
 
-package acme.entities.Strategies;
+package acme.entities.strategies;
 
-import java.time.temporal.ChronoUnit;
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.Transient;
+import javax.persistence.ManyToOne;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.validation.Valid;
 
 import acme.client.components.basis.AbstractEntity;
-import acme.client.components.datatypes.Moment;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
@@ -46,13 +47,13 @@ public class Strategy extends AbstractEntity {
 
 	@Mandatory
 	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
-	//@Temporal(TemporalType.TIMESTAMP)
-	private Moment				startMoment;
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date				startMoment;
 
 	@Mandatory
 	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
 	//@Temporal(TemporalType.TIMESTAMP)
-	private Moment				endMoment;
+	private Date				endMoment;
 
 	@Optional
 	@ValidUrl
@@ -61,42 +62,32 @@ public class Strategy extends AbstractEntity {
 
 	// Derivated  --------------------------------------------------
 
-
-	@Valid
-	@Transient
-	public Double getMonthsActive() {
-
-		if (this.startMoment == null || this.endMoment == null)
-			return 0.0;
-
-		long days = ChronoUnit.DAYS.between(this.startMoment.toInstant(), this.endMoment.toInstant());
-
-		double months = days / 30.0;
-
-		return Math.round(months * 10.0) / 10.0;
-	}
-
 	/*
+	 * @Valid
+	 * 
+	 * @Transient
+	 * public Double getMonthsActive() {
+	 * 
+	 * }
+	 * 
+	 * 
 	 * @Transient
 	 * public Double getExpectedPercentage() {
 	 * 
-	 * if (this.tactics == null || this.tactics.isEmpty())
-	 * return 0.0;
-	 * 
-	 * return this.tactics.stream().mapToDouble(Tactic::getExpectedPercentage).sum();
 	 * }
 	 */
-
 
 	@Mandatory
 	@Valid
 	@Column
-	private Boolean		draftMode;
+	private Boolean				draftMode;
 
 	// Relations --------------------------------------------------
 
+	@Mandatory
 	@Valid
-	private Fundraiser	fundraiser;
+	@ManyToOne(optional = false)
+	private Fundraiser			fundraiser;
 
 	//@Valid
 	//private List<Tactic>	tactics	= new ArrayList<>();

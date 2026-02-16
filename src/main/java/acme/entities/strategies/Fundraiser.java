@@ -1,20 +1,13 @@
 
-package acme.entities.Strategies;
+package acme.entities.strategies;
 
 import javax.persistence.Column;
-import javax.persistence.Entity;
 import javax.validation.Valid;
 
 import acme.client.components.basis.AbstractEntity;
 import acme.client.components.validation.Mandatory;
-import acme.client.components.validation.ValidScore;
-import lombok.Getter;
-import lombok.Setter;
 
-@Entity
-@Getter
-@Setter
-public class Tactic extends AbstractEntity {
+public class Fundraiser extends AbstractEntity {
 
 	// Serialisation version --------------------------------------------------
 
@@ -25,25 +18,16 @@ public class Tactic extends AbstractEntity {
 	@Mandatory
 	// @ValidHeader
 	@Column
-	private String				name;
+	private String				bank;
 
 	@Mandatory
 	// @ValidText
 	@Column
-	private String				notes;
-
-	@Mandatory
-	@ValidScore
-	@Column
-	private Double				expectedPercentage;
+	private String				statement;
 
 	@Mandatory
 	@Valid
 	@Column
-	private TacticKind			tacticKind;
-
-	// Relations --------------------------------------------------
-
-	private Strategy			strategy;
+	private Boolean				agent;
 
 }
