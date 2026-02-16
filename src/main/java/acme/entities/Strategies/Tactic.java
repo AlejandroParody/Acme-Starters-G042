@@ -1,6 +1,7 @@
 
 package acme.entities.Strategies;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.validation.Valid;
 
@@ -23,22 +24,22 @@ public class Tactic extends AbstractEntity {
 
 	@Mandatory
 	// @ValidHeader
-	//@Column
+	@Column
 	private String				name;
 
 	@Mandatory
 	// @ValidText
-	//@Column
+	@Column
 	private String				notes;
 
 	@Mandatory
 	@ValidScore
-	//@Column
+	@Column
 	private Double				expectedPercentage;
 
 	@Mandatory
 	@Valid
-	//@Column
+	@Column
 	private TacticKind			tacticKind;
 
 	// Relations --------------------------------------------------

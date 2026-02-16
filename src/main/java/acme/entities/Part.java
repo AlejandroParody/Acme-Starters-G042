@@ -1,6 +1,7 @@
 
 package acme.entities;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.validation.Valid;
 
@@ -21,22 +22,22 @@ public class Part extends AbstractEntity {
 
 	@Mandatory
 	//@ValidHeader
-	//@Column
+	@Column
 	private String				name;
 
 	@Mandatory
 	//@ValidText
-	//@Column
+	@Column
 	private String				description;
 
 	@Mandatory
 	@ValidMoney(min = 0)
-	//@Column
+	@Column
 	private Money				cost;
 
 	@Mandatory
 	@Valid
-	//@Column
+	@Column
 	private PartKind			kind;
 
 }

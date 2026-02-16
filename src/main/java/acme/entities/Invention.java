@@ -3,6 +3,7 @@ package acme.entities;
 
 import java.time.Duration;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Transient;
 import javax.validation.Valid;
@@ -30,17 +31,17 @@ public class Invention extends AbstractEntity {
 
 	@Mandatory
 	//@ValidTicker
-	//@Column(unique = true)
+	@Column(unique = true)
 	private String				ticker;
 
 	@Mandatory
 	//@ValidHeader
-	//@Column
+	@Column
 	private String				name;
 
 	@Mandatory
 	//@ValidText
-	//@Column
+	@Column
 	private String				description;
 
 	@Mandatory
@@ -55,7 +56,7 @@ public class Invention extends AbstractEntity {
 
 	@Optional
 	@ValidUrl
-	//@Column
+	@Column
 	private String				moreInfo;
 
 	@Mandatory
@@ -65,7 +66,7 @@ public class Invention extends AbstractEntity {
 
 	@Mandatory
 	@Valid
-	//@Column
+	@Column
 	private Boolean				draftMode;
 
 

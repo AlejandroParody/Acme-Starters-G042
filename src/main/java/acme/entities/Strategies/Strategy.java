@@ -2,9 +2,8 @@
 package acme.entities.Strategies;
 
 import java.time.temporal.ChronoUnit;
-import java.util.ArrayList;
-import java.util.List;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Transient;
 import javax.validation.Valid;
@@ -32,17 +31,17 @@ public class Strategy extends AbstractEntity {
 
 	@Mandatory
 	//@ValidTicker
-	//@Column(unique = true)
+	@Column(unique = true)
 	private String				ticker;
 
 	@Mandatory
 	//@ValidHeader
-	//@Column
+	@Column
 	private String				name;
 
 	@Mandatory
 	//@ValidText
-	//@Column
+	@Column
 	private String				description;
 
 	@Mandatory
@@ -57,7 +56,7 @@ public class Strategy extends AbstractEntity {
 
 	@Optional
 	@ValidUrl
-	//@Column
+	@Column
 	private String				moreInfo;
 
 	// Derivated  --------------------------------------------------
@@ -77,27 +76,29 @@ public class Strategy extends AbstractEntity {
 		return Math.round(months * 10.0) / 10.0;
 	}
 
-	@Transient
-	public Double getExpectedPercentage() {
-
-		if (this.tactics == null || this.tactics.isEmpty())
-			return 0.0;
-
-		return this.tactics.stream().mapToDouble(Tactic::getExpectedPercentage).sum();
-	}
+	/*
+	 * @Transient
+	 * public Double getExpectedPercentage() {
+	 * 
+	 * if (this.tactics == null || this.tactics.isEmpty())
+	 * return 0.0;
+	 * 
+	 * return this.tactics.stream().mapToDouble(Tactic::getExpectedPercentage).sum();
+	 * }
+	 */
 
 
 	@Mandatory
 	@Valid
-	//@Column
-	private Boolean			draftMode;
+	@Column
+	private Boolean		draftMode;
 
 	// Relations --------------------------------------------------
 
 	@Valid
-	private Fundraiser		fundraiser;
+	private Fundraiser	fundraiser;
 
-	@Valid
-	private List<Tactic>	tactics	= new ArrayList<>();
+	//@Valid
+	//private List<Tactic>	tactics	= new ArrayList<>();
 
 }
