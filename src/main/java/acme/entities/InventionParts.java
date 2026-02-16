@@ -2,7 +2,6 @@
 package acme.entities;
 
 import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
 import javax.validation.Valid;
 
 import acme.client.components.basis.AbstractEntity;
@@ -19,11 +18,11 @@ public class InventionParts extends AbstractEntity {
 
 	@Mandatory
 	@Valid
-	@ManyToOne(optional = false)
+	//@ManyToOne(optional = false)
 	private Invention			invention;
 
 	@Mandatory
 	@Valid
-	@ManyToOne(optional = false)
+	//@ManyToOne(optional = false)
 	private Part				part;
 }

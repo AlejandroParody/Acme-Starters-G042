@@ -5,13 +5,7 @@ import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 import javax.validation.Valid;
 
@@ -38,32 +32,32 @@ public class Strategy extends AbstractEntity {
 
 	@Mandatory
 	//@ValidTicker
-	@Column(unique = true)
+	//@Column(unique = true)
 	private String				ticker;
 
 	@Mandatory
 	//@ValidHeader
-	@Column
+	//@Column
 	private String				name;
 
 	@Mandatory
 	//@ValidText
-	@Column
+	//@Column
 	private String				description;
 
 	@Mandatory
 	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
-	@Temporal(TemporalType.TIMESTAMP)
+	//@Temporal(TemporalType.TIMESTAMP)
 	private Moment				startMoment;
 
 	@Mandatory
 	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
-	@Temporal(TemporalType.TIMESTAMP)
+	//@Temporal(TemporalType.TIMESTAMP)
 	private Moment				endMoment;
 
 	@Optional
 	@ValidUrl
-	@Column
+	//@Column
 	private String				moreInfo;
 
 	// Derivated  --------------------------------------------------
@@ -95,16 +89,14 @@ public class Strategy extends AbstractEntity {
 
 	@Mandatory
 	@Valid
-	@Column
+	//@Column
 	private Boolean			draftMode;
 
 	// Relations --------------------------------------------------
 
-	@ManyToOne(optional = false)
 	@Valid
 	private Fundraiser		fundraiser;
 
-	@OneToMany(mappedBy = "strategy", cascade = CascadeType.ALL, orphanRemoval = true)
 	@Valid
 	private List<Tactic>	tactics	= new ArrayList<>();
 
