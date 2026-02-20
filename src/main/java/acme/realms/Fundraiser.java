@@ -1,13 +1,21 @@
 
-package acme.entities.strategies;
+package acme.realms;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.validation.Valid;
 
-import acme.client.components.basis.AbstractEntity;
+import acme.client.components.basis.AbstractRole;
 import acme.client.components.validation.Mandatory;
+import acme.constraints.ValidHeader;
+import acme.constraints.ValidText;
+import lombok.Getter;
+import lombok.Setter;
 
-public class Fundraiser extends AbstractEntity {
+@Entity
+@Getter
+@Setter
+public class Fundraiser extends AbstractRole {
 
 	// Serialisation version --------------------------------------------------
 
@@ -16,12 +24,12 @@ public class Fundraiser extends AbstractEntity {
 	// Attributes -------------------------------------------------------------
 
 	@Mandatory
-	// @ValidHeader
+	@ValidHeader
 	@Column
 	private String				bank;
 
 	@Mandatory
-	// @ValidText
+	@ValidText
 	@Column
 	private String				statement;
 
