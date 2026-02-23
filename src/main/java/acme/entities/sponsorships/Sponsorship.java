@@ -71,6 +71,8 @@ public class Sponsorship extends AbstractEntity {
 	// Derivated Attributes
 
 
+	//@Mandatory
+	//@ValidNumber(min=0)
 	@Valid
 	@Transient
 	public Double getMonthsActive() {
@@ -91,8 +93,9 @@ public class Sponsorship extends AbstractEntity {
 	private SponsorshipRepository repo;
 
 
+	//@Mandatory
 	@Transient
-	public Double getExpectedPercentage() {
+	public Double getTotalMoney() {
 		return this.repo.calculateTotalMoney(this.getId());
 	};
 
