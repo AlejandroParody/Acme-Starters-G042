@@ -1,8 +1,6 @@
 
 package acme.entities.strategies;
 
-import java.time.Duration;
-import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -21,7 +19,6 @@ import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidMoment.Constraint;
 import acme.client.components.validation.ValidUrl;
-import acme.client.helpers.MomentHelper;
 import acme.constraints.ValidHeader;
 import acme.constraints.ValidText;
 import acme.constraints.ValidTicker;
@@ -73,30 +70,24 @@ public class Strategy extends AbstractEntity {
 	// Derivated  --------------------------------------------------
 
 
-	@Valid
+	// @Mandatory
+	// @ValidNumber(min=0)
 	@Transient
 	public Double getMonthsActive() {
-		if (this.startMoment == null || this.endMoment == null)
-			return 0.0;
-
-		if (MomentHelper.isAfter(this.startMoment, this.endMoment))
-			return 0.0;
-
-		Duration duration = MomentHelper.computeDuration(this.startMoment, this.endMoment);
-
-		return (double) duration.get(ChronoUnit.MONTHS);
-
+		//Duration duration = MomentHelper.computeDuration(this.startMoment, this.endMoment);
+		//return (double) duration.get(ChronoUnit.MONTHS);
+		return 0.0;
 	}
 
 
 	@Transient
 	@Autowired
-	private StrategyRepository repo;
+	private StrategyRepository repository;
 
 
 	@Transient
 	public Double getExpectedPercentage() {
-		return this.repo.calculateExpectedPercentage(this.getId());
+		return this.repository.calculateExpectedPercentage(this.getId());
 	};
 
 

@@ -1,0 +1,3 @@
+key,ticker,name,description,startMoment,endMoment,moreInfo,draftMode,key:fundraiser
+strategy-01,"AB12-abcde","Strategy1","Lorem ipsum",2026/06/14 08:00,2026/08/14 08:00,https://www.lorem-ipsum.org,false,fundraiser-01
+strategy-02,"BC12-abcde","Strategy2","Lorem ipsum",2026/07/14 08:00,2026/07/21 08:00,https://www.lorem-ipsum.org,false,fundraiser-02

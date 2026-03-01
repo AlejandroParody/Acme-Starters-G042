@@ -1,0 +1,13 @@
+key,bank,statement,agent,key:userAccount
+# Base
+fundraiser-01,"","","",""
+# Bank
+fundraiser-02,"",Lorem ipsum dolor sit amet consectetur adipiscing elit,true,user-account-fundraiser-01
+fundraiser-03,"Lorem ipsum dolor sit amet consectetur adipiscing elit Lorem ipsum dolor sit amet consectetur adipiscing elit Lorem ipsum dolor sit amet consectetur adipiscing elit",Lorem ipsum dolor sit amet consectetur adipiscing elit,true,user-account-fundraiser-01
+# Statement
+fundraiser-04,Bank1,"",true,user-account-fundraiser-01
+fundraiser-05,Bank1,Lorem ipsum dolor sit amet consectetur adipiscing elit Lorem ipsum dolor sit amet consectetur adipiscing elit Lorem ipsum dolor sit amet consectetur adipiscing elit Lorem ipsum dolor sit amet consectetur adipiscing elitLorem ipsum dolor sit amet consectetur adipiscing elit,true,user-account-fundraiser-01
+# Agent
+fundraiser-06,Bank1,Lorem ipsum dolor sit amet consectetur adipiscing elit,"",user-account-fundraiser-01
+# User Account
+fundraiser-07,Bank1,Lorem ipsum dolor sit amet consectetur adipiscing elit,true,""
