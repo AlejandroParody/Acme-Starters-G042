@@ -11,6 +11,6 @@ import acme.client.repositories.AbstractRepository;
 public interface InventionRepository extends AbstractRepository {
 
 	@Query("select sum(p.cost.amount) from Part p where p.invention.id = :inventionId")
-	Double computeTotalCost(@Param("id") int inventionId);
+	Double computeTotalCost(@Param("inventionId") int inventionId);
 
 }
