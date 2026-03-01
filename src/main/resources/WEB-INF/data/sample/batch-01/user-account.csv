@@ -9,3 +9,6 @@ user-account-administrator-02,true,"UserIdentity{name: 'Admin1', surname: 'Admin
 user-account-administrator-03,true,"UserIdentity{name: 'Admin2', surname: 'Administrator', email: 'admin2@acme.com'}",administrator3,administrator3
 user-account-fundraiser-01,true,"UserIdentity{name: 'Juan', surname: 'Merino', email: 'juan@acme.com'}",fundraiser1,fundraiser1
 user-account-fundraiser-02,true,"UserIdentity{name: 'Nacho', surname: 'Merino', email: 'nacho@acme.com'}",fundraiser2,fundraiser2
+user-account-inventor-01,true,"UserIdentity{name: 'Uno', surname: 'Inventor', email: 'inventor1@acme.com'}",inventor1,inventor1
+user-account-inventor-02,true,"UserIdentity{name: 'Dos', surname: 'Inventor', email: 'inventor2@acme.com'}",inventor2,inventor2
+user-account-inventor-03,true,"UserIdentity{name: 'Tres', surname: 'Inventor', email: 'inventor3@acme.com'}",inventor3,inventor3
