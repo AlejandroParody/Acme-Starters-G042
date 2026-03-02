@@ -1,0 +1,3 @@
+key,name,notes,expectedPercentage,tacticKind,key:strategy
+tactic-01,Tactic1,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,15.00,SUBTLE,strategy-01
+tactic-02,Tactic2,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,70.00,TENDER,strategy-02
