@@ -16,15 +16,21 @@ strategy-09,AA04-AAAAAA,"Lorem ipsum dolor sit amet consectetu","Lorem ipsum dol
 strategy-10,AA05-AAAAAA,"Lorem ipsum dolor sit amet consectetu","Lorem ipsum dolor sit amet","",2200/12/31 23:59,"http://lorem.com",true,fundraiser-01
 strategy-11,AA06-AAAAAA,"Lorem ipsum dolor sit amet consectetu","Lorem ipsum dolor sit amet",2022/09/01 10:00,2200/12/31 23:59,"http://lorem.com",true,fundraiser-01
 strategy-12,AA07-AAAAAA,"Lorem ipsum dolor sit amet consectetu","Lorem ipsum dolor sit amet",2201/01/01 0:01,2200/12/31 23:59,"http://lorem.com",true,fundraiser-01
+strategy-13,AA07-AAAAAA,"Lorem ipsum dolor sit amet consectetu","Lorem ipsum dolor sit amet",1999/12/31 23:58,1999/12/31 23:59,"http://lorem.com",true,fundraiser-01
+strategy-14,AA07-AAAAAA,"Lorem ipsum dolor sit amet consectetu","Lorem ipsum dolor sit amet",1999/12/31 23:59,2000/01/01 00:00,"http://lorem.com",true,fundraiser-01
+strategy-15,AA07-AAAAAA,"Lorem ipsum dolor sit amet consectetu","Lorem ipsum dolor sit amet",2000/01/01 0:00,2000/01/01 00:01,"http://lorem.com",true,fundraiser-01
+strategy-16,AA07-AAAAAA,"Lorem ipsum dolor sit amet consectetu","Lorem ipsum dolor sit amet",2200/12/31 23:58,2200/12/31 23:59,"http://lorem.com",true,fundraiser-01
+strategy-17,AA07-AAAAAA,"Lorem ipsum dolor sit amet consectetu","Lorem ipsum dolor sit amet",2200/12/31 23:59,2201/01/01 00:00,"http://lorem.com",true,fundraiser-01
+strategy-18,AA07-AAAAAA,"Lorem ipsum dolor sit amet consectetu","Lorem ipsum dolor sit amet",2201/01/01 00:00,2201/01/01 00:01,"http://lorem.com",true,fundraiser-01
 # EndMoment
-strategy-13,AA08-AAAAAA,"Lorem ipsum dolor sit amet consectetu","Lorem ipsum dolor sit amet",2026/01/08 0:00,"","http://lorem.com",true,fundraiser-01
-strategy-14,AA09-AAAAAA,"Lorem ipsum dolor sit amet consectetu","Lorem ipsum dolor sit amet",2026/01/08 0:00,2022/09/01 10:00,"http://lorem.com",true,fundraiser-01
-strategy-15,AA10-AAAAAA,"Lorem ipsum dolor sit amet consectetu","Lorem ipsum dolor sit amet",2026/01/08 0:00,2026/01/06 23:59,"http://lorem.com",true,fundraiser-01
+strategy-19,AA08-AAAAAA,"Lorem ipsum dolor sit amet consectetu","Lorem ipsum dolor sit amet",2026/01/08 0:00,"","http://lorem.com",true,fundraiser-01
+strategy-20,AA09-AAAAAA,"Lorem ipsum dolor sit amet consectetu","Lorem ipsum dolor sit amet",2026/01/08 0:00,2022/09/01 10:00,"http://lorem.com",true,fundraiser-01
+strategy-21,AA10-AAAAAA,"Lorem ipsum dolor sit amet consectetu","Lorem ipsum dolor sit amet",2026/01/08 0:00,2026/01/06 23:59,"http://lorem.com",true,fundraiser-01
 # MoreInfo
-strategy-16,AA11-AAAAAA,"Lorem ipsum dolor sit amet consectetu","Lorem ipsum dolor sit amet",2026/01/08 0:00,2200/12/31 23:59,,true,fundraiser-01
-strategy-17,AA12-AAAAAA,"Lorem ipsum dolor sit amet consectetu","Lorem ipsum dolor sit amet",2026/01/08 0:00,2200/12/31 23:59,"ftp://",true,fundraiser-01
-strategy-18,AA13-AAAAAA,"Lorem ipsum dolor sit amet consectetu","Lorem ipsum dolor sit amet",2026/01/08 0:00,2200/12/31 23:59,"http://a",true,fundraiser-01
+strategy-22,AA11-AAAAAA,"Lorem ipsum dolor sit amet consectetu","Lorem ipsum dolor sit amet",2026/01/08 0:00,2200/12/31 23:59,,true,fundraiser-01
+strategy-23,AA12-AAAAAA,"Lorem ipsum dolor sit amet consectetu","Lorem ipsum dolor sit amet",2026/01/08 0:00,2200/12/31 23:59,"ftp://",true,fundraiser-01
+strategy-24,AA13-AAAAAA,"Lorem ipsum dolor sit amet consectetu","Lorem ipsum dolor sit amet",2026/01/08 0:00,2200/12/31 23:59,"http://a",true,fundraiser-01
 # DraftMode
-strategy-19,AA14-AAAAAA,"Lorem ipsum dolor sit amet consectetu","Lorem ipsum dolor sit amet",2026/01/08 0:00,2200/12/31 23:59,"http://lorem.com","",fundraiser-01
+strategy-25,AA14-AAAAAA,"Lorem ipsum dolor sit amet consectetu","Lorem ipsum dolor sit amet",2026/01/08 0:00,2200/12/31 23:59,"http://lorem.com","",fundraiser-01
 # Fundraiser
-strategy-20,AA15-AAAAAA,"Lorem ipsum dolor sit amet consectetu","Lorem ipsum dolor sit amet",2026/01/08 0:00,2200/12/31 23:59,"http://lorem.com",true,""
+strategy-26,AA15-AAAAAA,"Lorem ipsum dolor sit amet consectetu","Lorem ipsum dolor sit amet",2026/01/08 0:00,2200/12/31 23:59,"http://lorem.com",true,""
