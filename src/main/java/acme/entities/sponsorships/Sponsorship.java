@@ -14,6 +14,7 @@ import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import acme.client.components.basis.AbstractEntity;
+import acme.client.components.datatypes.Money;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
@@ -81,10 +82,18 @@ public class Sponsorship extends AbstractEntity {
 	private SponsorshipRepository repo;
 
 
-	//@Mandatory
 	@Transient
-	public Double getTotalMoney() {
-		return this.repo.calculateTotalMoney(this.getId());
+	public Money getTotalMoney() {
+		Money res = null;
+		Double totalMoney = this.repo.calculateTotalMoney(this.getId());
+
+		if (totalMoney == null)
+			totalMoney = 0.0;
+
+		res.setAmount(totalMoney);
+		res.setCurrency("EUR");
+
+		return res;
 	};
 
 

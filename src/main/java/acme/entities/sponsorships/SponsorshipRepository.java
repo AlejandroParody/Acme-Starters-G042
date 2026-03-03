@@ -9,6 +9,6 @@ import acme.client.repositories.AbstractRepository;
 @Repository
 public interface SponsorshipRepository extends AbstractRepository {
 
-	@Query("SELECT SUM(d.money.amount) FROM Donation d WHERE d.sponsorship.id = :id")
+	@Query("SELECT SUM(d.money.amount) FROM Donation d WHERE d.sponsorship.id = :id AND d.money.currency = 'EUR'")
 	Double calculateTotalMoney(int id);
 }
