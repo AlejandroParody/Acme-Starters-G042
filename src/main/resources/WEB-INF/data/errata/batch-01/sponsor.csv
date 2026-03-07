@@ -1,0 +1,7 @@
+key,address,im,gold,key:userAccount
+# empty
+sponsor-01,"","",,
+# string normal
+sponsor-02,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i","Lorem ipsum dolor sit amet, consectetu",false,user-account-fundraiser-04
+# string header
+sponsor-03,"L","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tem",true,user-account-fundraiser-04

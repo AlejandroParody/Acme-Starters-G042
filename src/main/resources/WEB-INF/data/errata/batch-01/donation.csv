@@ -1,0 +1,9 @@
+key,name,notes,money,donationKind,key:sponsorship
+# empty
+donation-01,"","",,,
+# string 
+donation-02,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tem",Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,EUR 400.00,REWARDED,sponsorship-01
+donation-03,Donation3,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",EUR 300.00,CELEBRATED,sponsorship-01
+# money
+donation-04,Donation4,لوريم إيبسوم,EUR -0.01,ALTRUIST,sponsorship-02
+donation-05,Donation5,洛伦·伊普森,EUR 1000000.01,REWARDED,sponsorship-02
