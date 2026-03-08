@@ -1,14 +1,17 @@
 
-package acme.entities;
+package acme.entities.inventions;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
 import javax.validation.Valid;
 
 import acme.client.components.basis.AbstractEntity;
 import acme.client.components.datatypes.Money;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.ValidMoney;
+import acme.constraints.ValidHeader;
+import acme.constraints.ValidText;
 import acme.datatypes.PartKind;
 import lombok.Getter;
 import lombok.Setter;
@@ -21,12 +24,12 @@ public class Part extends AbstractEntity {
 	private static final long	serialVersionUID	= 1L;
 
 	@Mandatory
-	//@ValidHeader
+	@ValidHeader
 	@Column
 	private String				name;
 
 	@Mandatory
-	//@ValidText
+	@ValidText
 	@Column
 	private String				description;
 
@@ -39,5 +42,10 @@ public class Part extends AbstractEntity {
 	@Valid
 	@Column
 	private PartKind			kind;
+
+	@Mandatory
+	@Valid
+	@ManyToOne(optional = false)
+	private Invention			invention;
 
 }

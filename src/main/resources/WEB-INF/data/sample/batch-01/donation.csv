@@ -1,0 +1,23 @@
+key,name,notes,money,donationKind,key:sponsorship
+donation-01,Donation1,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,EUR 500.00,ALTRUIST,sponsorship-01
+donation-02,Donation2,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,EUR 400.00,REWARDED,sponsorship-01
+donation-03,Donation3,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,EUR 300.00,CELEBRATED,sponsorship-01
+donation-04,Donation4,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,EUR 500.00,ALTRUIST,sponsorship-02
+donation-05,Donation5,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,EUR 400.00,REWARDED,sponsorship-02
+donation-06,Donation6,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,EUR 300.00,CELEBRATED,sponsorship-02
+donation-07,Donation7,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,EUR 500.00,ALTRUIST,sponsorship-03
+donation-08,Donation8,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,EUR 400.00,REWARDED,sponsorship-03
+donation-09,Donation9,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,EUR 300.00,CELEBRATED,sponsorship-03
+donation-10,Donation10,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,EUR 500.00,ALTRUIST,sponsorship-04
+donation-11,Donation11,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,EUR 400.00,REWARDED,sponsorship-05
+donation-12,Donation12,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,EUR 300.00,CELEBRATED,sponsorship-06
+donation-13,Donation13,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,EUR 500.00,ALTRUIST,sponsorship-07
+donation-14,Donation14,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,EUR 400.00,REWARDED,sponsorship-08
+donation-15,Donation15,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,EUR 300.00,CELEBRATED,sponsorship-09
+donation-16,Donation16,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,EUR 500.00,ALTRUIST,sponsorship-10
+donation-17,Donation17,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,EUR 400.00,REWARDED,sponsorship-11
+donation-18,Donation18,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,EUR 300.00,CELEBRATED,sponsorship-12
+donation-19,Donation19,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,EUR 500.00,ALTRUIST,sponsorship-13
+
+
+

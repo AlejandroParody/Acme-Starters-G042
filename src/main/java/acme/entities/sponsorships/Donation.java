@@ -3,12 +3,15 @@ package acme.entities.sponsorships;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
 import javax.validation.Valid;
 
 import acme.client.components.basis.AbstractEntity;
 import acme.client.components.datatypes.Money;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.ValidMoney;
+import acme.constraints.ValidHeader;
+import acme.constraints.ValidText;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -22,17 +25,17 @@ public class Donation extends AbstractEntity {
 	// Attributes -------------------------------------------------------------
 
 	@Mandatory
-	// @ValidHeader
+	@ValidHeader
 	@Column
 	private String				name;
 
 	@Mandatory
-	// @ValidText
+	@ValidText
 	@Column
 	private String				notes;
 
 	@Mandatory
-	@ValidMoney(min = 0)
+	@ValidMoney
 	@Column
 	private Money				money;
 
@@ -43,6 +46,9 @@ public class Donation extends AbstractEntity {
 
 	// Relations --------------------------------------------------
 
+	@Mandatory
+	@Valid
+	@ManyToOne(optional = false)
 	private Sponsorship			sponsorship;
 
 }
