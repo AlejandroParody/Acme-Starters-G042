@@ -1,3 +1,15 @@
 key,ticker,name,description,startMoment,endMoment,moreInfo,draftMode,key:fundraiser
 strategy-01,"AB12-abcde","Strategy1","Lorem ipsum",2026/06/14 08:00,2026/08/14 08:00,https://www.lorem-ipsum.org,false,fundraiser-01
 strategy-02,"BC12-abcde","Strategy2","Lorem ipsum",2026/07/14 08:00,2026/07/21 08:00,https://www.lorem-ipsum.org,false,fundraiser-02
+strategy-03,"CD12-abcde","Strategy3","Lorem ipsum",2026/09/20 08:00,2026/09/21 08:00,https://www.lorem-ipsum.org,false,fundraiser-03
+strategy-04,"DE12-abcde","Strategy4","Lorem ipsum",2026/07/25 08:00,2026/08/21 08:00,https://www.lorem-ipsum.org,false,fundraiser-02
+strategy-05,"EF12-abcde","Strategy5","Lorem ipsum",2026/08/10 08:00,2026/10/03 08:00,https://www.lorem-ipsum.org,false,fundraiser-03
+strategy-06,"GH12-abcde","Strategy6","Lorem ipsum",2026/07/14 08:00,2026/07/15 08:00,https://www.lorem-ipsum.org,false,fundraiser-03
+strategy-07,"HI12-abcde","Strategy7","Lorem ipsum",2026/07/18 08:00,2026/07/19 08:00,https://www.lorem-ipsum.org,false,fundraiser-01
+strategy-08,"IJ12-abcde","Strategy8","Lorem ipsum",2026/11/14 08:00,2026/11/25 08:00,https://www.lorem-ipsum.org,false,fundraiser-06
+strategy-09,"JK12-abcde","Strategy9","Lorem ipsum",2026/11/07 08:00,2026/12/23 08:00,https://www.lorem-ipsum.org,false,fundraiser-05
+strategy-10,"KL12-abcde","Strategy10","Lorem ipsum",2026/11/07 08:00,2026/11/07 08:01,https://www.lorem-ipsum.org,false,fundraiser-05
+strategy-11,"LM12-abcde","Strategy11","Lorem ipsum",2026/11/07 08:02,2026/11/07 09:00,https://www.lorem-ipsum.org,false,fundraiser-05
+strategy-12,"MN12-abcde","Strategy12","Lorem ipsum",2026/11/07 09:01,2026/11/07 09:30,https://www.lorem-ipsum.org,false,fundraiser-05
+strategy-13,"NO12-abcde","Strategy13","Lorem ipsum",2026/11/07 09:31,2026/11/07 18:00,https://www.lorem-ipsum.org,false,fundraiser-05
+strategy-14,"OP12-abcde","Strategy14","Lorem ipsum",2026/11/02 08:00,2026/12/23 19:00,https://www.lorem-ipsum.org,false,fundraiser-03
