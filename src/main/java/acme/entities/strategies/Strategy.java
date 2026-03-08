@@ -17,7 +17,6 @@ import acme.client.components.basis.AbstractEntity;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
-import acme.client.components.validation.ValidMoment.Constraint;
 import acme.client.components.validation.ValidUrl;
 import acme.constraints.ValidHeader;
 import acme.constraints.ValidText;
@@ -53,12 +52,12 @@ public class Strategy extends AbstractEntity {
 	private String				description;
 
 	@Mandatory
-	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
+	@ValidMoment
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date				startMoment;
 
 	@Mandatory
-	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
+	@ValidMoment
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date				endMoment;
 
@@ -87,7 +86,10 @@ public class Strategy extends AbstractEntity {
 
 	@Transient
 	public Double getExpectedPercentage() {
-		return this.repository.calculateExpectedPercentage(this.getId());
+		Double percentage = this.repository.calculateExpectedPercentage(this.getId());
+		if (percentage == null)
+			percentage = 0.0;
+		return percentage;
 	};
 
 

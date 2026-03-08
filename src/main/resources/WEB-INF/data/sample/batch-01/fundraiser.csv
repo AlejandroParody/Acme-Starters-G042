@@ -1,3 +1,9 @@
 key,bank,statement,agent,key:userAccount
 fundraiser-01,Bank1,Lorem ipsum dolor sit amet consectetur adipiscing elit,true,user-account-fundraiser-01
 fundraiser-02,Bank2,Lorem ipsum dolor sit amet consectetur adipiscing elit,true,user-account-fundraiser-02
+fundraiser-03,Bank3,Lorem ipsum dolor sit amet consectetur adipiscing elit,true,user-account-fundraiser-03
+fundraiser-04,Bank4,Lorem ipsum dolor sit amet consectetur adipiscing elit,true,user-account-fundraiser-04
+fundraiser-05,Bank1,Lorem ipsum dolor sit amet consectetur adipiscing elit,true,user-account-fundraiser-05
+fundraiser-06,Bank4,Lorem ipsum dolor sit amet consectetur adipiscing elit,true,user-account-fundraiser-06
+fundraiser-07,Bank4,Lorem ipsum dolor sit amet consectetur adipiscing elit,true,user-account-fundraiser-07
+fundraiser-08,Bank2,Lorem ipsum dolor sit amet consectetur adipiscing elit,true,user-account-fundraiser-08

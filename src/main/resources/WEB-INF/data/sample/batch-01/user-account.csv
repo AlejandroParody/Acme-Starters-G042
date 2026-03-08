@@ -15,6 +15,12 @@ user-account-sponsor-05,true,"UserIdentity{name: 'Socrates', surname: 'Ponsor', 
 user-account-sponsor-06,true,"UserIdentity{name: 'Sebas', surname: 'Ponsor', email: 'seponsor@acme.com'}",sponsor6,sponsor6
 user-account-fundraiser-01,true,"UserIdentity{name: 'Juan', surname: 'Merino', email: 'juan@acme.com'}",fundraiser1,fundraiser1
 user-account-fundraiser-02,true,"UserIdentity{name: 'Nacho', surname: 'Merino', email: 'nacho@acme.com'}",fundraiser2,fundraiser2
+user-account-fundraiser-03,true,"UserIdentity{name: 'Pablo', surname: 'Nores', email: 'pablo@acme.com'}",fundraiser3,fundraiser3
+user-account-fundraiser-04,true,"UserIdentity{name: 'Julio', surname: 'Martin', email: 'julio@acme.com'}",fundraiser4,fundraiser4
+user-account-fundraiser-05,true,"UserIdentity{name: 'Juan', surname: 'Martin', email: 'juanM@acme.com'}",fundraiser5,fundraiser5
+user-account-fundraiser-06,true,"UserIdentity{name: 'Mario', surname: 'Martin', email: 'mario@acme.com'}",fundraiser6,fundraiser6
+user-account-fundraiser-07,true,"UserIdentity{name: 'Pablo', surname: 'Gonzalez', email: 'pabloG@acme.com'}",fundraiser7,fundraiser7
+user-account-fundraiser-08,true,"UserIdentity{name: 'Marcos', surname: 'Hernandez', email: 'marcos@acme.com'}",fundraiser8,fundraiser8
 user-account-inventor-01,true,"UserIdentity{name: 'Uno', surname: 'Inventor', email: 'inventor1@acme.com'}",inventor1,inventor1
 user-account-inventor-02,true,"UserIdentity{name: 'Dos', surname: 'Inventor', email: 'inventor2@acme.com'}",inventor2,inventor2
 user-account-inventor-03,true,"UserIdentity{name: 'Tres', surname: 'Inventor', email: 'inventor3@acme.com'}",inventor3,inventor3
