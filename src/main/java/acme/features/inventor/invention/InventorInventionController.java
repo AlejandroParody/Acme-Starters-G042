@@ -17,7 +17,7 @@ public class InventorInventionController extends AbstractController<Inventor, In
 	protected void initialise() {
 		super.setMediaType(MediaType.TEXT_HTML);
 
-		super.addBasicCommand("list", null);
-		super.addBasicCommand("show", null);
+		super.addBasicCommand("list", InventorInventionListService.class);
+		super.addBasicCommand("show", InventorInventionShowService.class);
 	}
 }

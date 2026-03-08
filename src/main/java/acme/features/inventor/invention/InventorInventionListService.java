@@ -26,9 +26,8 @@ public class InventorInventionListService extends AbstractService<Inventor, Inve
 	@Override
 	public void load() {
 		int inventorId;
-
 		inventorId = super.getRequest().getPrincipal().getActiveRealm().getId();
-		this.inventions = this.repository.findInventionsByInventorId(inventorId);
+		this.inventions = this.repository.findInventionsByInventorIdorPublished(inventorId);
 	}
 
 	@Override
@@ -39,6 +38,5 @@ public class InventorInventionListService extends AbstractService<Inventor, Inve
 	@Override
 	public void unbind() {
 		super.unbindObjects(this.inventions, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo", "draftMode");
-
 	}
 }
