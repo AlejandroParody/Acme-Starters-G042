@@ -1,0 +1,7 @@
+any.inventor.form.title = Perfil del inventor
+
+any.inventor.form.label.fullName = Nombre completo:
+any.inventor.form.label.email = Correo electrónico:
+any.inventor.form.label.bio = Biografía:
+any.inventor.form.label.keyWords = Palabras clave:
+any.inventor.form.label.licensed = ¿Tiene licencia?
