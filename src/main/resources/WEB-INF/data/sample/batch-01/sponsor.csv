@@ -1,8 +1,4 @@
 key,address,im,gold,key:userAccount
-sponsor-01," โลเร็ม อิปซัม","لوريم إيبسوم",true,user-account-sponsor-01
-sponsor-02,"<marquee>Hacked</marquee>","Lorem ipsum dolor sit amet, consectetu",false,user-account-sponsor-02
-#edge data string
-sponsor-03,"L","L",true,user-account-sponsor-03
-sponsor-04,"Lo","Lo",true,user-account-sponsor-04
-sponsor-05,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor*","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod t",false,user-account-sponsor-05
-sponsor-06,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod ts",true,user-account-sponsor-06
+sponsor-01,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",true,user-account-sponsor-01
+sponsor-02,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",false,user-account-sponsor-02
+sponsor-03,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",false,user-account-sponsor-03

@@ -1,30 +1,36 @@
 key,name,notes,money,donationKind,key:sponsorship
-# standard variations
-donation-01,Donation1,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,EUR 500.00,ALTRUIST,sponsorship-01
-donation-02,Donation2,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,EUR 400.00,REWARDED,sponsorship-01
-donation-03,Donation3,โลเร็ม อิปซัม,EUR 300.00,CELEBRATED,sponsorship-01
-donation-04,Donation4,لوريم إيبسوم,EUR 500.00,ALTRUIST,sponsorship-02
-donation-05,Donation5,洛伦·伊普森,EUR 400.00,REWARDED,sponsorship-02
-donation-06,Donation6,<marquee>Hacked</marquee>,EUR 300.00,CELEBRATED,sponsorship-02
-donation-07,Donation7,<script>alert(‘Hacked!’);</script>,EUR 500.00,ALTRUIST,sponsorship-03
-donation-08,Donation8,'' or 'A' = 'A ,EUR 400.00,REWARDED,sponsorship-03
-donation-09,Donation9,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,EUR 300.00,CELEBRATED,sponsorship-03
-donation-10,Donation10,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,EUR 500.00,ALTRUIST,sponsorship-04
-# edge data money
-donation-11,Donation11,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,EUR 1000000.00,REWARDED,sponsorship-05
-donation-12,Donation12,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,EUR 999999.99,CELEBRATED,sponsorship-06
-donation-13,Donation13,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,EUR 0.00,ALTRUIST,sponsorship-07
-donation-14,Donation14,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,EUR 0.01,REWARDED,sponsorship-08
-#edge data string size Header
-donation-15,D,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,EUR 300.00,CELEBRATED,sponsorship-09
-donation-16,Do,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,EUR 500.00,ALTRUIST,sponsorship-10
-donation-17,Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed do: eiusmod t,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,EUR 400.00,REWARDED,sponsorship-11
-donation-18,Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed do: eiusmod te,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,EUR 300.00,CELEBRATED,sponsorship-12
-#edge data string size String
-donation-19,Donation19,L,EUR 500.00,ALTRUIST,sponsorship-13
-donation-20,Donation13,Lo,EUR 500.00,ALTRUIST,sponsorship-07
-donation-21,Donation13,Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor,EUR 500.00,ALTRUIST,sponsorship-08
-donation-22,Donation13,Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor*,EUR 500.00,ALTRUIST,sponsorship-09
-
-
+# base entity
+donation-01,"Lorem ipsum","Lorem ipsum dolor sit amet consectetur adipiscing elit lorem",EUR 500.00,ALTRUIST,sponsorship-01
+# name standard variation
+donation-02,"L","Lorem ipsum dolor sit amet consectetur adipiscing elit lorem",EUR 500.00,ALTRUIST,sponsorship-01
+donation-03,"Lo","Lorem ipsum dolor sit amet consectetur adipiscing elit lorem",EUR 500.00,ALTRUIST,sponsorship-01
+donation-04,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod t","Lorem ipsum dolor sit amet consectetur adipiscing elit lorem",EUR 500.00,ALTRUIST,sponsorship-01
+donation-05,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod te","Lorem ipsum dolor sit amet consectetur adipiscing elit lorem",EUR 500.00,ALTRUIST,sponsorship-01
+donation-06,"โลเร็ม อิปซัม","Lorem ipsum dolor sit amet consectetur adipiscing elit lorem",EUR 500.00,ALTRUIST,sponsorship-01
+donation-07,"لوريم إيبسوم","Lorem ipsum dolor sit amet consectetur adipiscing elit lorem",EUR 500.00,ALTRUIST,sponsorship-01
+donation-08,"洛伦·伊普森","Lorem ipsum dolor sit amet consectetur adipiscing elit lorem",EUR 500.00,ALTRUIST,sponsorship-01
+donation-09,"<marquee>Hacked</marquee>","Lorem ipsum dolor sit amet consectetur adipiscing elit lorem",EUR 500.00,ALTRUIST,sponsorship-01
+donation-10,"<script>alert(‘Hacked!’);</script>","Lorem ipsum dolor sit amet consectetur adipiscing elit lorem",EUR 500.00,ALTRUIST,sponsorship-01
+donation-11,"' or 'A' = 'A ","Lorem ipsum dolor sit amet consectetur adipiscing elit lorem",EUR 500.00,ALTRUIST,sponsorship-01
+# notes standard variations
+donation-12,"Lorem ipsum","L",EUR 500.00,ALTRUIST,sponsorship-01
+donation-13,"Lorem ipsum","Lo",EUR 500.00,ALTRUIST,sponsorship-01
+donation-14,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",EUR 500.00,ALTRUIST,sponsorship-01
+donation-15,"Lorem ipsum","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor*",EUR 500.00,ALTRUIST,sponsorship-01
+donation-16,"Lorem ipsum","โลเร็ม อิปซัม",EUR 500.00,ALTRUIST,sponsorship-01
+donation-17,"Lorem ipsum","لوريم إيبسوم",EUR 500.00,ALTRUIST,sponsorship-01
+donation-18,"Lorem ipsum","洛伦·伊普森",EUR 500.00,ALTRUIST,sponsorship-01
+donation-19,"Lorem ipsum","<marquee>Hacked</marquee>",EUR 500.00,ALTRUIST,sponsorship-01
+donation-20,"Lorem ipsum","<script>alert(‘Hacked!’);</script>",EUR 500.00,ALTRUIST,sponsorship-01
+donation-21,"Lorem ipsum","' or 'A' = 'A ",EUR 500.00,ALTRUIST,sponsorship-01
+# money standard variations
+donation-22,"Lorem ipsum","Lorem ipsum dolor sit amet consectetur adipiscing elit lorem",EUR 0.00,ALTRUIST,sponsorship-01
+donation-23,"Lorem ipsum","Lorem ipsum dolor sit amet consectetur adipiscing elit lorem",EUR 0.01,ALTRUIST,sponsorship-01
+donation-24,"Lorem ipsum","Lorem ipsum dolor sit amet consectetur adipiscing elit lorem",EUR 999999.99,ALTRUIST,sponsorship-01
+donation-25,"Lorem ipsum","Lorem ipsum dolor sit amet consectetur adipiscing elit lorem",EUR 1000000.00,ALTRUIST,sponsorship-01
+# donationKind standard variations
+donation-26,"Lorem ipsum","Lorem ipsum dolor sit amet consectetur adipiscing elit lorem",EUR 500.00,REWARDED,sponsorship-01
+donation-27,"Lorem ipsum","Lorem ipsum dolor sit amet consectetur adipiscing elit lorem",EUR 500.00,CELEBRATED,sponsorship-01
+# sponsorship standard variation
+donation-28,"Lorem ipsum","Lorem ipsum dolor sit amet consectetur adipiscing elit lorem",EUR 500.00,ALTRUIST,sponsorship-02
 
