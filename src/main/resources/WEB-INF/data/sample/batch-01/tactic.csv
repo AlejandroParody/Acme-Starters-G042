@@ -1,3 +1,9 @@
 key,name,notes,expectedPercentage,tacticKind,key:strategy
 tactic-01,Tactic1,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,15.00,SUBTLE,strategy-01
 tactic-02,Tactic2,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,70.00,TENDER,strategy-02
+tactic-03,Tactic3,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,26.00,AGGRESSIVE,strategy-03
+tactic-04,Tactic3,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,90.00,TENDER,strategy-04
+tactic-05,Tactic3,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,55.00,TENDER,strategy-05
+tactic-06,Tactic3,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,67.00,SUBTLE,strategy-02
+tactic-07,Tactic3,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,34.00,AGGRESSIVE,strategy-02
+tactic-08,Tactic3,Lorem ipsum dolor sit amet consectetur adipiscing elit lorem,01.00,AGGRESSIVE,strategy-01

@@ -1,0 +1,16 @@
+any.invention.form.title = Invention details
+any.invention.list.title = Listing of inventions
+
+any.invention.list.label.ticker = Ticker
+any.invention.list.label.name = Name
+any.invention.list.label.startMoment = Start date
+
+any.invention.form.label.ticker = Ticker:
+any.invention.form.label.name = Name:
+any.invention.form.label.description = Description:
+any.invention.form.label.startMoment = Start date:
+any.invention.form.label.endMoment = End date:
+any.invention.form.label.moreInfo = More info: (Optional)
+any.invention.form.label.inventor = Inventor:
+any.invention.form.button.parts = Parts
+any.invention.form.button.inventor = View inventor profile
