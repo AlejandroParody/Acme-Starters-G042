@@ -1,14 +1,53 @@
 key,ticker,name,description,start-moment,end-moment,more-info,draft-mode,key:sponsor
-#empty
-sponsorship-01,,"","",,,,,
+# base entity
+sponsorship-01,AA00-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",2026/06/01 00:00,2026/08/01 00:00,http://lorem.com/ipsum,true,sponsor-01
 #ticker
-sponsorship-02,A-abcde,"<script>alert(‘Hacked!’);</script>","โลเร็ม อิปซัม",2027/04/01 00:00,2027/09/01 00:00,http://example.org?,true,sponsor-01
-sponsorship-03,AC00-absadscde,"<marquee>Hacked</marquee>","洛伦·伊普森",2026/03/01 00:00,2027/11/01 00:00,http://example.org?a,true,sponsor-02
-sponsorship-04,AD00-ab,"' or 'A' = 'A ","Lorem" ,2025/06/01 00:00,2025/11/01 00:00,http://example.org?a&b,true,sponsor-02
-#string header
-sponsorship-05,AE00-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tem","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2026/02/01 00:00,2027/07/01 00:00,http://example.org/,true,sponsor-01
-#string normal (255)
-sponsorship-06,AF00-abcde,"sponsorship 6","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",2030/03/01 00:00,2030/10/01 00:00,http://lorem.com/ipsum,true,sponsor-01
-# data
-sponsorship-07,AG00-abcde,"s","L",2201/01/01 0:01,2028/10/01 00:00,http://example.org/,true,sponsor-01
-sponsorship-08,AH00-abcde,"sp","Lo",1999/12/31 23:59,2026/10/01 00:00,http://lorem.com/ipsum,true,sponsor-02
+sponsorship-02,A00-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",2026/06/01 00:00,2026/08/01 00:00,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-03,AA00-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",2026/06/01 00:00,2026/08/01 00:00,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-04,aa00-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",2026/06/01 00:00,2026/08/01 00:00,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-05,AA00-abcd,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",2026/06/01 00:00,2026/08/01 00:00,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-06,AA00-abcdefghijk,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",2026/06/01 00:00,2026/08/01 00:00,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-07,AA00_abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",2026/06/01 00:00,2026/08/01 00:00,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-08,AA00/abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",2026/06/01 00:00,2026/08/01 00:00,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-09,AAAA-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",2026/06/01 00:00,2026/08/01 00:00,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-10,AA00abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",2026/06/01 00:00,2026/08/01 00:00,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-11,null,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",2026/06/01 00:00,2026/08/01 00:00,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-38,AA00-a,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",2026/06/01 00:00,2026/08/01 00:00,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-39,AA00-ab,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",2026/06/01 00:00,2026/08/01 00:00,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-40,AA00-abc,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",2026/06/01 00:00,2026/08/01 00:00,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-41,AA00.abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",2026/06/01 00:00,2026/08/01 00:00,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-42,AA00*abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",2026/06/01 00:00,2026/08/01 00:00,http://lorem.com/ipsum,true,sponsor-01
+
+#name
+sponsorship-12,AA00-abcde,"","Lorem ipsum dolor sit amet, consectetu",2026/06/01 00:00,2026/08/01 00:00,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-13,AA00-abcde,,"Lorem ipsum dolor sit amet, consectetu",2026/06/01 00:00,2026/08/01 00:00,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-14,AA00-abcde,null,"Lorem ipsum dolor sit amet, consectetu",2026/06/01 00:00,2026/08/01 00:00,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-15,AA00-abcde,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tem","Lorem ipsum dolor sit amet, consectetu",2026/06/01 00:00,2026/08/01 00:00,http://lorem.com/ipsum,true,sponsor-01
+#description
+sponsorship-16,AA00-abcde,"Lorem ipsum dolor sit amet, consectetu","",2026/06/01 00:00,2026/08/01 00:00,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-17,AA00-abcde,"Lorem ipsum dolor sit amet, consectetu",,2026/06/01 00:00,2026/08/01 00:00,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-18,AA00-abcde,"Lorem ipsum dolor sit amet, consectetu",null,2026/06/01 00:00,2026/08/01 00:00,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-19,AA00-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",2026/06/01 00:00,2026/08/01 00:00,http://lorem.com/ipsum,true,sponsor-01
+#start moment
+sponsorship-20,AA00-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",null,2026/08/01 00:00,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-21,AA00-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",,2026/08/01 00:00,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-22,AA00-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",2201/01/01 0:01,2026/08/01 00:00,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-23,AA00-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",1999/12/31 23:59,2026/08/01 00:00,http://lorem.com/ipsum,true,sponsor-01
+#end moment
+sponsorship-24,AA00-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",2026/06/01 00:00,null,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-25,AA00-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",2026/06/01 00:00,,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-26,AA00-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",2026/06/01 00:00,2201/01/01 0:01,http://lorem.com/ipsum,true,sponsor-01
+sponsorship-27,AA00-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",1999/12/31 23:58,1999/12/31 23:59,http://lorem.com/ipsum,true,sponsor-01
+# more info
+sponsorship-28,AA00-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",2026/06/01 00:00,2026/08/01 00:00,,true,sponsor-01
+sponsorship-29,AA00-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",2026/06/01 00:00,2026/08/01 00:00,"",true,sponsor-01
+sponsorship-30,AA00-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",2026/06/01 00:00,2026/08/01 00:00,http://,true,sponsor-01
+sponsorship-31,AA00-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",2026/06/01 00:00,2026/08/01 00:00,ftp://,true,sponsor-01
+sponsorship-32,AA00-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",2026/06/01 00:00,2026/08/01 00:00,http://a,true,sponsor-01
+sponsorship-33,AA00-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",2026/06/01 00:00,2026/08/01 00:00,ftp://a,true,sponsor-01
+sponsorship-34,AA00-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",2026/06/01 00:00,2026/08/01 00:00,"http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/x",true,sponsor-01
+# draft mode
+sponsorship-35,AA00-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",2026/06/01 00:00,2026/08/01 00:00,http://lorem.com/ipsum,null,sponsor-01
+sponsorship-36,AA00-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",2026/06/01 00:00,2026/08/01 00:00,http://lorem.com/ipsum,"",sponsor-01
+sponsorship-37,AA00-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",2026/06/01 00:00,2026/08/01 00:00,http://lorem.com/ipsum,,sponsor-01
+
