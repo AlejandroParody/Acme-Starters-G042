@@ -14,10 +14,10 @@ import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import acme.client.components.basis.AbstractEntity;
+import acme.client.components.datatypes.Money;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
-import acme.client.components.validation.ValidMoment.Constraint;
 import acme.client.components.validation.ValidUrl;
 import acme.constraints.ValidHeader;
 import acme.constraints.ValidText;
@@ -51,12 +51,12 @@ public class Sponsorship extends AbstractEntity {
 	private String				description;
 
 	@Mandatory
-	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
+	@ValidMoment
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date				startMoment;
 
 	@Mandatory
-	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
+	@ValidMoment
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date				endMoment;
 
@@ -82,10 +82,18 @@ public class Sponsorship extends AbstractEntity {
 	private SponsorshipRepository repo;
 
 
-	//@Mandatory
 	@Transient
-	public Double getTotalMoney() {
-		return this.repo.calculateTotalMoney(this.getId());
+	public Money getTotalMoney() {
+		Money res = null;
+		Double totalMoney = this.repo.calculateTotalMoney(this.getId());
+
+		if (totalMoney == null)
+			totalMoney = 0.0;
+
+		res.setAmount(totalMoney);
+		res.setCurrency("EUR");
+
+		return res;
 	};
 
 
