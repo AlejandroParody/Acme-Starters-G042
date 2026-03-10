@@ -1,6 +1,7 @@
 
 package acme.entities.sponsorships;
 
+import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -18,7 +19,9 @@ import acme.client.components.datatypes.Money;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
+import acme.client.components.validation.ValidNumber;
 import acme.client.components.validation.ValidUrl;
+import acme.client.helpers.MomentHelper;
 import acme.constraints.ValidHeader;
 import acme.constraints.ValidSponsorship;
 import acme.constraints.ValidText;
@@ -70,12 +73,11 @@ public class Sponsorship extends AbstractEntity {
 	// Derivated Attributes
 
 
-	//@Mandatory
-	//@ValidNumber(min=0)
-	@Valid
+	@Mandatory
+	@ValidNumber(min = 0)
 	@Transient
 	public Double getMonthsActive() {
-		return 0.0;
+		return MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
 	}
 
 
