@@ -33,4 +33,5 @@ donation-26,"Lorem ipsum","Lorem ipsum dolor sit amet consectetur adipiscing eli
 donation-27,"Lorem ipsum","Lorem ipsum dolor sit amet consectetur adipiscing elit lorem",EUR 500.00,CELEBRATED,sponsorship-01
 # sponsorship standard variation
 donation-28,"Lorem ipsum","Lorem ipsum dolor sit amet consectetur adipiscing elit lorem",EUR 500.00,ALTRUIST,sponsorship-02
-
+# one entity because of constraint sponsorship must have at least one donation
+donation-29,"Lorem ipsum","Lorem ipsum dolor sit amet consectetur adipiscing elit lorem",EUR 500.00,ALTRUIST,sponsorship-47

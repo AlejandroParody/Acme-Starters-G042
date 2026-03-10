@@ -20,6 +20,7 @@ import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidUrl;
 import acme.constraints.ValidHeader;
+import acme.constraints.ValidSponsorship;
 import acme.constraints.ValidText;
 import acme.constraints.ValidTicker;
 import acme.realms.Sponsor;
@@ -29,6 +30,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
+@ValidSponsorship
 public class Sponsorship extends AbstractEntity {
 
 	private static final long	serialVersionUID	= 1L;
