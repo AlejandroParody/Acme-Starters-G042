@@ -76,8 +76,10 @@ public class Strategy extends AbstractEntity {
 	@ValidNumber(min = 0)
 	@Transient
 	public Double getMonthsActive() {
+		if (this.startMoment == null || this.endMoment == null)
+			return 0.0;
 		double duration = MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
-		return duration;
+		return Math.round(duration * 100.0) / 100.0;
 	}
 
 
