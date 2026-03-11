@@ -15,8 +15,9 @@ master.menu.anonymous.favourite-link = Enlace favorito
 
 # master.menu.any #######################################################
 
-master.menu.any = Inventos
+master.menu.any = Cualquiera
 master.menu.any.list-inventions = Lista de inventos
+master.menu.any.list-sponsorships = Lista de patrocinios
 
 # master.menu.administrator ###################################################
 
