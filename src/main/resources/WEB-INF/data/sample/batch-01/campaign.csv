@@ -1,0 +1,30 @@
+key,ticker,name,description,startMoment,endMoment,moreInfo,draftMode,key:spokesperson
+# template
+campaign-001,"","","","","","","",""
+#text1
+campaign-002,ABCD-123456,"L",Lo,2012/07/02 00:00,2025/01/08 00:01,http://a.b,1,spokesperson-01
+campaign-003,ABDD-123456,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",Lo,2012/07/02 00:00,2025/01/08 00:01,http://a.b,1,spokesperson-01
+campaign-004,AACD-123456,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor*",Lo,2012/07/02 00:00,2025/01/08 00:01,http://a.b,1,spokesperson-01
+campaign-005,ABCD-143456,"โลเร็ม อิปซัม",Lo,2012/07/02 00:00,2025/01/08 00:01,http://a.b,1,spokesperson-01
+campaign-006,ABCD-123456,"لوريم إيبسوم",Lo,2012/07/02 00:00,2025/01/08 00:01,http://a.b,1,spokesperson-01
+campaign-007,ABCD-334531,"ل洛伦·伊普森",Lo,2012/07/02 00:00,2025/01/08 00:01,http://a.b,1,spokesperson-01
+#text2
+campaign-008,ARDC-123456,"Lo",L,2012/07/02 00:00,2025/01/08 00:01,http://a.b,1,spokesperson-01
+campaign-009,APPP-123456,lo,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",2012/07/02 00:00,2025/01/08 00:01,http://a.b,1,spokesperson-01
+campaign-010,AXXX-123456,lo,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor*",2012/07/02 00:00,2025/01/08 00:01,http://a.b,1,spokesperson-01
+campaign-011,AZZZ-143456,"โลเร็ม อิปซัม",Lo,2012/07/02 00:00,2025/01/08 00:01,http://a.b,1,spokesperson-01
+campaign-012,APOR-123456,lo,"لوريم إيبسوم",2012/07/02 00:00,2025/01/08 00:01,http://a.b,1,spokesperson-01
+campaign-013,ACAB-334531,lo,"ل洛伦·伊普森",2012/07/02 00:00,2025/01/08 00:01,http://a.b,1,spokesperson-01
+#startmoment
+campaign-014,MMMM-123456,"Lo",L,2000/01/01 00:00,2025/01/08 00:01,http://a.b,1,spokesperson-01
+campaign-015,LMAO-777777,"Lo",L,2000/01/01 00:01,2025/01/08 00:01,http://a.b,1,spokesperson-01
+campaign-016,LMAO-888888,"Lo",L,2024/12/31 00:00,2025/01/08 00:01,http://a.b,1,spokesperson-01
+campaign-017,LMAO-765432,"Lo",L,2024/12/31 23:59,2025/01/08 00:01,http://a.b,1,spokesperson-01
+#endmoment
+campaign-018,DFGM-123456,"L",Lo,2012/07/02 00:00,2025/01/08 00:00,http://a.b,1,spokesperson-01
+campaign-019,DFGM-093495,"L",Lo,2012/07/02 00:00,2025/01/08 00:01,http://a.b,1,spokesperson-01
+campaign-020,CSAR-093495,"L",Lo,2012/07/02 00:00,2200/12/31 00:00,http://a.b,1,spokesperson-01
+campaign-021,CSAR-952453,"L",Lo,2012/07/02 00:00,2200/12/31 23:59,http://a.b,1,spokesperson-01
+#moreinfook
+campaign-022,ABCD-000000,"L",Lo,2012/07/02 00:00,2025/01/08 00:01,http://example.org/a/b?a&b,1,spokesperson-01
+campaign-023,ABCD-002200,"L",Lo,2012/07/02 00:00,2025/01/08 00:01,https://www.lorem-ipsum.org,1,spokesperson-01

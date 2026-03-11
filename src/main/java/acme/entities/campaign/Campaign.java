@@ -11,6 +11,8 @@ import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 import javax.validation.Valid;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import acme.client.components.basis.AbstractEntity;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
@@ -47,12 +49,12 @@ public class Campaign extends AbstractEntity {
 	private String				description;
 
 	@Mandatory
-	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
+	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)//MODIFY future 
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date				startMoment;
 
 	@Mandatory
-	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
+	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)//tambien
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date				endMoment;
 
@@ -60,6 +62,10 @@ public class Campaign extends AbstractEntity {
 	@ValidUrl
 	@Column
 	private String				moreInfo;
+
+	@Transient
+	@Autowired
+	private CampaignRepository	repository;
 
 
 	//améliorer cela attendre le rev 3 pour le odifier 
@@ -70,11 +76,15 @@ public class Campaign extends AbstractEntity {
 		return 0.0;
 
 	}
-	//consulta no bucle
+
 	@Transient
 	public Double getEffort() {
+		Double result = this.repository.computeAverageEffort(this.getId());
 
-		return 0.0;
+		if (result == null)
+			result = 0.0;
+
+		return result;
 	}
 
 

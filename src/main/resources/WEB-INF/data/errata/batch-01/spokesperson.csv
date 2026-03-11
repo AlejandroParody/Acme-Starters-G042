@@ -1,0 +1,14 @@
+key,cv,achievements,licensed
+#template
+spokesperson-001,"","",""
+#cv-error
+spokesperson-002,"","Lo","1"
+spokesperson-003,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i","Lo","1"
+#achiev-error
+spokesperson-004,"","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i","1"
+spokesperson-005,"Lo","","1"
+#licensed-error
+spokesperson-006,"Lo","lo",""
+spokesperson-007,"Lo","lo","<marquee>Hacked</marquee>"
+"
+
