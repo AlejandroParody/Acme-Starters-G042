@@ -1,0 +1,16 @@
+inventor.part.list.title = Partes
+inventor.part.form.title = Detalles de parte
+
+inventor.part.list.label.name = Nombre
+inventor.part.list.label.kind = Tipo
+inventor.part.list.label.cost = Coste
+inventor.part.list.button.create = Nueva parte
+
+inventor.part.form.label.name = Nombre:
+inventor.part.form.label.description = Descripción:
+inventor.part.form.label.cost = Coste:
+inventor.part.form.label.kind = Tipo:
+
+inventor.part.form.button.update = Actualizar
+inventor.part.form.button.delete = Eliminar
+inventor.part.form.button.back = Volver a la invención
