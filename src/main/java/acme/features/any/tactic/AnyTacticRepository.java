@@ -1,5 +1,5 @@
 
-package acme.features.fundraiser.tactic;
+package acme.features.any.tactic;
 
 import java.util.Collection;
 
@@ -10,7 +10,7 @@ import acme.client.repositories.AbstractRepository;
 import acme.entities.strategies.Tactic;
 
 @Repository
-public interface FundraiserTacticRepository extends AbstractRepository {
+public interface AnyTacticRepository extends AbstractRepository {
 
 	@Query("select t from Tactic t where t.strategy.id = :id")
 	Collection<Tactic> findTacticByStrategy(int id);

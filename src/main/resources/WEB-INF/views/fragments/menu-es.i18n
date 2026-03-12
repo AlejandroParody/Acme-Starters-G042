@@ -16,7 +16,9 @@ master.menu.anonymous.favourite-link = Enlace favorito
 # master.menu.any #######################################################
 
 master.menu.any = Inventos
+master.menu.any.strategies = Estrategias
 master.menu.any.list-inventions = Lista de inventos
+master.menu.any.list-strategies = Lista de estrategias
 
 # master.menu.administrator ###################################################
 

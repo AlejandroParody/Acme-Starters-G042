@@ -1,5 +1,5 @@
 
-package acme.features.fundraiser.strategy;
+package acme.features.any.strategy;
 
 import javax.annotation.PostConstruct;
 
@@ -11,14 +11,14 @@ import acme.entities.strategies.Strategy;
 import acme.realms.Fundraiser;
 
 @Controller
-public class FundraiserStrategyController extends AbstractController<Fundraiser, Strategy> {
+public class AnyStrategyController extends AbstractController<Fundraiser, Strategy> {
 
 	@PostConstruct
 	protected void initialise() {
 		super.setMediaType(MediaType.TEXT_HTML);
 
-		super.addBasicCommand("list", FundraiserStrategyListService.class);
-		super.addBasicCommand("show", FundraiserStrategyShowService.class);
+		super.addBasicCommand("list", AnyStrategyListService.class);
+		super.addBasicCommand("show", AnyStrategyShowService.class);
 	}
 
 }

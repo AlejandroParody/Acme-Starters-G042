@@ -1,5 +1,5 @@
 
-package acme.features.fundraiser.strategy;
+package acme.features.any.strategy;
 
 import java.util.Collection;
 
@@ -11,16 +11,16 @@ import acme.entities.strategies.Strategy;
 import acme.realms.Fundraiser;
 
 @Service
-public class FundraiserStrategyListService extends AbstractService<Fundraiser, Strategy> {
+public class AnyStrategyListService extends AbstractService<Fundraiser, Strategy> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private FundraiserStrategyRepository	repository;
+	private AnyStrategyRepository	repository;
 
-	private Collection<Strategy>			strategies;
+	private Collection<Strategy>	strategies;
 
-	// AbstractService<fundraiser, Strategy> ----------------------------------
+	// AbstractService<Fundraiser, Strategy> ----------------------------------
 
 
 	@Override

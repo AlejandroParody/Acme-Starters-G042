@@ -1,5 +1,5 @@
 
-package acme.features.fundraiser.tactic;
+package acme.features.any.tactic;
 
 import java.util.Collection;
 
@@ -9,18 +9,18 @@ import org.springframework.stereotype.Service;
 import acme.client.services.AbstractService;
 import acme.entities.strategies.Strategy;
 import acme.entities.strategies.Tactic;
-import acme.features.fundraiser.strategy.FundraiserStrategyRepository;
+import acme.features.any.strategy.AnyStrategyRepository;
 import acme.realms.Fundraiser;
 
 @Service
-public class FundraiserTacticListService extends AbstractService<Fundraiser, Tactic> {
+public class AnyTacticListService extends AbstractService<Fundraiser, Tactic> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private FundraiserTacticRepository		repository;
+	private AnyTacticRepository		repository;
 
-	private FundraiserStrategyRepository	strategyRepository;
+	private AnyStrategyRepository	strategyRepository;
 
 	private Collection<Tactic>				tactics;
 

@@ -1,5 +1,5 @@
 
-package acme.features.fundraiser.tactic;
+package acme.features.any.tactic;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -9,12 +9,12 @@ import acme.entities.strategies.Tactic;
 import acme.realms.Fundraiser;
 
 @Service
-public class FundraiserTacticShowService extends AbstractService<Fundraiser, Tactic> {
+public class AnyTacticShowService extends AbstractService<Fundraiser, Tactic> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private FundraiserTacticRepository	repository;
+	private AnyTacticRepository	repository;
 
 	private Tactic						tactic;
 
