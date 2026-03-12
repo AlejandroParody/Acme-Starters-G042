@@ -11,6 +11,7 @@ inventor.part.form.label.description = Descripción:
 inventor.part.form.label.cost = Coste:
 inventor.part.form.label.kind = Tipo:
 
+inventor.part.form.button.create = Crear
 inventor.part.form.button.update = Actualizar
 inventor.part.form.button.delete = Eliminar
 inventor.part.form.button.back = Volver a la invención

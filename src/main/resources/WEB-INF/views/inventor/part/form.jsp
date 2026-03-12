@@ -8,10 +8,15 @@
     <acme:form-money code="inventor.part.form.label.cost" path="cost"/>
     <acme:form-select code="inventor.part.form.label.kind" path="kind" choices="${kinds}"/>
 
-    <jstl:if test="${!published}">
-        <acme:submit code="inventor.part.form.button.update" action="/inventor/part/update"/>
-        <acme:submit code="inventor.part.form.button.delete" action="/inventor/part/delete"/>
-    </jstl:if>
+    <jstl:choose>
+        <jstl:when test="${_command == 'create'}">
+            <acme:submit code="inventor.part.form.button.create" action="/inventor/part/create?inventionId=${inventionId}"/>
+        </jstl:when>
+        <jstl:when test="${acme:anyOf(_command, 'show|update|delete') && published == false}">
+            <acme:submit code="inventor.part.form.button.update" action="/inventor/part/update"/>
+            <acme:submit code="inventor.part.form.button.delete" action="/inventor/part/delete"/>
+        </jstl:when>
+    </jstl:choose>
 
     <acme:button code="inventor.part.form.button.back" action="/inventor/invention/show?id=${inventionId}"/>
 </acme:form>
