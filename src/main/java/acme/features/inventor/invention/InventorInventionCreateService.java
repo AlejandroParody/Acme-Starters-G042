@@ -10,7 +10,7 @@ import acme.entities.inventions.Invention;
 import acme.realms.Inventor;
 
 @Service
-public class InventorInventionShowService extends AbstractService<Inventor, Invention> {
+public class InventorInventionCreateService extends AbstractService<Inventor, Invention> {
 
 	@Autowired
 	private InventorInventionRepository	repository;
@@ -20,19 +20,36 @@ public class InventorInventionShowService extends AbstractService<Inventor, Inve
 
 	@Override
 	public void load() {
-		int id;
+		Inventor inventor;
 
-		id = super.getRequest().getData("id", int.class);
-		this.invention = this.repository.findInventionById(id);
+		inventor = (Inventor) super.getRequest().getPrincipal().getActiveRealm();
+		this.invention = super.newObject(Invention.class);
+		this.invention.setDraftMode(true);
+		this.invention.setInventor(inventor);
 	}
 
 	@Override
 	public void authorise() {
 		boolean status;
 
-		status = this.invention != null && this.invention.getInventor().isPrincipal();
+		status = super.getRequest().getPrincipal().hasRealmOfType(Inventor.class);
 
 		super.setAuthorised(status);
+	}
+
+	@Override
+	public void bind() {
+		super.bindObject(this.invention, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo");
+	}
+
+	@Override
+	public void validate() {
+		super.validateObject(this.invention);
+	}
+
+	@Override
+	public void execute() {
+		this.repository.save(this.invention);
 	}
 
 	@Override
@@ -41,8 +58,7 @@ public class InventorInventionShowService extends AbstractService<Inventor, Inve
 
 		tuple = super.unbindObject(this.invention, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo");
 
-		tuple.put("published", !this.invention.getDraftMode() ? "Yes" : "No");
-		tuple.put("inventorId", this.invention.getInventor().getId());
+		tuple.put("published", false);
 
 		super.getResponse().addData(tuple);
 	}

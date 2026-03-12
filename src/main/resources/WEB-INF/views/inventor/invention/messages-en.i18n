@@ -13,9 +13,14 @@ inventor.invention.form.label.description = Description:
 inventor.invention.form.label.startMoment = Start date:
 inventor.invention.form.label.endMoment = End date:
 inventor.invention.form.label.moreInfo = More info: (Optional)
-inventor.invention.form.label.draftMode = Draft mode:
 inventor.invention.form.label.published = Published:
 
+inventor.invention.form.placeholder.ticker = e.g. AB12-myTicker
+inventor.invention.form.placeholder.name = e.g. My invention
+inventor.invention.form.placeholder.description = e.g. A brief description
+inventor.invention.form.placeholder.moreInfo = e.g. https://example.com
+
+inventor.invention.form.button.create = Create
 inventor.invention.form.button.update = Update
 inventor.invention.form.button.delete = Delete
 inventor.invention.form.button.publish = Publish

@@ -42,7 +42,11 @@ public class AnyInventionShowService extends AbstractService<Any, Invention> {
 	@Override
 	public void unbind() {
 		Tuple tuple;
-		tuple = super.unbindObject(this.invention, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo", "draftMode");
+
+		tuple = super.unbindObject(this.invention, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo");
+
 		tuple.put("inventorId", this.invention.getInventor().getId());
+
+		super.getResponse().addData(tuple);
 	}
 }
