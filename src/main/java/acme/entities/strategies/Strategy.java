@@ -1,7 +1,6 @@
 
 package acme.entities.strategies;
 
-import java.time.Duration;
 import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
@@ -19,7 +18,7 @@ import acme.client.components.basis.AbstractEntity;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
-import acme.client.components.validation.ValidMoment.Constraint;
+import acme.client.components.validation.ValidNumber;
 import acme.client.components.validation.ValidUrl;
 import acme.client.helpers.MomentHelper;
 import acme.constraints.ValidHeader;
@@ -56,12 +55,12 @@ public class Strategy extends AbstractEntity {
 	private String				description;
 
 	@Mandatory
-	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
+	@ValidMoment
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date				startMoment;
 
 	@Mandatory
-	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
+	@ValidMoment
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date				endMoment;
 
@@ -73,30 +72,28 @@ public class Strategy extends AbstractEntity {
 	// Derivated  --------------------------------------------------
 
 
-	@Valid
+	@Mandatory
+	@ValidNumber(min = 0)
 	@Transient
 	public Double getMonthsActive() {
 		if (this.startMoment == null || this.endMoment == null)
 			return 0.0;
-
-		if (MomentHelper.isAfter(this.startMoment, this.endMoment))
-			return 0.0;
-
-		Duration duration = MomentHelper.computeDuration(this.startMoment, this.endMoment);
-
-		return (double) duration.get(ChronoUnit.MONTHS);
-
+		double duration = MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
+		return Math.round(duration * 100.0) / 100.0;
 	}
 
 
 	@Transient
 	@Autowired
-	private StrategyRepository repo;
+	private StrategyRepository repository;
 
 
 	@Transient
 	public Double getExpectedPercentage() {
-		return this.repo.calculateExpectedPercentage(this.getId());
+		Double percentage = this.repository.calculateExpectedPercentage(this.getId());
+		if (percentage == null)
+			percentage = 0.0;
+		return percentage;
 	};
 
 

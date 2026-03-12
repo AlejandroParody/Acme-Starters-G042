@@ -1,0 +1,18 @@
+key,enabled,identity,password,username
+# Base
+user-account-fundraiser-01,true,"","",""
+# Identity
+user-account-fundraiser-03,true,"",fundraiser1,fundraiser1
+# Password
+user-account-fundraiser-04,true,"UserIdentity{name: 'Juan', surname: 'Merino', email: 'juan@acme.com'}","",fundraiser1
+# Username
+user-account-fundraiser-05,true,"UserIdentity{name: 'Juan', surname: 'Merino', email: 'juan@acme.com'}",fundraiser1,""
+
+# Base
+user-account-inventor-01,true,"","",""
+# Identity
+user-account-inventor-02,true,"",inventor1,inventor1
+# Password
+user-account-inventor-03,true,"UserIdentity{name: 'Juan', surname: 'Inventor', email: 'inventor1@acme.com'}","",inventor1
+# Username
+user-account-inventor-04,true,"UserIdentity{name: 'Juan', surname: 'Inventor', email: 'inventor1@acme.com'}",inventor1,""

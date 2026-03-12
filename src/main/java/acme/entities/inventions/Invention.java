@@ -1,7 +1,7 @@
 
 package acme.entities.inventions;
 
-import java.time.Duration;
+import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -19,7 +19,7 @@ import acme.client.components.datatypes.Money;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
-import acme.client.components.validation.ValidMoment.Constraint;
+import acme.client.components.validation.ValidNumber;
 import acme.client.components.validation.ValidUrl;
 import acme.client.helpers.MomentHelper;
 import acme.constraints.ValidHeader;
@@ -52,12 +52,12 @@ public class Invention extends AbstractEntity {
 	private String				description;
 
 	@Mandatory
-	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
+	@ValidMoment
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date				startMoment;
 
 	@Mandatory
-	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
+	@ValidMoment
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date				endMoment;
 
@@ -78,13 +78,11 @@ public class Invention extends AbstractEntity {
 	private InventionRepository	repository;
 
 
-	@Valid
+	@Mandatory
+	@ValidNumber(min = 0)
 	@Transient
 	private Double monthsActive() {
-		Duration duration = MomentHelper.computeDuration(this.startMoment, this.endMoment);
-		double days = duration.toMillis() / (1000.0 * 60 * 60 * 24);
-
-		double result = Math.round(days / 30 * 10) / 10;
+		Double result = MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
 		return result;
 
 	}
