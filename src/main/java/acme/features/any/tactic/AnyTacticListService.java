@@ -6,6 +6,7 @@ import java.util.Collection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.client.components.principals.Any;
 import acme.client.services.AbstractService;
 import acme.entities.strategies.Strategy;
 import acme.entities.strategies.Tactic;
@@ -13,7 +14,7 @@ import acme.features.any.strategy.AnyStrategyRepository;
 import acme.realms.Fundraiser;
 
 @Service
-public class AnyTacticListService extends AbstractService<Fundraiser, Tactic> {
+public class AnyTacticListService extends AbstractService<Any, Tactic> {
 
 	// Internal state ---------------------------------------------------------
 
@@ -22,9 +23,9 @@ public class AnyTacticListService extends AbstractService<Fundraiser, Tactic> {
 
 	private AnyStrategyRepository	strategyRepository;
 
-	private Collection<Tactic>				tactics;
+	private Collection<Tactic>		tactics;
 
-	// AbstractService<Fundraiser, Tactic> ----------------------------------
+	// AbstractService<Any, Tactic> ----------------------------------
 
 
 	@Override

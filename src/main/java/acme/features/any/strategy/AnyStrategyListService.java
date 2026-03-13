@@ -6,12 +6,12 @@ import java.util.Collection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.client.components.principals.Any;
 import acme.client.services.AbstractService;
 import acme.entities.strategies.Strategy;
-import acme.realms.Fundraiser;
 
 @Service
-public class AnyStrategyListService extends AbstractService<Fundraiser, Strategy> {
+public class AnyStrategyListService extends AbstractService<Any, Strategy> {
 
 	// Internal state ---------------------------------------------------------
 
@@ -20,14 +20,12 @@ public class AnyStrategyListService extends AbstractService<Fundraiser, Strategy
 
 	private Collection<Strategy>	strategies;
 
-	// AbstractService<Fundraiser, Strategy> ----------------------------------
+	// AbstractService<Any, Strategy> ----------------------------------
 
 
 	@Override
 	public void load() {
-		int id;
-		id = super.getRequest().getData("id", int.class);
-		this.strategies = this.repository.findStrategyByFundraiser(id);
+		this.strategies = this.repository.findAllPublishedStrategies();
 	}
 
 	@Override

@@ -4,19 +4,19 @@ package acme.features.any.strategy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.client.components.principals.Any;
 import acme.client.services.AbstractService;
 import acme.entities.strategies.Strategy;
-import acme.realms.Fundraiser;
 
 @Service
-public class AnyStrategyShowService extends AbstractService<Fundraiser, Strategy> {
+public class AnyStrategyShowService extends AbstractService<Any, Strategy> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
 	private AnyStrategyRepository	repository;
 
-	private Strategy						strategy;
+	private Strategy				strategy;
 
 	// AbstractService<Fundraiser, Strategy> ----------------------------------
 

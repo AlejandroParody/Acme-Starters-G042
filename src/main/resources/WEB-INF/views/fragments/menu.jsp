@@ -35,7 +35,7 @@
 			<acme:menu-suboption code="master.menu.administrator.shut-system-down" action="/administrator/system/shut-down"/>
 		</acme:menu-option>
 		
-		<acme:menu-option code="master.menu.any.strategies" access="hasRealm('Fundraiser')">
+		<acme:menu-option code="master.menu.any.strategies" access="isAuthenticated() or isAnonymous()">
 			<acme:menu-suboption code="master.menu.any.list-strategies" action="/any/strategy/list"/>
 		</acme:menu-option>
 
