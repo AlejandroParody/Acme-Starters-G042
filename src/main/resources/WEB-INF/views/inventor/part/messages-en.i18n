@@ -14,4 +14,3 @@ inventor.part.form.label.kind = Kind:
 inventor.part.form.button.create = Create
 inventor.part.form.button.update = Update
 inventor.part.form.button.delete = Delete
-inventor.part.form.button.back = Back to invention

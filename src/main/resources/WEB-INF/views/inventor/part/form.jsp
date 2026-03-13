@@ -17,6 +17,4 @@
             <acme:submit code="inventor.part.form.button.delete" action="/inventor/part/delete"/>
         </jstl:when>
     </jstl:choose>
-
-    <acme:button code="inventor.part.form.button.back" action="/inventor/invention/show?id=${inventionId}"/>
 </acme:form>
