@@ -11,7 +11,6 @@ import acme.client.services.AbstractService;
 import acme.entities.strategies.Strategy;
 import acme.entities.strategies.Tactic;
 import acme.features.any.strategy.AnyStrategyRepository;
-import acme.realms.Fundraiser;
 
 @Service
 public class AnyTacticListService extends AbstractService<Any, Tactic> {
@@ -21,6 +20,7 @@ public class AnyTacticListService extends AbstractService<Any, Tactic> {
 	@Autowired
 	private AnyTacticRepository		repository;
 
+	@Autowired
 	private AnyStrategyRepository	strategyRepository;
 
 	private Collection<Tactic>		tactics;
@@ -31,22 +31,22 @@ public class AnyTacticListService extends AbstractService<Any, Tactic> {
 	@Override
 	public void load() {
 		int strategyId;
-		strategyId = super.getRequest().getData("id", int.class);
+		strategyId = super.getRequest().getData("strategyId", int.class);
 		this.tactics = this.repository.findTacticByStrategy(strategyId);
 	}
 
 	@Override
 	public void authorise() {
+		boolean status;
 		int strategyId;
-		Fundraiser fundraiser;
 		Strategy strategy;
 
-		strategyId = super.getRequest().getData("id", int.class);
+		strategyId = super.getRequest().getData("strategyId", int.class);
 		strategy = this.strategyRepository.findStrategyById(strategyId);
-		fundraiser = strategy.getFundraiser();
 
-		boolean authorised = super.getRequest().getPrincipal().hasRealm(fundraiser);
-		super.setAuthorised(authorised);
+		status = strategy != null && !strategy.getDraftMode();
+
+		super.setAuthorised(status);
 	}
 
 	@Override
