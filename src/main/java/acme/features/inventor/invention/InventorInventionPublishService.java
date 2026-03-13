@@ -10,7 +10,7 @@ import acme.entities.inventions.Invention;
 import acme.realms.Inventor;
 
 @Service
-public class InventorInventionShowService extends AbstractService<Inventor, Invention> {
+public class InventorInventionPublishService extends AbstractService<Inventor, Invention> {
 
 	@Autowired
 	private InventorInventionRepository	repository;
@@ -30,9 +30,25 @@ public class InventorInventionShowService extends AbstractService<Inventor, Inve
 	public void authorise() {
 		boolean status;
 
-		status = this.invention != null && this.invention.getInventor().isPrincipal();
+		status = this.invention != null && this.invention.getDraftMode() && this.invention.getInventor().isPrincipal();
 
 		super.setAuthorised(status);
+	}
+
+	@Override
+	public void bind() {
+		super.bindObject(this.invention, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo");
+	}
+
+	@Override
+	public void validate() {
+		super.validateObject(this.invention);
+	}
+
+	@Override
+	public void execute() {
+		this.invention.setDraftMode(false);
+		this.repository.save(this.invention);
 	}
 
 	@Override
@@ -42,7 +58,6 @@ public class InventorInventionShowService extends AbstractService<Inventor, Inve
 		tuple = super.unbindObject(this.invention, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo");
 
 		tuple.put("published", !this.invention.getDraftMode());
-		tuple.put("inventorId", this.invention.getInventor().getId());
 
 		super.getResponse().addData(tuple);
 	}
