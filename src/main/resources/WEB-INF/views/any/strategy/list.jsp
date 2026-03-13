@@ -5,6 +5,7 @@
 
 <acme:list>
 	<acme:list-column code="any.strategy.list.label.ticker" path="ticker" width="20%"/>
-	<acme:list-column code="any.strategy.list.label.name" path="name" width="50%"/>
-	<acme:list-column code="any.strategy.list.label.startMoment" path="startMoment" width="30%"/>
+	<acme:list-column code="any.strategy.list.label.name" path="name" width="40%"/>
+	<acme:list-column code="any.strategy.list.label.startMoment" path="startMoment" width="40%"/>
+	<acme:list-hidden path="redress"/>
 </acme:list>

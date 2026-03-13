@@ -9,10 +9,13 @@
 
     <acme:form-textarea path="description" code="any.strategy.form.label.description"/>
 
-    <acme:form-moment path="startMoment" code="any.strategy.form.label.start"/>
-    <acme:form-moment path="endMoment" code="any.strategy.form.label.end"/>
+    <acme:form-moment path="startMoment" code="any.strategy.form.label.startMoment"/>
+    <acme:form-moment path="endMoment" code="any.strategy.form.label.endMoment"/>
 
     <acme:form-url path="moreInfo" code="any.strategy.form.label.moreInfo"/>
-
+    
     <acme:form-textbox path="fundraiser" code="any.strategy.form.label.fundraiser"/>
+    
+    <acme:button code="any.strategy.form.button.tactics" action="/any/tactic/list?masterId=${id}"/>
+    <acme:button code="any.strategy.form.button.fundraiser" action="/any/fundraiser/show?id=${fundraiserId}"/>
 </acme:form>
