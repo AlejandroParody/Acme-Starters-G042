@@ -12,6 +12,5 @@ any.strategy.form.label.description = Description:
 any.strategy.form.label.startMoment = Start date:
 any.strategy.form.label.endMoment = End date:
 any.strategy.form.label.moreInfo = More info: (Optional)
-any.strategy.form.label.fundraiser = Fundraiser:
 any.strategy.form.button.tactics = Tactics
 any.strategy.form.button.fundraiser = View fundraiser profile
