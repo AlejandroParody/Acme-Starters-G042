@@ -1,0 +1,27 @@
+inventor.invention.list.title = My inventions
+inventor.invention.form.title = Invention details
+
+inventor.invention.list.label.ticker = Ticker
+inventor.invention.list.label.name = Name
+inventor.invention.list.label.draftMode = Draft
+inventor.invention.list.label.startMoment = Start date
+inventor.invention.list.button.create = New invention
+
+inventor.invention.form.label.ticker = Ticker:
+inventor.invention.form.label.name = Name:
+inventor.invention.form.label.description = Description:
+inventor.invention.form.label.startMoment = Start date:
+inventor.invention.form.label.endMoment = End date:
+inventor.invention.form.label.moreInfo = More info: (Optional)
+inventor.invention.form.label.published = Published:
+
+inventor.invention.form.placeholder.ticker = e.g. AB12-myTicker
+inventor.invention.form.placeholder.name = e.g. My invention
+inventor.invention.form.placeholder.description = e.g. A brief description
+inventor.invention.form.placeholder.moreInfo = e.g. https://example.com
+
+inventor.invention.form.button.create = Create
+inventor.invention.form.button.update = Update
+inventor.invention.form.button.delete = Delete
+inventor.invention.form.button.publish = Publish
+inventor.invention.form.button.parts = Parts
