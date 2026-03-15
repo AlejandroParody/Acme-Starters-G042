@@ -38,6 +38,6 @@ public class FundraiserStrategyListService extends AbstractService<Fundraiser, S
 
 	@Override
 	public void unbind() {
-		super.unbindObjects(this.strategies, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo");
+		super.unbindObjects(this.strategies, "ticker", "name", "description", "draftMode", "startMoment", "endMoment");
 	}
 }
