@@ -1,0 +1,8 @@
+authenticated.fundraiser.form.title = Perfil de recaudador
+
+authenticated.fundraiser.form.label.bank = Banco:
+authenticated.fundraiser.form.label.statement = Estado:
+authenticated.fundraiser.form.label.agent = Agente
+
+authenticated.fundraiser.form.button.create = Convertirse en fundraiser
+authenticated.fundraiser.form.button.update = Actualizar perfil

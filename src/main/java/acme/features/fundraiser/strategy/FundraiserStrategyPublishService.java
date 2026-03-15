@@ -10,7 +10,7 @@ import acme.entities.strategies.Strategy;
 import acme.realms.Fundraiser;
 
 @Service
-public class FundraiserStrategyShowService extends AbstractService<Fundraiser, Strategy> {
+public class FundraiserStrategyPublishService extends AbstractService<Fundraiser, Strategy> {
 
 	@Autowired
 	private FundraiserStrategyRepository	repository;
@@ -30,9 +30,25 @@ public class FundraiserStrategyShowService extends AbstractService<Fundraiser, S
 	public void authorise() {
 		boolean status;
 
-		status = this.strategy != null && this.strategy.getFundraiser().isPrincipal();
+		status = this.strategy != null && this.strategy.getDraftMode() && this.strategy.getFundraiser().isPrincipal();
 
 		super.setAuthorised(status);
+	}
+
+	@Override
+	public void bind() {
+		super.bindObject(this.strategy, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo");
+	}
+
+	@Override
+	public void validate() {
+		super.validateObject(this.strategy);
+	}
+
+	@Override
+	public void execute() {
+		this.strategy.setDraftMode(false);
+		this.repository.save(this.strategy);
 	}
 
 	@Override
@@ -42,7 +58,6 @@ public class FundraiserStrategyShowService extends AbstractService<Fundraiser, S
 		tuple = super.unbindObject(this.strategy, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo");
 
 		tuple.put("published", !this.strategy.getDraftMode());
-		tuple.put("strategyId", this.strategy.getFundraiser().getId());
 
 		super.getResponse().addData(tuple);
 	}

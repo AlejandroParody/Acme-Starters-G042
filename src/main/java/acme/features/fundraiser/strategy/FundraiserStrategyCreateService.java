@@ -10,7 +10,7 @@ import acme.entities.strategies.Strategy;
 import acme.realms.Fundraiser;
 
 @Service
-public class FundraiserStrategyShowService extends AbstractService<Fundraiser, Strategy> {
+public class FundraiserStrategyCreateService extends AbstractService<Fundraiser, Strategy> {
 
 	@Autowired
 	private FundraiserStrategyRepository	repository;
@@ -20,19 +20,36 @@ public class FundraiserStrategyShowService extends AbstractService<Fundraiser, S
 
 	@Override
 	public void load() {
-		int id;
+		Fundraiser fundraiser;
 
-		id = super.getRequest().getData("id", int.class);
-		this.strategy = this.repository.findStrategyById(id);
+		fundraiser = (Fundraiser) super.getRequest().getPrincipal().getActiveRealm();
+		this.strategy = super.newObject(Strategy.class);
+		this.strategy.setDraftMode(true);
+		this.strategy.setFundraiser(fundraiser);
 	}
 
 	@Override
 	public void authorise() {
 		boolean status;
 
-		status = this.strategy != null && this.strategy.getFundraiser().isPrincipal();
+		status = super.getRequest().getPrincipal().hasRealmOfType(Fundraiser.class);
 
 		super.setAuthorised(status);
+	}
+
+	@Override
+	public void bind() {
+		super.bindObject(this.strategy, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo");
+	}
+
+	@Override
+	public void validate() {
+		super.validateObject(this.strategy);
+	}
+
+	@Override
+	public void execute() {
+		this.repository.save(this.strategy);
 	}
 
 	@Override
@@ -41,8 +58,7 @@ public class FundraiserStrategyShowService extends AbstractService<Fundraiser, S
 
 		tuple = super.unbindObject(this.strategy, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo");
 
-		tuple.put("published", !this.strategy.getDraftMode());
-		tuple.put("strategyId", this.strategy.getFundraiser().getId());
+		tuple.put("published", false);
 
 		super.getResponse().addData(tuple);
 	}

@@ -12,7 +12,7 @@ import acme.entities.strategies.TacticKind;
 import acme.realms.Fundraiser;
 
 @Service
-public class FundraiserTacticShowService extends AbstractService<Fundraiser, Tactic> {
+public class FundraiserTacticUpdateService extends AbstractService<Fundraiser, Tactic> {
 
 	@Autowired
 	private FundraiserTacticRepository	repository;
@@ -32,9 +32,24 @@ public class FundraiserTacticShowService extends AbstractService<Fundraiser, Tac
 	public void authorise() {
 		boolean status;
 
-		status = this.tactic != null && this.tactic.getStrategy().getFundraiser().isPrincipal();
+		status = this.tactic != null && this.tactic.getStrategy().getDraftMode() && this.tactic.getStrategy().getFundraiser().isPrincipal();
 
 		super.setAuthorised(status);
+	}
+
+	@Override
+	public void bind() {
+		super.bindObject(this.tactic, "name", "notes", "expectedPercentage", "tacticKind");
+	}
+
+	@Override
+	public void validate() {
+		super.validateObject(this.tactic);
+	}
+
+	@Override
+	public void execute() {
+		this.repository.save(this.tactic);
 	}
 
 	@Override
@@ -44,7 +59,7 @@ public class FundraiserTacticShowService extends AbstractService<Fundraiser, Tac
 
 		choices = SelectChoices.from(TacticKind.class, this.tactic.getTacticKind());
 
-		tuple = super.unbindObject(this.tactic, "name", "notes", "expectedPercentage", "tacticKind", "strategy.ticker", "strategy.name");
+		tuple = super.unbindObject(this.tactic, "name", "notes", "expectedPercentage", "tacticKind");
 
 		tuple.put("tacticKinds", choices);
 		tuple.put("strategyId", this.tactic.getStrategy().getId());

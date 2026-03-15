@@ -16,9 +16,11 @@ public class FundraiserStrategyController extends AbstractController<Fundraiser,
 	@PostConstruct
 	protected void initialise() {
 		super.setMediaType(MediaType.TEXT_HTML);
-
 		super.addBasicCommand("list", FundraiserStrategyListService.class);
 		super.addBasicCommand("show", FundraiserStrategyShowService.class);
+		super.addBasicCommand("create", FundraiserStrategyCreateService.class);
+		super.addBasicCommand("update", FundraiserStrategyUpdateService.class);
+		super.addBasicCommand("delete", FundraiserStrategyDeleteService.class);
+		super.addCustomCommand("publish", "update", FundraiserStrategyPublishService.class);
 	}
-
 }

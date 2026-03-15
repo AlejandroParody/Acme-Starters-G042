@@ -18,6 +18,7 @@ master.menu.anonymous.favourite-link = Enlace favorito
 master.menu.any = Cualquiera
 master.menu.any.list-inventions = Lista de inventos
 master.menu.any.list-sponsorships = Lista de patrocinios
+master.menu.any.list-strategies = Lista de estrategias
 
 # master.menu.administrator ###################################################
 
@@ -42,6 +43,11 @@ master.menu.consumer.favourite-link = Enlace favorito
 master.menu.inventor = Inventor
 master.menu.inventor.list-inventions = Mis inventos
 
+# master.menu.fundraiser ##########################################################
+
+master.menu.fundraiser = Recaudador
+master.menu.fundraiser.list-strategies = Mis estrategias
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Cuenta
@@ -52,5 +58,7 @@ master.menu.user-account.become-consumer = Hazte consumidor
 master.menu.user-account.consumer-profile = Perfil de consumidor
 master.menu.user-account.become-inventor = Convertirse en inventor
 master.menu.user-account.inventor-profile = Perfil de inventor
+master.menu.user-account.become-fundraiser = Convertirse en recaudador
+master.menu.user-account.fundraiser-profile = Perfil de recaudador
 master.menu.user-account.become-sponsor = Hazte patrocinador
 master.menu.user-account.sponsor-profile = Perfil de patrocinador
