@@ -1,0 +1,28 @@
+key,ticker,name,description,startMoment,endMoment,moreInfo,draftMode,key:spokesperson
+# text1
+campaign-002,CP26-000002,"Campaign Two","Description",2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-002
+campaign-003,CP26-000003,"Campaign Three","Short Name",2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-003
+campaign-004,CP26-000004,"Campaign Four","Short Name",2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-004
+campaign-005,CP26-000005,"โลเร็ม อิปซัม","Lo",2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-005
+campaign-006,CP26-000006,"لوريم إيبسوم","Lo",2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-006
+campaign-007,CP26-000007,"洛伦·伊普森","Lo",2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-007
+# text2
+campaign-008,CP26-000008,"Lo","L",2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-008
+campaign-009,CP26-000009,"Campaign Nine","Description",2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-009
+campaign-010,CP26-000010,"Campaign Ten","Description",2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-010
+campaign-011,CP26-000011,"โลเร็ม อิปซัม","Lo",2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-011
+campaign-012,CP26-000012,"lo","لوريم إيبسوم",2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-012
+campaign-013,CP26-000013,"lo","洛伦·伊普森",2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-013
+# moments
+campaign-014,CP26-000014,"Lo","L",2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-014
+campaign-015,CP26-000015,"Lo","L",2026/05/01 00:01,2026/12/01 00:01,http://a.b,1,spokesperson-015
+campaign-016,CP26-000016,"Lo","L",2026/10/31 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-016
+campaign-017,CP26-000017,"Lo","L",2026/10/31 23:59,2026/12/31 00:01,http://a.b,1,spokesperson-002
+# endmoment
+campaign-018,CP26-000018,"L","Lo",2026/05/02 00:00,2026/12/08 00:00,http://a.b,1,spokesperson-003
+campaign-019,CP26-000019,"L","Lo",2026/05/02 00:00,2026/12/08 00:01,http://a.b,1,spokesperson-004
+campaign-020,CP26-000020,"L","Lo",2026/05/02 00:00,2200/12/31 00:00,http://a.b,1,spokesperson-005
+campaign-021,CP26-000021,"L","Lo",2026/05/02 00:00,2200/12/31 23:59,http://a.b,1,spokesperson-006
+# moreinfo
+campaign-022,CP26-000022,"L","Lo",2026/05/02 00:00,2026/12/08 00:01,http://example.org,1,spokesperson-007
+campaign-023,CP26-000023,"L","Lo",2026/05/02 00:00,2026/12/08 00:01,https://lorem.org,1,spokesperson-008
