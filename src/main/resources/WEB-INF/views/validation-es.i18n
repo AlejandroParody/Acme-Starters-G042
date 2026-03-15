@@ -11,3 +11,8 @@
 acme.validation.header.message = El encabezado debe contener entre 1 y 75 caracteres.
 acme.validation.text.message = El texto debe contener entre 1 y 255 caracteres.
 acme.validation.ticker.message = El formato es incorrecto.
+
+#sponsorships
+acme.validation.sponsorship.null-draft-mode.message = El valor del atributo "draft-mode" no puede ser nulo.
+acme.validation.sponsorship.invalid-interval.message = El intervalo de tiempo es incorrecto.
+acme.validation.sponsorship.no-donations.message = El patrocinio debe tener al menos una Donacion.
