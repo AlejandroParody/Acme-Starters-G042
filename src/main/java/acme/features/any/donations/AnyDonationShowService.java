@@ -8,8 +8,8 @@ import acme.client.components.models.Tuple;
 import acme.client.components.principals.Any;
 import acme.client.components.views.SelectChoices;
 import acme.client.services.AbstractService;
+import acme.datatypes.DonationKind;
 import acme.entities.sponsorships.Donation;
-import acme.entities.sponsorships.DonationKind;
 
 @Service
 public class AnyDonationShowService extends AbstractService<Any, Donation> {
@@ -46,9 +46,9 @@ public class AnyDonationShowService extends AbstractService<Any, Donation> {
 		Tuple tuple;
 		SelectChoices choices;
 
-		choices = SelectChoices.from(DonationKind.class, this.donation.getDonationKind());
+		choices = SelectChoices.from(DonationKind.class, this.donation.getKind());
 
-		tuple = super.unbindObject(this.donation, "name", "notes", "money", "donationKind", "sponsorship.ticker", "sponsorship.name");
-		tuple.put("donationKinds", choices);
+		tuple = super.unbindObject(this.donation, "name", "notes", "money", "kind", "sponsorship.ticker", "sponsorship.name");
+		tuple.put("kinds", choices);
 	}
 }

@@ -34,9 +34,12 @@ public class SponsorshipValidator extends AbstractValidator<ValidSponsorship, Sp
 		boolean result = true;
 
 		if (sponsorship != null) {
-			boolean inDraftMode = sponsorship.getDraftMode();
-			if (!inDraftMode) {
-				//DEBE TENER AL MENOS UNA DONACION
+			Boolean inDraftMode = sponsorship.getDraftMode();
+			if (inDraftMode == null) {
+				super.state(context, false, "draftMode", "acme.validation.sponsorship.null-draft-mode.message");
+				result = false;
+			} else if (!inDraftMode) {
+				// DEBE TENER AL MENOS UNA DONACION
 				int numberOfDonations = this.repository.countDonationsBySponsorshipId(sponsorship.getId());
 				boolean hasMoreThanOneDonation = numberOfDonations >= 1;
 				super.state(context, hasMoreThanOneDonation, "Donation relation", "acme.validation.sponsorship.no-donations.message");
@@ -49,8 +52,10 @@ public class SponsorshipValidator extends AbstractValidator<ValidSponsorship, Sp
 					validInterval = MomentHelper.isAfter(start, now) && MomentHelper.isBefore(start, end);
 				}
 				super.state(context, validInterval, "startMoment", "acme.validation.sponsorship.invalid-interval.message");
+				result = !super.hasErrors(context);
+			} else {
+				result = !super.hasErrors(context);
 			}
-			result = !super.hasErrors(context);
 		}
 
 		return result;
