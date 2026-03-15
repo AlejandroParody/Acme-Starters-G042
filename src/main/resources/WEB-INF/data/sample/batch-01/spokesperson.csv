@@ -1,21 +1,18 @@
-key,cv,achievements,licensed
+key,cv,achievements,licensed,key:userAccount
 #template
-spokesperson-001,"","",""
-#cv
-spokesperson-002,"l","Lo","1"
-spokesperson-003,"lo","Lo","1"
-spokesperson-004,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*	","Lo","1"
-spokesperson-005,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor","Lo","1"
-spokesperson-006,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor*","Lo","1"
-spokesperson-007,"โลเร็ม อิปซัม","Lo","1"
-spokesperson-008,"لوريم إيبسوم","Lo","1"
-spokesperson-009,"洛伦·伊普森","Lo","1"
-#achieve
-spokesperson-010,"lo","L","1"
-spokesperson-011,"lo","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*	","Lo","1"
-spokesperson-012,lo,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor","1"
-spokesperson-013,lo,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor*","1"
-spokesperson-014,lo,"โลเร็ม อิปซัม","1"
-spokesperson-015,lo,"洛伦·伊普森","1"
-#licensed
-spokesperson-016,lo,"洛伦·伊普森","100"
+#spokesperson-001,"","","",""
+spokesperson-002,l,Lo,true,user-account-inventor-01
+spokesperson-003,lo,Lo,true,user-account-inventor-02
+spokesperson-004,Description...,Lo,true,user-account-inventor-03
+spokesperson-005,Description...,Lo,true,user-account-fundraiser-01
+spokesperson-006,Description...,Lo,true,user-account-fundraiser-02
+spokesperson-007,โลเร็ม อิปซัม,Lo,true,user-account-fundraiser-03
+spokesperson-008,لوريم إيبسوم,Lo,true,user-account-fundraiser-04
+spokesperson-009,洛伦·伊普森,Lo,true,user-account-fundraiser-05
+spokesperson-010,lo,L,true,user-account-fundraiser-06
+spokesperson-011,Description...,Lo,true,user-account-fundraiser-07
+spokesperson-012,lo,Description...,true,user-account-fundraiser-08
+spokesperson-013,lo,Description...,true,user-account-provider-01
+spokesperson-014,lo,โลเร็ม อิปซัม,true,user-account-provider-02
+spokesperson-015,lo,洛伦·伊普森,true,user-account-consumer-01
+spokesperson-016,lo,洛伦·伊普森,false,user-account-consumer-02

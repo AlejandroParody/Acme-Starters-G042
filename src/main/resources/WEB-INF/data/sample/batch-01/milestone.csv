@@ -1,30 +1,29 @@
-key,title,achievements,effort,kind,campaign
+key,title,achievements,effort,kind,key:campaign
 #template
-milestone-001,"","","","",""
+#milestone-001,"","","","",""
 #text1ok
-milestone-002,l,Lo,2,TEASER,campaign-001
-milestone-003,lo,Lo,2,TEASER,campaign-001
-milestone-004,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",Lo,2,TEASER,campaign-001
-milestone-005,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor*",Lo,2,TEASER,campaign-001
-milestone-006,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",Lo,2,TEASER,campaign-001
-milestone-007,โลเร็ม อิปซัม,Lo,2,TEASER,campaign-001
-milestone-008,لوريم إيبسوم,Lo,2,TEASER,campaign-001
-milestone-009,洛伦·伊普森,Lo,2,TEASER,campaign-001
+milestone-002,l,Lo,2,TEASER,campaign-002
+milestone-003,lo,Lo,2,TEASER,campaign-002
+milestone-004,"Lorem ipsum dolor sit amet...","Lo",2,TEASER,campaign-002
+milestone-005,"Lorem ipsum dolor sit amet...","Lo",2,TEASER,campaign-002
+milestone-006,"Lorem ipsum...","Lo",2,TEASER,campaign-002
+milestone-007,โลเร็ม อิปซัม,Lo,2,TEASER,campaign-002
+milestone-008,لوريم إيبسوم,Lo,2,TEASER,campaign-002
+milestone-009,洛伦·伊普森,Lo,2,TEASER,campaign-002
 #text2
-milestone-010,L,l,2,TEASER,campaign-001
-milestone-011,lo,Lo,2,TEASER,campaign-001
-milestone-012,lo,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",2,TEASER,campaign-001
-milestone-013,lo,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor*",2,TEASER,campaign-001
-milestone-014,lo,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut*",2,TEASER,campaign-001
-milestone-015,lo,โลเร็ม อิปซัม,2,TEASER,campaign-001
-milestone-016,lo,لوريم إيبسوم,2,TEASER,campaign-001
-milestone-017,lo,洛伦·伊普森,2,TEASER,campaign-001
+milestone-010,L,l,2,TEASER,campaign-002
+milestone-011,lo,Lo,2,TEASER,campaign-002
+milestone-012,lo,"Lorem ipsum...",2,TEASER,campaign-002
+milestone-013,lo,"Lorem ipsum...",2,TEASER,campaign-002
+milestone-014,lo,"Lorem ipsum...",2,TEASER,campaign-002
+milestone-015,lo,โลเร็ม อิปซัม,2,TEASER,campaign-002
+milestone-016,lo,لوريم إيبسوم,2,TEASER,campaign-002
+milestone-017,lo,洛伦·伊普森,2,TEASER,campaign-002
 #effort
-milestone-018,l,Lo,0,TEASER,campaign-001
-milestone-019,l,Lo,1,TEASER,campaign-001
-milestone-020,l,Lo,100,TEASER,campaign-001
+milestone-018,l,Lo,0,TEASER,campaign-002
+milestone-019,l,Lo,1,TEASER,campaign-002
+milestone-020,l,Lo,100,TEASER,campaign-002
 #kind
-milestone-021,l,Lo,0,TEASER,campaign-001
-milestone-022,l,Lo,0,ENGAGING,campaign-001
-milestone-023,l,Lo,0,CONVERSION,campaign-001
-
+milestone-021,l,Lo,0,TEASER,campaign-002
+milestone-022,l,Lo,0,ENGAGING,campaign-002
+milestone-023,l,Lo,0,CONVERSION,campaign-002

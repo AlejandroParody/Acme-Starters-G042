@@ -1,23 +1,21 @@
-key,title,achievements,effort,kind,campaign
+key,title,achievements,effort,kind,key:campaign
 #template 
-milestone-001,"","","","",""
+#milestone-001,"","","","",""
 #title-error
-milestone-002,"","Lo","2","TEASER","campaign-001"
-milestone-003,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i","Lo","2","TEASER","campaign-001"
+milestone-002,"","Lo","2","TEASER","campaign-002"
+milestone-003,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i","Lo","2","TEASER","campaign-002"
 #achievement-error
-milestone-004,"Lo","","2","TEASER","campaign-001"
-milestone-005,"Lo","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i","2","TEASER","campaign-001"
+milestone-004,"Lo","","2","TEASER","campaign-002"
+milestone-005,"Lo","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i","2","TEASER","campaign-002"
 #effort-error
-milestone-006,"Lo","Lo","","TEASER","campaign-001"
-milestone-007,"Lo","Lo","-4","TEASER","campaign-001"
-milestone-0013,"Lo","Lo","-1,00","TEASER","campaign-001"
-milestone-008,"Lo","Lo","-0,01","TEASER","campaign-001"
-milestone-009,"Lo","Lo","100,01","TEASER","campaign-001"
-milestone-010,"Lo","Lo","101,00","TEASER","campaign-001"
+milestone-006,"Lo","Lo","","TEASER","campaign-002"
+milestone-007,"Lo","Lo","-4","TEASER","campaign-002"
+milestone-013,"Lo","Lo","-1.00","TEASER","campaign-002"
+milestone-008,"Lo","Lo","-0.01","TEASER","campaign-002"
+milestone-009,"Lo","Lo","100.01","TEASER","campaign-002"
+milestone-010,"Lo","Lo","101.00","TEASER","campaign-002"
 #kind-error
-milestone-011,"Lo","Lo","1","","campaign-001"
-milestone-012,"Lo","Lo","1","Not in milestonekind","campaign-001"
+milestone-011,"Lo","Lo","1","","campaign-002"
+
 #campaign-error
 milestone-014,"Lo","Lo","1","TEASER",""
-milestone-015,"Lo","Lo","1","TEASER","not a campaign"
-

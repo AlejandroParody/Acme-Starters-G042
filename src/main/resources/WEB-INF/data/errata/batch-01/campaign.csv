@@ -1,28 +1,25 @@
 key,ticker,name,description,startMoment,endMoment,moreInfo,draftMode,key:spokesperson
 # template
-campaign-001,"","","","","","","",""
+#campaign-001,"","","","","","","",""
 #text error
-campaign-002,ABCD-123456,"",Lo,2012/07/02 00:00,2025/01/08 00:01,http://a.b,1,spokesperson-01
-campaign-003,ABXD-123453,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",Lo,2012/07/02 00:00,2025/01/08 00:01,http://a.b,1,spokesperson-01
-campaign-004,AZCD-123452,Lo,"",2012/07/02 00:00,2025/01/08 00:01,http://a.b,1,spokesperson-01
-campaign-005,ABCD-122451,Lo,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",2012/07/02 00:00,2025/01/08 00:01,http://a.b,1,spokesperson-01
-campaign-006,ABCR-123454,Lo,Lo,2012/07/02 00:00,2025/01/08 00:01,http://,1,spokesperson-01
-campaign-007,ABPR-123456,Lo,Lo,2012/07/02 00:00,2025/01/08 00:01,user:password@mail.com,1,spokesperson-01
+campaign-002,ABCD-123456,"",Lo,2012/07/02 00:00,2025/01/08 00:01,http://a.b,1,spokesperson-002
+campaign-003,ABXD-123453,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",Lo,2012/07/02 00:00,2025/01/08 00:01,http://a.b,1,spokesperson-002
+campaign-004,AZCD-123452,Lo,"",2012/07/02 00:00,2025/01/08 00:01,http://a.b,1,spokesperson-002
+campaign-005,ABCD-122451,Lo,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",2012/07/02 00:00,2025/01/08 00:01,http://a.b,1,spokesperson-002
+campaign-006,ABCR-123454,Lo,Lo,2012/07/02 00:00,2025/01/08 00:01,http://,1,spokesperson-002
+campaign-007,ABPR-123456,Lo,Lo,2012/07/02 00:00,2025/01/08 00:01,user:password@mail.com,1,spokesperson-002
 #startmoments errors
-campaign-008,ABPR-123499,Lo,Lo,"",2025/01/08 00:01,http://a.b,1,spokesperson-01
-campaign-009,ABPR-093221,Lo,Lo,1999/12/31 23:59,2025/01/08 00:01,http://a.b,1,spokesperson-01
-campaign-010,ABPR-093239,Lo,Lo,2025/01/01 00:01,2025/01/08 00:01,http://a.b,1,spokesperson-01
+campaign-008,ABPR-123499,Lo,Lo,"",2025/01/08 00:01,http://a.b,1,spokesperson-002
+campaign-009,ABPR-093221,Lo,Lo,1999/12/31 23:59,2025/01/08 00:01,http://a.b,1,spokesperson-002
+campaign-010,ABPR-093239,Lo,Lo,2025/01/01 00:01,2025/01/08 00:01,http://a.b,1,spokesperson-002
 #endmoments errors
-campaign-011,POPR-093329,Lo,Lo,02/07/2012 00:00,"",http://a.b,1,spokesperson-01
-campaign-012,ABPQ-093529,Lo,Lo,2012/07/02 00:00,2025/01/07 23:59,http://a.b,1,spokesperson-01
-campaign-013,AGPQ-093329,Lo,Lo,2012/07/02 00:00,2201/01/01 00:01,http://a.b,1,spokesperson-01
+campaign-011,POPR-093329,Lo,Lo,2012/07/02 00:00,"",http://a.b,1,spokesperson-002
+campaign-012,ABPQ-093529,Lo,Lo,2012/07/02 00:00,2025/01/07 23:59,http://a.b,1,spokesperson-002
+campaign-013,AGPQ-093329,Lo,Lo,2012/07/02 00:00,2201/01/01 00:01,http://a.b,1,spokesperson-002
 #ticker error
-campaign-014,"",Lo,Lo,2012/07/02 00:00,2025/01/08 00:01,http://a.b,1,spokesperson-01
-campaign-015,ergieigrv,Lo,Lo,2012/07/02 00:00,2025/01/08 00:01,http://a.b,1,spokesperson-01
+campaign-014,"",Lo,Lo,2012/07/02 00:00,2025/01/08 00:01,http://a.b,1,spokesperson-002
+campaign-015,ergieigrv,Lo,Lo,2012/07/02 00:00,2025/01/08 00:01,http://a.b,1,spokesperson-002
 #draftmode error
-campaign-016,AGPQ-093777,Lo,Lo,2012/07/02 00:00,2025/01/08 00:01,http://a.b,,spokesperson-01
-campaign-017,AGPQ-092117,Lo,Lo,2012/07/02 00:00,2025/01/08 00:01,http://a.b,mgimhepg,spokesperson-01
-
+campaign-016,AGPQ-093777,Lo,Lo,2012/07/02 00:00,2025/01/08 00:01,http://a.b,1,spokesperson-002
 #key error
-campaign-018,AGPQ-093997,Lo,Lo,2012/07/02 00:00,2025/01/08 00:01,http://a.b,1,
-campaign-019,PRED-093997,Lo,Lo,2012/07/02 00:00,2025/01/08 00:01,http://a.b,1,viisvZ<SGzo^^shfzespfgfvz
+campaign-018,AGPQ-093997,Lo,Lo,2012/07/02 00:00,2025/01/08 00:01,http://a.b,1,""
