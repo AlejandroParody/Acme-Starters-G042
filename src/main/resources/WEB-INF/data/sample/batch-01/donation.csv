@@ -1,4 +1,4 @@
-key,name,notes,money,donationKind,key:sponsorship
+key,name,notes,money,kind,key:sponsorship
 # base entity
 donation-01,"Lorem ipsum","Lorem ipsum dolor sit amet consectetur adipiscing elit lorem",EUR 500.00,ALTRUIST,sponsorship-01
 # name standard variation
