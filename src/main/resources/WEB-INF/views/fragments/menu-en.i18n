@@ -42,6 +42,11 @@ master.menu.consumer.favourite-link = Favourite link
 master.menu.inventor = Inventor
 master.menu.inventor.list-inventions = My inventions
 
+# master.menu.sponsor ##########################################################
+
+master.menu.sponsor = Sponsor
+master.menu.sponsor.list-sponsorships = My sponsorships
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Account
