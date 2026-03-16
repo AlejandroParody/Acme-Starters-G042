@@ -1,13 +1,6 @@
 key,cv,achievements,licensed,key:userAccount
 #template
 #spokesperson-001,"","","",""
-spokesperson-002,l,Lo,true,user-account-inventor-01
-spokesperson-003,lo,Lo,true,user-account-inventor-02
-spokesperson-004,Description...,Lo,true,user-account-inventor-03
-spokesperson-005,Description...,Lo,true,user-account-fundraiser-01
-spokesperson-006,Description...,Lo,true,user-account-fundraiser-02
-spokesperson-007,โลเร็ม อิปซัม,Lo,true,user-account-fundraiser-03
-spokesperson-008,lo,Description...,true,user-account-provider-01
-spokesperson-009,lo,โลเร็ม อิปซัม,true,user-account-provider-02
-spokesperson-010,lo,洛伦·伊普森,true,user-account-consumer-01
-spokesperson-011,lo,洛伦·伊普森,false,user-account-consumer-02
+spokesperson-001,Lo,Lo,1,user-account-spokesperson-01
+spokesperson-002,Lo,Lo,1,user-account-spokesperson-02
+spokesperson-003,Lo,Lo,1,user-account-spokesperson-03

@@ -1,28 +1,53 @@
 key,ticker,name,description,startMoment,endMoment,moreInfo,draftMode,key:spokesperson
-# text1
-campaign-002,CP26-000002,"Campaign Two","Description",2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-002
-campaign-003,CP26-000003,"Campaign Three","Short Name",2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-003
-campaign-004,CP26-000004,"Campaign Four","Short Name",2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-004
-campaign-005,CP26-000005,"โลเร็ม อิปซัม","Lo",2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-005
-campaign-006,CP26-000006,"لوريم إيبسوم","Lo",2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-006
-campaign-007,CP26-000007,"洛伦·伊普森","Lo",2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-007
+# text1,"","",""
+campaign-002,CP26-000002,ampaign2,lo,2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-002
+campaign-003,CP26-000003,L,lo,2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-002
+campaign-004,CP26-000004,Lo,lo,2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-002
+campaign-005,CP26-000005,"do consequat. Duis aute irure dolor",Lo,2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-002
+campaign-006,CP26-000006," commodo consequat. Duis aute irure dolor*",Lo,2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-002
+campaign-007,CP26-000007,โลเร็ม อิปซัม,Lo,2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-002
+campaign-024,CP26-000024,لوريم إيبسوم,Lo,2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-002
+campaign-025,CP26-000025,洛伦·伊普森,Lo,2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-002
+campaign-026,CP26-000026,<marquee>Hacked</marquee>,Lo,2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-002
+campaign-027,CP26-000027,<script>alert(‘Hacked!’);</script>,Lo,2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-002
+campaign-028,CP26-000028,' or 'A' = 'A,Lo,2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-002
 # text2
-campaign-008,CP26-000008,"Lo","L",2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-008
-campaign-009,CP26-000009,"Campaign Nine","Description",2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-009
-campaign-010,CP26-000010,"Campaign Ten","Description",2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-010
-campaign-011,CP26-000011,"โลเร็ม อิปซัม","Lo",2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-011
-campaign-012,CP26-000012,"lo","لوريم إيبسوم",2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-011
-campaign-013,CP26-000013,"lo","洛伦·伊普森",2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-011
+campaign-009,CP26-000009,lo,L,2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-002
+campaign-010,CP26-000010,lo,Lo,2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-002
+campaign-011,CP26-000011,lo,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor",2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-002
+campaign-012,CP26-000012,lo,"Lorem ipsum dolor sit amet,consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor*",2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-002
+campaign-013,CP26-000013,lo,โลเร็ม อิปซัม,2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-002
+campaign-029,CP26-000029,lo,لوريم إيبسوم,2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-002
+campaign-030,CP26-000030,lo,洛伦·伊普森,2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-002
+campaign-031,CP26-000031,lo,<marquee>Hacked</marquee>,2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-002
+campaign-032,CP26-000032,lo,<script>alert(‘Hacked!’);</script>,2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-002
+campaign-033,CP26-000033,lo,' or 'A' = 'A,2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-002
 # moments
-campaign-014,CP26-000014,"Lo","L",2026/05/01 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-011
-campaign-015,CP26-000015,"Lo","L",2026/05/01 00:01,2026/12/01 00:01,http://a.b,1,spokesperson-011
-campaign-016,CP26-000016,"Lo","L",2026/10/31 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-011
-campaign-017,CP26-000017,"Lo","L",2026/10/31 23:59,2026/12/31 00:01,http://a.b,1,spokesperson-002
+campaign-014,CP26-000014,Lo,L,2025/01/08 00:00,2026/12/01 00:01,http://a.b,1,spokesperson-002
+campaign-015,CP26-000015,Lo,L,2025/01/08 00:01,2026/12/01 00:02,http://a.b,1,spokesperson-002
+campaign-016,CP26-000016,Lo,L,2200/12/01 23:59,2200/12/01 00:01,http://a.b,1,spokesperson-002
 # endmoment
-campaign-018,CP26-000018,"L","Lo",2026/05/02 00:00,2026/12/08 00:00,http://a.b,1,spokesperson-003
-campaign-019,CP26-000019,"L","Lo",2026/05/02 00:00,2026/12/08 00:01,http://a.b,1,spokesperson-004
-campaign-020,CP26-000020,"L","Lo",2026/05/02 00:00,2200/12/31 00:00,http://a.b,1,spokesperson-005
-campaign-021,CP26-000021,"L","Lo",2026/05/02 00:00,2200/12/31 23:59,http://a.b,1,spokesperson-006
+campaign-018,CP26-000018,L,Lo,2025/01/07 00:00,2025/01/08 00:00,http://a.b,1,spokesperson-002
+campaign-019,CP26-000019,L,Lo,2025/01/08 00:00,2025/01/08 00:01,http://a.b,1,spokesperson-002
+campaign-020,CP26-000020,L,Lo,2026/05/02 00:00,2200/12/31 00:00,http://a.b,1,spokesperson-002
+campaign-021,CP26-000021,L,Lo,2026/05/02 00:00,2200/12/31 23:59,http://a.b,1,spokesperson-002
 # moreinfo
-campaign-022,CP26-000022,"L","Lo",2026/05/02 00:00,2026/12/08 00:01,http://example.org,1,spokesperson-007
-campaign-023,CP26-000023,"L","Lo",2026/05/02 00:00,2026/12/08 00:01,https://lorem.org,1,spokesperson-008
+campaign-034,CP26-000034,L,Lo,2026/05/02 00:00,2026/12/08 00:01,http://lorem.com/ipsum,1,spokesperson-002
+campaign-035,CP26-000035,L,Lo,2026/05/02 00:00,2026/12/08 00:01,http://a.b,1,spokesperson-002
+campaign-036,CP26-000036,L,Lo,2026/05/02 00:00,2026/12/08 00:01,"http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/",1,spokesperson-002
+campaign-037,CP26-000037,L,Lo,2026/05/02 00:00,2026/12/08 00:01,"http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/X",1,spokesperson-002
+campaign-038,CP26-000038,L,Lo,2026/05/02 00:00,2026/12/08 00:01,http://www.lorem-ipsum.org,1,spokesperson-002
+campaign-039,CP26-000039,L,Lo,2026/05/02 00:00,2026/12/08 00:01,https://www.lorem-ipsum.org,1,spokesperson-002
+campaign-040,CP26-000040,L,Lo,2026/05/02 00:00,2026/12/08 00:01,http://www.lorem-ipsum.org/dolor/sit.html,1,spokesperson-002
+campaign-041,CP26-000041,L,Lo,2026/05/02 00:00,2026/12/08 00:01,http://www.lorem-ipsum.org/dolor/sit.html#dolor,1,spokesperson-002
+campaign-042,CP26-000042,L,Lo,2026/05/02 00:00,2026/12/08 00:01,http://example.org?a=1&b=2,1,spokesperson-002
+campaign-043,CP26-000043,L,Lo,2026/05/02 00:00,2026/12/08 00:01,http://example.org?,1,spokesperson-002
+campaign-044,CP26-000044,L,Lo,2026/05/02 00:00,2026/12/08 00:01,http://example.org?a,1,spokesperson-002
+campaign-045,CP26-000045,L,Lo,2026/05/02 00:00,2026/12/08 00:01,http://example.org?a&b,1,spokesperson-002
+campaign-046,CP26-000046,L,Lo,2026/05/02 00:00,2026/12/08 00:01,http://example.org/,1,spokesperson-002
+campaign-047,CP26-000047,L,Lo,2026/05/02 00:00,2026/12/08 00:01,http://example.org/a,1,spokesperson-002
+campaign-048,CP26-000048,L,Lo,2026/05/02 00:00,2026/12/08 00:01,http://example.org/a/b,1,spokesperson-002
+campaign-049,CP26-000049,L,Lo,2026/05/02 00:00,2026/12/08 00:01,http://example.org/a/b?,1,spokesperson-002
+campaign-050,CP26-000050,L,Lo,2026/05/02 00:00,2026/12/08 00:01,http://example.org/a/b?a&b,1,spokesperson-002
+#draftmode
+campaign-051,CP26-000051,L,Lo,2026/05/02 00:00,2026/12/08 00:01,http://example.org/a/b?a&b,0,spokesperson-002
