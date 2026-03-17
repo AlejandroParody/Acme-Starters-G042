@@ -2,7 +2,7 @@ key,title,achievements,effort,kind,key:campaign
 #template
 #milestone-001,"","","","",""
 #text1ok
-milestone-002," labore et dolore magna aliqua! Ut*",Lo,2,TEASER,campaign-002
+milestone-002,labore et dolore magna aliqua! Ut*,Lo,2,TEASER,campaign-002
 milestone-003,L,Lo,2,TEASER,campaign-002
 milestone-004,Lo,Lo,2,TEASER,campaign-002
 milestone-007,โลเร็ม อิปซัม,Lo,2,TEASER,campaign-002
@@ -31,4 +31,4 @@ milestone-030,l,Lo,100,TEASER,campaign-002
 #kind
 milestone-021,l,Lo,0,TEASER,campaign-002
 milestone-022,l,Lo,0,ENGAGING,campaign-002
-milestone-023,l,Lo,0,CONVERSION,campaign-002
+milestone-023,l,Lo,1,CONVERSION,campaign-051

@@ -16,7 +16,7 @@ public interface AnyMilestoneRepository extends AbstractRepository {
 	@Query("select p from Milestone p where p.campaign.id = :campaignId")
 	Collection<Milestone> findMilestonesByCampaignId(int campaignId);
 
-	@Query("select p from Part p where p.id = :id")
+	@Query("select p from Milestone p where p.id = :id")
 	Milestone findMilestoneById(int id);
 
 	@Query("select i from Campaign i where i.id = :id")

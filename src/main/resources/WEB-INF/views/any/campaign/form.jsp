@@ -11,6 +11,6 @@
 	<acme:form-moment code="any.campaign.form.label.endMoment" path="endMoment"/>
 	<acme:form-url code="any.campaign.form.label.moreInfo" path="moreInfo"/>
 
-	<acme:button code="any.campaign.form.button.milestones" action="/any/part/list?campaignId=${id}"/>
-	<acme:button code="any.campaign.form.button.spokesperson" action="/any/campaign/show?id=${campaignId}"/>
+	<acme:button code="any.campaign.form.button.milestones" action="/any/milestone/list?campaignId=${id}"/>
+	<acme:button code="any.campaign.form.button.spokesperson" action="/any/spokesperson/show?id=${spokespersonId}"/>
 </acme:form>

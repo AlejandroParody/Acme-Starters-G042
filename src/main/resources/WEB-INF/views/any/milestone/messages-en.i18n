@@ -2,8 +2,9 @@ any.milestone.form.title = milestone details
 any.milestone.list.title = Listing of milestones
 
 any.milestone.list.label.title = title
-any.milestone.label.kind = Kind
-any.milestone.label.effort = effort
+any.milestone.list.label.achievements = achievements
+any.milestone.list.label.effort = effort
+any.milestone.list.label.kind= kind
 
 any.milestone.form.label.title = title:
 any.milestone.form.label.achievements = achievements:

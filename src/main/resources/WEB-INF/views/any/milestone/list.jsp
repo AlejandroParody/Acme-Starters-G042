@@ -4,7 +4,8 @@
 <%@taglib prefix="acme" uri="http://acme-framework.org/"%>
 
 <acme:list>
-	<acme:list-column code="any.milestone.list.label.name" path="title" width="40%"/>
-	<acme:list-column code="any.milestone.list.label.kind" path="achievements" width="20%"/>
-	<acme:list-column code="any.milestone.list.label.cost" path="effort" width="40%"/>
+	<acme:list-column code="any.milestone.list.label.title" path="title" width="25%"/>
+	<acme:list-column code="any.milestone.list.label.achievements" path="achievements" width="40%"/>
+	<acme:list-column code="any.milestone.list.label.effort" path="effort" width="10%"/>
+	<acme:list-column code="any.milestone.list.label.kind" path="kind" width="25%"/>
 </acme:list>

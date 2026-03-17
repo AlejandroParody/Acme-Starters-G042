@@ -36,6 +36,6 @@ public class AnySpokespersonShowService extends AbstractService<Any, Spokesperso
 
 	@Override
 	public void unbind() {
-		super.unbindObject(this.spokesperson, "cv", "achievment", "licensed", "identity.fullName", "identity.email");
+		super.unbindObject(this.spokesperson, "cv", "achievements", "licensed", "identity.fullName", "identity.email");
 	}
 }
