@@ -19,4 +19,7 @@ acme.validation.sponsorship.no-donations.message = Sponsorship must have at leas
 
 #strategies
 acme.validation.strategy.hastactic.message = Strategy has to have at least 1 tactic
-fundraiser.strategy.form.error.duplicate-ticker = Ticker already in use, try a different one
+acme.validation.strategy.duplicated.message = Ticker already in use, try a different one
+acme.validation.strategy.start-past.message = The start date must be in the future
+acme.validation.strategy.end-past.message = The end date must be in the future
+acme.validation.strategy.end-before-start.message = The end date must be before the start date

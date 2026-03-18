@@ -53,7 +53,7 @@ public class FundraiserStrategyPublishService extends AbstractService<Fundraiser
 			boolean uniqueTicker;
 			Strategy existingStrategy;
 
-			existingStrategy = this.repository.findStrategybyTicker(this.strategy.getTicker());
+			existingStrategy = this.repository.findStrategyByTicker(this.strategy.getTicker());
 			uniqueTicker = existingStrategy == null || existingStrategy.equals(this.strategy);
 
 			super.state(uniqueTicker, "ticker", "acme.validation.strategy.uniqueticker.message");

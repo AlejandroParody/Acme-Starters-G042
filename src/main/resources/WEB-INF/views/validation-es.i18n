@@ -19,4 +19,7 @@ acme.validation.sponsorship.no-donations.message = El patrocinio debe tener al m
 
 #strategies
 acme.validation.strategy.hastactic.message = La estrategia tiene que tener al menos 1 táctica para ser publicada
-fundraiser.strategy.form.error.duplicate-ticker = Este ticker ya está en uso, intenta uno diferente
+acme.validation.strategy.duplicated.message = Este ticker ya está en uso, prueba uno diferente
+acme.validation.strategy.start-past.message = La fecha de inicio no puede ser en el pasado
+acme.validation.strategy.end-past.message = La fecha del final no puede ser en el pasado
+acme.validation.strategy.end-before-start.message = La fecha del final tiene que ser posterior a la de inicio
