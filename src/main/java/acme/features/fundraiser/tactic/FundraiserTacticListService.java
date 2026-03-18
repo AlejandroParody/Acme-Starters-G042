@@ -38,8 +38,11 @@ public class FundraiserTacticListService extends AbstractService<Fundraiser, Tac
 
 		strategyId = super.getRequest().getData("strategyId", int.class);
 		strategy = this.repository.findStrategyById(strategyId);
-		this.tactics = this.repository.findTacticsByStrategyId(strategyId);
 
+		if (strategy == null)
+			return;
+
+		this.tactics = this.repository.findTacticsByStrategyId(strategyId);
 		super.getResponse().addGlobal("strategyId", strategyId);
 		super.getResponse().addGlobal("published", !strategy.getDraftMode());
 	}

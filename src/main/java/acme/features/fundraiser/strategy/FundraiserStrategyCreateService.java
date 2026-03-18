@@ -44,6 +44,9 @@ public class FundraiserStrategyCreateService extends AbstractService<Fundraiser,
 
 	@Override
 	public void validate() {
+		Strategy existing;
+		existing = this.repository.findStrategybyTicker(this.strategy.getTicker());
+		super.state(existing == null, "ticker", "fundraiser.strategy.form.error.duplicate-ticker");
 		super.validateObject(this.strategy);
 	}
 
