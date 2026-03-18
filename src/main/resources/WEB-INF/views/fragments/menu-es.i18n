@@ -19,6 +19,7 @@ master.menu.any = Cualquiera
 master.menu.any.list-inventions = Lista de inventos
 master.menu.any.list-sponsorships = Lista de patrocinios
 master.menu.any.list-strategies = Lista de estrategias
+master.menu.any.list-campaigns = Lista campañas
 
 # master.menu.administrator ###################################################
 
@@ -48,6 +49,11 @@ master.menu.inventor.list-inventions = Mis inventos
 master.menu.fundraiser = Recaudador
 master.menu.fundraiser.list-strategies = Mis estrategias
 
+# master.menu.spokesperson ##########################################################
+
+master.menu.spokesperson = Portavoz
+master.menu.spokesperson.list-campaign = Mis campañas
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Cuenta
@@ -62,3 +68,6 @@ master.menu.user-account.become-fundraiser = Convertirse en recaudador
 master.menu.user-account.fundraiser-profile = Perfil de recaudador
 master.menu.user-account.become-sponsor = Hazte patrocinador
 master.menu.user-account.sponsor-profile = Perfil de patrocinador
+master.menu.user-account.become-spokesperson = Hazte portavoz
+master.menu.user-account.spokesperson-profile = Perfil de portavoz
+
