@@ -15,3 +15,11 @@ user-account-inventor-02,true,"UserIdentity{name: '', surname: '', email: ''}",i
 user-account-inventor-03,true,"UserIdentity{name: 'Juan', surname: 'Inventor', email: 'inventor1@acme.com'}","",inventor1
 # Username
 user-account-inventor-04,true,"UserIdentity{name: 'Juan', surname: 'Inventor', email: 'inventor1@acme.com'}",inventor1,""
+# Base
+user-account-spokesperson-01,true,"UserIdentity{name: 'Juan', surname: 'Spokesperson', email: 'spokesperson1@acme.com'}","",""
+# Identity
+user-account-spokesperson-02,true,"UserIdentity{name: '', surname: '', email: ''}",spokesperson1,spokesperson1
+# Password
+user-account-spokesperson-03,true,"UserIdentity{name: 'Juan', surname: 'Spokesperson', email: 'spokesperson1@acme.com'}","",spokesperson1
+# Username
+user-account-s-04,true,"UserIdentity{name: 'Juan', surname: 'Inventor', email: 'inventor1@acme.com'}",inventor1,""
