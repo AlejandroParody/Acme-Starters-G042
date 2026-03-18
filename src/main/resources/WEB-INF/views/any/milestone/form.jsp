@@ -6,7 +6,7 @@
 <acme:form>
 		<acme:form-textbox code="any.milestone.form.label.title" path="title"/>
 		<acme:form-textarea code="any.milestone.form.label.achievements" path="achievements"/>
-		<acme:form-money code="any.milestone.form.label.effort" path="effort"/>
+		<acme:form-double code="any.milestone.form.label.effort" path="effort"/>
 		<acme:form-select code="any.milestone.form.label.kind" path="kind" choices="${kinds}"/>
 		<acme:form-textbox code="any.milestone.form.label.campaign" path="campaign.name"/>
 </acme:form>

@@ -53,7 +53,7 @@ master.menu.fundraiser.list-strategies = My strategies
 # master.menu.spokesperson ##########################################################
 
 master.menu.spokesperson = Spokesperson
-master.menu.spokesperson.list-campaigns = My campaigns
+master.menu.spokesperson.list-campaign = My campaigns
 
 
 # master.menu.user-account ####################################################
