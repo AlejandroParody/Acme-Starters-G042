@@ -21,4 +21,7 @@ public interface SpokespersonCampaignRepository extends AbstractRepository {
 
 	@Query("select p from Milestone p where p.campaign.id = :campaignId")
 	Collection<Milestone> findMilestonesByCampaignId(int campaignId);
+
+	@Query("select c from Campaign c where c.ticker = :ticker")
+	Campaign findOneByTicker(String ticker);
 }

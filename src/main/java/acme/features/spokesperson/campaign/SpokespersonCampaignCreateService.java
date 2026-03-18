@@ -45,6 +45,9 @@ public class SpokespersonCampaignCreateService extends AbstractService<Spokesper
 	@Override
 	public void validate() {
 		super.validateObject(this.campaign);
+
+		Campaign existing = this.repository.findOneByTicker(this.campaign.getTicker());
+		super.state(existing == null, "ticker", "acme.validation.strategy.duplicated.message");
 	}
 
 	@Override

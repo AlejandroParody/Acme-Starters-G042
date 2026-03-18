@@ -16,3 +16,4 @@ acme.validation.ticker.message = The format is not correct.
 acme.validation.sponsorship.null-draft-mode.message = The value of "draft-mode" atribute cannot be null. 
 acme.validation.sponsorship.invalid-interval.message = Time interval is incorrect.
 acme.validation.sponsorship.no-donations.message = Sponsorship must have at least one donation.
+acme.validation.strategy.duplicated.message = Ticker already in use, try a different one

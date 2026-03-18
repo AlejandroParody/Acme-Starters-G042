@@ -16,7 +16,7 @@
         </jstl:when>
         <jstl:when test="${acme:anyOf(_command, 'show|update|delete|publish') && published == 'false'}">
             <acme:form-textbox code="spokesperson.campaign.form.label.published" path="published" readonly="true"/>
-            <acme:button code="spokesperson.campaign.form.button.milestones" action="/spokesperson/campaign/list?campaignId=${id}"/>
+            <acme:button code="spokesperson.campaign.form.button.milestones" action="/spokesperson/milestone/list?campaignId=${id}"/>
             <acme:submit code="spokesperson.campaign.form.button.update" action="/spokesperson/campaign/update"/>
             <acme:submit code="spokesperson.campaign.form.button.delete" action="/spokesperson/campaign/delete"/>
             <acme:submit code="spokesperson.campaign.form.button.publish" action="/spokesperson/campaign/publish"/>
