@@ -11,7 +11,9 @@ import javax.validation.Payload;
 import javax.validation.ReportAsSingleViolation;
 import javax.validation.constraints.Pattern;
 
-@Target(ElementType.FIELD)//tambien metodo
+@Target({
+	ElementType.FIELD, ElementType.METHOD
+})
 @Retention(RetentionPolicy.RUNTIME)
 @Constraint(validatedBy = {})
 @ReportAsSingleViolation

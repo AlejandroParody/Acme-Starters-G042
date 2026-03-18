@@ -25,6 +25,8 @@
 		<acme:menu-option code="master.menu.any" access="isAuthenticated() or isAnonymous()">
     		<acme:menu-suboption code="master.menu.any.list-inventions" action="/any/invention/list"/>
     		<acme:menu-suboption code="master.menu.any.list-sponsorships" action="/any/sponsorship/list"/>
+    		<acme:menu-suboption code="master.menu.any.list-strategies" action="/any/strategy/list"/>
+    		<acme:menu-suboption code="master.menu.any.list-campaigns" action="/any/campaign/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRealm('Administrator')">
@@ -50,8 +52,15 @@
 		
 		<acme:menu-option code="master.menu.sponsor" access="hasRealm('Sponsor')">
     		<acme:menu-suboption code="master.menu.sponsor.list-sponsorships" action="/sponsor/sponsorship/list"/>
+		<acme:menu-option code="master.menu.spokesperson" access="hasRealm('Spokesperson')">
+    		<acme:menu-suboption code="master.menu.spokesperson.list-campaign" action="/spokesperson/campaign/list"/>
+		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.fundraiser" access="hasRealm('Fundraiser')">
+    		<acme:menu-suboption code="master.menu.fundraiser.list-strategies" action="/fundraiser/strategy/list"/>
 		</acme:menu-option>
 	</acme:menu-left>
+	
 
 	<acme:menu-right>		
 		<acme:menu-option code="master.menu.user-account" access="isAuthenticated()">
@@ -62,8 +71,13 @@
 			<acme:menu-suboption code="master.menu.user-account.consumer-profile" action="/authenticated/consumer/update" access="hasRealm('Consumer')"/>
 			<acme:menu-suboption code="master.menu.user-account.become-inventor" action="/authenticated/inventor/create" access="!hasRealm('Inventor')"/>
 			<acme:menu-suboption code="master.menu.user-account.inventor-profile" action="/authenticated/inventor/update" access="hasRealm('Inventor')"/>
+			<acme:menu-suboption code="master.menu.user-account.become-fundraiser" action="/authenticated/fundraiser/create" access="!hasRealm('Fundraiser')"/>
+			<acme:menu-suboption code="master.menu.user-account.fundraiser-profile" action="/authenticated/fundraiser/update" access="hasRealm('Fundraiser')"/>
 			<acme:menu-suboption code="master.menu.user-account.become-sponsor" action="/authenticated/sponsor/create" access="!hasRealm('Sponsor')"/>
 			<acme:menu-suboption code="master.menu.user-account.sponsor-profile" action="/authenticated/sponsor/update" access="hasRealm('Sponsor')"/>
+			<acme:menu-suboption code="master.menu.user-account.become-spokesperson" action="/authenticated/spokesperson/create" access="!hasRealm('Spokesperson')"/>
+			<acme:menu-suboption code="master.menu.user-account.spokesperson-profile" action="/authenticated/spokesperson/update" access="hasRealm('Spokesperson')"/>
+			
 		</acme:menu-option>
 	</acme:menu-right>
 </acme:menu-bar>

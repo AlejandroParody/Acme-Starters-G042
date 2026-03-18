@@ -1,0 +1,27 @@
+spokesperson.campaign.list.title = Mis campañas
+spokesperson.campaign.form.title = Detalles de la campaña
+
+spokesperson.campaign.list.label.ticker = Código
+spokesperson.campaign.list.label.name = Nombre
+spokesperson.campaign.list.label.draftMode = Borrador
+spokesperson.campaign.list.label.startMoment = Fecha de inicio
+spokesperson.campaign.list.button.create = Nueva campaña
+
+spokesperson.campaign.form.label.ticker = Código:
+spokesperson.campaign.form.label.name = Nombre:
+spokesperson.campaign.form.label.description = Descripción:
+spokesperson.campaign.form.label.startMoment = Fecha de inicio:
+spokesperson.campaign.form.label.endMoment = Fecha de fin:
+spokesperson.campaign.form.label.moreInfo = Más información: (Opcional)
+spokesperson.campaign.form.label.published = Publicado:
+
+spokesperson.campaign.form.placeholder.ticker = ej. AB12-miCodigo
+spokesperson.campaign.form.placeholder.name = ej. Mi campaña
+spokesperson.campaign.form.placeholder.description = ej. Un ejemplo de descripción breve
+spokesperson.campaign.form.placeholder.moreInfo = ej. https://ejemplo.com
+
+spokesperson.campaign.form.button.create = Crear
+spokesperson.campaign.form.button.update = Actualizar
+spokesperson.campaign.form.button.delete = Eliminar
+spokesperson.campaign.form.button.publish = Publicar
+spokesperson.campaign.form.button.milestones = Hitos

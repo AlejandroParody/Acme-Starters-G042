@@ -13,30 +13,31 @@ import acme.realms.Fundraiser;
 @Service
 public class FundraiserStrategyListService extends AbstractService<Fundraiser, Strategy> {
 
-	// Internal state ---------------------------------------------------------
-
 	@Autowired
 	private FundraiserStrategyRepository	repository;
 
 	private Collection<Strategy>			strategies;
 
-	// AbstractService<fundraiser, Strategy> ----------------------------------
-
-
-	@Override
-	public void load() {
-		int id;
-		id = super.getRequest().getData("id", int.class);
-		this.strategies = this.repository.findStrategyByFundraiser(id);
-	}
 
 	@Override
 	public void authorise() {
-		super.setAuthorised(true);
+		boolean status;
+
+		status = super.getRequest().getPrincipal().hasRealmOfType(Fundraiser.class);
+
+		super.setAuthorised(status);
+	}
+
+	@Override
+	public void load() {
+		int fundraiserId;
+
+		fundraiserId = super.getRequest().getPrincipal().getActiveRealm().getId();
+		this.strategies = this.repository.findStrategiesByFundraiserId(fundraiserId);
 	}
 
 	@Override
 	public void unbind() {
-		super.unbindObjects(this.strategies, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo");
+		super.unbindObjects(this.strategies, "ticker", "name", "description", "draftMode", "startMoment", "endMoment");
 	}
 }
