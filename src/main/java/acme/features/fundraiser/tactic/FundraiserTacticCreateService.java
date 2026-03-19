@@ -25,11 +25,11 @@ public class FundraiserTacticCreateService extends AbstractService<Fundraiser, T
 	public void load() {
 		int strategyId;
 		Strategy strategy;
-
 		strategyId = super.getRequest().getData("strategyId", int.class);
 		strategy = this.repository.findStrategyById(strategyId);
-
 		this.tactic = super.newObject(Tactic.class);
+		if (strategy == null)
+			return;
 		this.tactic.setStrategy(strategy);
 	}
 
