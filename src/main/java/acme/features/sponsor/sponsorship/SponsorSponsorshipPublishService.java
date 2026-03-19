@@ -42,7 +42,13 @@ public class SponsorSponsorshipPublishService extends AbstractService<Sponsor, S
 
 	@Override
 	public void validate() {
+
 		super.validateObject(this.sponsorship);
+
+		int countDonations = this.repository.countDonationsBySponsorshipId(this.sponsorship.getId());
+		boolean hasDonations = countDonations > 0;
+		super.state(hasDonations, "*", "acme.validation.sponsorship.no-donations.message");
+
 	}
 
 	@Override
