@@ -46,6 +46,6 @@ public class SpokespersonMilestoneListService extends AbstractService<Spokespers
 
 	@Override
 	public void unbind() {
-		super.unbindObjects(this.milestones, "title", "kind", "effort");
+		super.unbindObjects(this.milestones, "title", "achievements", "effort", "kind");
 	}
 }

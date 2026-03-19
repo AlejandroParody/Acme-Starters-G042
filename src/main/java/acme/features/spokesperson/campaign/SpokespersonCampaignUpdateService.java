@@ -1,10 +1,13 @@
 
 package acme.features.spokesperson.campaign;
 
+import java.util.Date;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.client.components.models.Tuple;
+import acme.client.helpers.MomentHelper;
 import acme.client.services.AbstractService;
 import acme.entities.campaign.Campaign;
 import acme.realms.Spokesperson;
@@ -42,6 +45,22 @@ public class SpokespersonCampaignUpdateService extends AbstractService<Spokesper
 
 	@Override
 	public void validate() {
+
+		Campaign existing = this.repository.findOneByTicker(this.campaign.getTicker());
+		boolean isNotDuplicate = existing == null || existing.getId() == this.campaign.getId();
+		super.state(isNotDuplicate, "ticker", "acme.validation.strategy.duplicated.message");
+
+		Date now = MomentHelper.getCurrentMoment();
+
+		if (this.campaign.getStartMoment() != null)
+			super.state(this.campaign.getStartMoment().after(now), "startMoment", "acme.validation.strategy.start-past.message");
+
+		if (this.campaign.getEndMoment() != null)
+			super.state(this.campaign.getEndMoment().after(now), "endMoment", "acme.validation.strategy.end-past.message");
+
+		if (this.campaign.getStartMoment() != null && this.campaign.getEndMoment() != null)
+			super.state(this.campaign.getEndMoment().after(this.campaign.getStartMoment()), "endMoment", "acme.validation.strategy.end-before-start.message");
+
 		super.validateObject(this.campaign);
 	}
 

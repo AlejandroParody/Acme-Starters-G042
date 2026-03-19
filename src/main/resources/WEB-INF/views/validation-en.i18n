@@ -16,3 +16,9 @@ acme.validation.ticker.message = The format is not correct.
 acme.validation.sponsorship.null-draft-mode.message = The value of "draft-mode" atribute cannot be null. 
 acme.validation.sponsorship.invalid-interval.message = Time interval is incorrect.
 acme.validation.sponsorship.no-donations.message = Sponsorship must have at least one donation.
+#last issues validator
+acme.validation.strategy.duplicated.message = Ticker already in use, try a different one
+acme.validation.strategy.start-past.message= Moment invalid
+acme.validation.strategy.end-past.message=Moment invalid
+acme.validation.strategy.end-before-start.message= Moment invalid, the end moment cannot be before the start moment
+spokesperson.campaign.error.no-milestones= A campaign need a minimum of 1 milestone to be published
