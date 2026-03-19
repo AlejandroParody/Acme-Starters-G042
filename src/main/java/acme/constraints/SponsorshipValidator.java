@@ -29,33 +29,42 @@ public class SponsorshipValidator extends AbstractValidator<ValidSponsorship, Sp
 
 	@Override
 	public boolean isValid(final Sponsorship sponsorship, final ConstraintValidatorContext context) {
-		assert context != null;
 
+		assert context != null;
 		boolean result = true;
 
-		if (sponsorship != null) {
-			Boolean inDraftMode = sponsorship.getDraftMode();
-			if (inDraftMode == null) {
-				super.state(context, false, "draftMode", "acme.validation.sponsorship.null-draft-mode.message");
-				result = false;
-			} else if (!inDraftMode) {
-				// DEBE TENER AL MENOS UNA DONACION
+		if (sponsorship == null)
+			return result;
+
+		else {
+
+			Sponsorship inDataBase = this.repository.findSponsorshipByTicker(sponsorship.getTicker());
+			boolean canStablishSameTicker = inDataBase == null || inDataBase.getId() == sponsorship.getId();
+
+			super.state(context, canStablishSameTicker, "ticker", "acme.validation.sponsorship.duplicated-ticker.message");
+
+			boolean isSponsorshipPublished = Boolean.FALSE.equals(sponsorship.getDraftMode());
+
+			if (isSponsorshipPublished) {
 				int numberOfDonations = this.repository.countDonationsBySponsorshipId(sponsorship.getId());
-				boolean hasMoreThanOneDonation = numberOfDonations >= 1;
-				super.state(context, hasMoreThanOneDonation, "Donation relation", "acme.validation.sponsorship.no-donations.message");
-				// INTERVALO DEBE SER VALIDO 
-				boolean validInterval = false;
-				Date end = sponsorship.getEndMoment();
-				Date start = sponsorship.getStartMoment();
-				if (start != null && end != null) {
-					var now = MomentHelper.getCurrentMoment();
-					validInterval = MomentHelper.isAfter(start, now) && MomentHelper.isBefore(start, end);
-				}
-				super.state(context, validInterval, "startMoment", "acme.validation.sponsorship.invalid-interval.message");
-				result = !super.hasErrors(context);
-			} else {
-				result = !super.hasErrors(context);
+				boolean hasDonations = numberOfDonations > 0;
+				super.state(context, hasDonations, "draftMode", "acme.validation.sponsorship.no-donations.message");
 			}
+
+			// INTERVALO DEBE SER VALIDO 
+			boolean validInterval = false;
+			boolean dateInFuture = false;
+			Date end = sponsorship.getEndMoment();
+			Date start = sponsorship.getStartMoment();
+			if (start != null && end != null) {
+				var now = MomentHelper.getCurrentMoment();
+				validInterval = MomentHelper.isBefore(start, end);
+				dateInFuture = MomentHelper.isAfter(start, now);
+			}
+			super.state(context, validInterval, "endMoment", "acme.validation.sponsorship.invalid-interval.message");
+			super.state(context, dateInFuture, "startMoment", "acme.validation.sponsorship.past-date.message");
+
+			result = !super.hasErrors(context);
 		}
 
 		return result;

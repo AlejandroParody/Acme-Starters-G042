@@ -1,4 +1,5 @@
 // Sirve para validar los sponsorship segun las restricciones dadas en el enunciado, que son las siguientes:
+// - only euros are accepted
 // - Sponsorships cannot be published unless they have at least one donation
 // - Start moment - end moment must be a valid time interval in future wrt. the moment when a sponsorship is published
 // Notar que solo deben de aplicar si draftmode == false. No importa si no se valida cuando draftmode == true
