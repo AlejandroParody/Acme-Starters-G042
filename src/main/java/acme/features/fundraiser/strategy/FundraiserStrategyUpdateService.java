@@ -42,6 +42,9 @@ public class FundraiserStrategyUpdateService extends AbstractService<Fundraiser,
 
 	@Override
 	public void validate() {
+		Strategy existing;
+		existing = this.repository.findStrategyByTickerAndNotId(this.strategy.getTicker(), this.strategy.getId());
+		super.state(existing == null, "ticker", "acme.validation.strategy.uniqueticker.message");
 		super.validateObject(this.strategy);
 	}
 
@@ -54,7 +57,7 @@ public class FundraiserStrategyUpdateService extends AbstractService<Fundraiser,
 	public void unbind() {
 		Tuple tuple;
 
-		tuple = super.unbindObject(this.strategy, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo");
+		tuple = super.unbindObject(this.strategy, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo", "monthsActive", "expectedPercentage");
 
 		tuple.put("published", !this.strategy.getDraftMode());
 

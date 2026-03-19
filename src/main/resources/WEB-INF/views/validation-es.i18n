@@ -13,12 +13,23 @@ acme.validation.text.message = El texto debe contener entre 1 y 255 caracteres.
 acme.validation.ticker.message = El formato es incorrecto.
 
 #sponsorships
+
+acme.validation.sponsorship.null-draft-mode.message = El valor del atributo "draft-mode" no puede ser nulo.
+acme.validation.sponsorship.invalid-interval.message = El intervalo de tiempo es incorrecto.
+acme.validation.sponsorship.no-donations.message = El patrocinio debe tener al menos una Donacion.
 acme.validation.sponsorship.null-draft-mode.message = El valor del atributo "draft-mode" no puede ser nulo
 acme.validation.sponsorship.invalid-interval.message = La fecha de fin debe ser después que la fecha de inicio
 acme.validation.sponsorship.past-date.message = Las fechas deben ser futuras
 acme.validation.sponsorship.no-donations.message = El patrocinio debe tener al menos una Donacion
 acme.validation.sponsorship.duplicated-ticker.message = Ya existen un patrocinio con ese identificador
 acme.validation.sponsorship.null-money.message = El valor del Dinero no puede ser nulo
+
+#strategies
+acme.validation.strategy.hastactic.message = La estrategia tiene que tener al menos 1 táctica para ser publicada
+acme.validation.strategy.uniqueticker.message = Este ticker ya está en uso, prueba uno diferente
+acme.validation.strategy.startmomentinfuture.message = La fecha de inicio no puede ser en el pasado
+acme.validation.strategy.endmomentinfuture.message = La fecha del final no puede ser en el pasado
+acme.validation.strategy.invalidinterval.message = La fecha del final tiene que ser posterior a la de inicio
 
 #donation
 acme.validation.donation.not-eur.message = La divisa no es correcta. Debe ser EUR

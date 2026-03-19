@@ -39,10 +39,10 @@ public class FundraiserStrategyShowService extends AbstractService<Fundraiser, S
 	public void unbind() {
 		Tuple tuple;
 
-		tuple = super.unbindObject(this.strategy, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo");
+		tuple = super.unbindObject(this.strategy, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo", "monthsActive", "expectedPercentage");
 
 		tuple.put("published", !this.strategy.getDraftMode());
-		tuple.put("strategyId", this.strategy.getFundraiser().getId());
+		tuple.put("strategyId", this.strategy.getId());
 
 		super.getResponse().addData(tuple);
 	}

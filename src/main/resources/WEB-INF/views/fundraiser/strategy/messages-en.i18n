@@ -13,6 +13,8 @@ fundraiser.strategy.form.label.description = Description:
 fundraiser.strategy.form.label.startMoment = Start moment:
 fundraiser.strategy.form.label.endMoment = End moment:
 fundraiser.strategy.form.label.moreInfo = More info: (Optional)
+fundraiser.strategy.form.label.monthsActive = Months active:
+fundraiser.strategy.form.label.expectedPercentage = Expected percentage:
 fundraiser.strategy.form.label.published = Published:
 
 fundraiser.strategy.form.placeholder.ticker = e.g. AB12-myTicker
