@@ -47,7 +47,9 @@ public class SpokespersonCampaignUpdateService extends AbstractService<Spokesper
 	public void validate() {
 
 		Campaign existing = this.repository.findOneByTicker(this.campaign.getTicker());
-		super.state(existing == null, "ticker", "acme.validation.strategy.duplicated.message");
+		boolean isNotDuplicate = existing == null || existing.getId() == this.campaign.getId();
+		super.state(isNotDuplicate, "ticker", "acme.validation.strategy.duplicated.message");
+
 		Date now = MomentHelper.getCurrentMoment();
 
 		if (this.campaign.getStartMoment() != null)
@@ -58,9 +60,6 @@ public class SpokespersonCampaignUpdateService extends AbstractService<Spokesper
 
 		if (this.campaign.getStartMoment() != null && this.campaign.getEndMoment() != null)
 			super.state(this.campaign.getEndMoment().after(this.campaign.getStartMoment()), "endMoment", "acme.validation.strategy.end-before-start.message");
-
-		int numberOfMilestones = this.repository.countMilestonesByCampaignId(this.campaign.getId());
-		super.state(numberOfMilestones > 0, "ticker", "spokesperson.campaign.error.no-milestones");
 
 		super.validateObject(this.campaign);
 	}

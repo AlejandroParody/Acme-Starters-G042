@@ -50,6 +50,7 @@ public class SpokespersonCampaignCreateService extends AbstractService<Spokesper
 
 		Campaign existing = this.repository.findOneByTicker(this.campaign.getTicker());
 		super.state(existing == null, "ticker", "acme.validation.strategy.duplicated.message");
+
 		Date now = MomentHelper.getCurrentMoment();
 
 		if (this.campaign.getStartMoment() != null)
