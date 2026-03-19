@@ -49,18 +49,18 @@ public class FundraiserStrategyCreateService extends AbstractService<Fundraiser,
 	public void validate() {
 		Strategy existing;
 		existing = this.repository.findStrategyByTicker(this.strategy.getTicker());
-		super.state(existing == null, "ticker", "acme.validation.strategy.duplicated.message");
+		super.state(existing == null, "ticker", "acme.validation.strategy.uniqueticker.message");
 
 		Date now = MomentHelper.getCurrentMoment();
 
 		if (this.strategy.getStartMoment() != null)
-			super.state(this.strategy.getStartMoment().after(now), "startMoment", "acme.validation.strategy.start-past.message");
+			super.state(this.strategy.getStartMoment().after(now), "startMoment", "acme.validation.strategy.startmomentinfuture.message");
 
 		if (this.strategy.getEndMoment() != null)
-			super.state(this.strategy.getEndMoment().after(now), "endMoment", "acme.validation.strategy.end-past.message");
+			super.state(this.strategy.getEndMoment().after(now), "endMoment", "acme.validation.strategy.endmomentinfuture.message");
 
 		if (this.strategy.getStartMoment() != null && this.strategy.getEndMoment() != null)
-			super.state(this.strategy.getEndMoment().after(this.strategy.getStartMoment()), "endMoment", "acme.validation.strategy.end-before-start.message");
+			super.state(this.strategy.getEndMoment().after(this.strategy.getStartMoment()), "endMoment", "acme.validation.strategy.invalidinterval.message");
 
 		super.validateObject(this.strategy);
 	}
