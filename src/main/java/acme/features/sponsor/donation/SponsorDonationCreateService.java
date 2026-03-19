@@ -54,6 +54,7 @@ public class SponsorDonationCreateService extends AbstractService<Sponsor, Donat
 
 	@Override
 	public void validate() {
+
 		super.validateObject(this.donation);
 	}
 

@@ -45,13 +45,14 @@ public class SponsorshipValidator extends AbstractValidator<ValidSponsorship, Sp
 
 			boolean isSponsorshipPublished = Boolean.FALSE.equals(sponsorship.getDraftMode());
 
+			// DEBE TENER MAS DE UNA DONATION ASOCIADA
 			if (isSponsorshipPublished) {
 				int numberOfDonations = this.repository.countDonationsBySponsorshipId(sponsorship.getId());
 				boolean hasDonations = numberOfDonations > 0;
 				super.state(context, hasDonations, "draftMode", "acme.validation.sponsorship.no-donations.message");
 			}
 
-			// INTERVALO DEBE SER VALIDO 
+			// INTERVALO DEBE SER VALIDO Y FUTURO
 			boolean validInterval = false;
 			boolean dateInFuture = false;
 			Date end = sponsorship.getEndMoment();
@@ -65,6 +66,7 @@ public class SponsorshipValidator extends AbstractValidator<ValidSponsorship, Sp
 			super.state(context, dateInFuture, "startMoment", "acme.validation.sponsorship.past-date.message");
 
 			result = !super.hasErrors(context);
+
 		}
 
 		return result;

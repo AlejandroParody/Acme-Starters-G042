@@ -18,3 +18,6 @@ acme.validation.sponsorship.invalid-interval.message = End date must be after St
 acme.validation.sponsorship.past-date.message = The date cannot be in past
 acme.validation.sponsorship.no-donations.message = Sponsorship must have at least one donation
 acme.validation.sponsorship.duplicated-ticker.message = Already exist a sponsorship with this Ticker
+
+#donation
+acme.validation.donation.not-eur.message = Currency is not correct. It must be EUR
