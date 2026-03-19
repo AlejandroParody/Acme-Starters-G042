@@ -1,0 +1,29 @@
+sponsor.sponsorship.list.title = My sponsorships
+sponsor.sponsorship.form.title = Sponsorship details
+
+sponsor.sponsorship.list.label.ticker = Ticker
+sponsor.sponsorship.list.label.name = Name
+sponsor.sponsorship.list.label.draftMode = Draft
+sponsor.sponsorship.list.label.startMoment = Start date
+sponsor.sponsorship.list.button.create = New sponsorship
+
+sponsor.sponsorship.form.label.ticker = Ticker:
+sponsor.sponsorship.form.label.name = Name:
+sponsor.sponsorship.form.label.description = Description:
+sponsor.sponsorship.form.label.startMoment = Start date:
+sponsor.sponsorship.form.label.endMoment = End date:
+sponsor.sponsorship.form.label.moreInfo = More info: (Optional)
+sponsor.sponsorship.form.label.published = Published:
+sponsor.sponsorship.form.label.monthsActive = Months active:
+sponsor.sponsorship.form.label.totalMoney = Total money:
+
+sponsor.sponsorship.form.placeholder.ticker = e.g. AB12-myTicker
+sponsor.sponsorship.form.placeholder.name = e.g. My sponsorship
+sponsor.sponsorship.form.placeholder.description = e.g. A brief description
+sponsor.sponsorship.form.placeholder.moreInfo = e.g. https://example.com
+
+sponsor.sponsorship.form.button.create = Create
+sponsor.sponsorship.form.button.update = Update
+sponsor.sponsorship.form.button.delete = Delete
+sponsor.sponsorship.form.button.publish = Publish
+sponsor.sponsorship.form.button.donations = Donations

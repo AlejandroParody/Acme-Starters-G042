@@ -1,6 +1,7 @@
 
 package acme.entities.campaign;
 
+import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -17,8 +18,9 @@ import acme.client.components.basis.AbstractEntity;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
-import acme.client.components.validation.ValidMoment.Constraint;
+import acme.client.components.validation.ValidNumber;
 import acme.client.components.validation.ValidUrl;
+import acme.client.helpers.MomentHelper;
 import acme.constraints.ValidHeader;
 import acme.constraints.ValidText;
 import acme.constraints.ValidTicker;
@@ -49,12 +51,12 @@ public class Campaign extends AbstractEntity {
 	private String				description;
 
 	@Mandatory
-	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)//MODIFY future 
+	@ValidMoment
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date				startMoment;
 
 	@Mandatory
-	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)//tambien
+	@ValidMoment
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date				endMoment;
 
@@ -68,12 +70,12 @@ public class Campaign extends AbstractEntity {
 	private CampaignRepository	repository;
 
 
-	//améliorer cela attendre le rev 3 pour le odifier 
-	@Valid
+	@Mandatory
+	@ValidNumber(min = 0)
 	@Transient
-	public Double getMonthsActive() {
-		//Duration duration = MomentHelper.computeDuration(this.startMoment, this.endMoment);
-		return 0.0;
+	private Double monthsActive() {
+		Double result = MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
+		return result;
 
 	}
 

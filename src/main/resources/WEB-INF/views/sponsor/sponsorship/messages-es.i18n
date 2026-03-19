@@ -1,0 +1,30 @@
+sponsor.sponsorship.list.title = Mis patrocionios
+sponsor.sponsorship.form.title = Detalles del patrocinio
+
+sponsor.sponsorship.list.label.ticker = Referencia
+sponsor.sponsorship.list.label.name = Nombre
+sponsor.sponsorship.list.label.draftMode = Borrador
+sponsor.sponsorship.list.label.startMoment = Fecha de inicio
+sponsor.sponsorship.list.button.create = Nuevo patrocinio
+
+sponsor.sponsorship.form.label.ticker = Referencia:
+sponsor.sponsorship.form.label.name = Nombre:
+sponsor.sponsorship.form.label.description = Descripción:
+sponsor.sponsorship.form.label.startMoment = Fecha de inicio:
+sponsor.sponsorship.form.label.endMoment = Fecha de fin:
+sponsor.sponsorship.form.label.moreInfo = Más información:
+sponsor.sponsorship.form.label.published = Publicado:
+sponsor.sponsorship.form.label.monthsActive = Meses activos:
+sponsor.sponsorship.form.label.totalMoney = Dinero total:
+
+
+sponsor.sponsorship.form.placeholder.ticker = ej. AB12-miTicker
+sponsor.sponsorship.form.placeholder.name = ej. Mi patrocinio
+sponsor.sponsorship.form.placeholder.description = ej. Una breve descripción
+sponsor.sponsorship.form.placeholder.moreInfo = ej. https://ejemplo.com
+
+sponsor.sponsorship.form.button.create = Crear
+sponsor.sponsorship.form.button.update = Actualizar
+sponsor.sponsorship.form.button.delete = Eliminar
+sponsor.sponsorship.form.button.publish = Publicar
+sponsor.sponsorship.form.button.donations = Donaciones

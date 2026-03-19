@@ -13,9 +13,16 @@ acme.validation.text.message = Text must have between 1 and 255 characters.
 acme.validation.ticker.message = The format is not correct.
 
 #sponsorships
+
 acme.validation.sponsorship.null-draft-mode.message = The value of "draft-mode" atribute cannot be null. 
 acme.validation.sponsorship.invalid-interval.message = Time interval is incorrect.
 acme.validation.sponsorship.no-donations.message = Sponsorship must have at least one donation.
+acme.validation.sponsorship.null-draft-mode.message = The value of "draft-mode" atribute cannot be null
+acme.validation.sponsorship.invalid-interval.message = End date must be after Start Date
+acme.validation.sponsorship.past-date.message = The date cannot be in past
+acme.validation.sponsorship.no-donations.message = Sponsorship must have at least one donation
+acme.validation.sponsorship.duplicated-ticker.message = Already exist a sponsorship with this Ticker
+acme.validation.sponsorship.null-money.message = Money value cannot be null
 
 #strategies
 acme.validation.strategy.hastactic.message = Strategy has to have at least 1 tactic
@@ -23,3 +30,14 @@ acme.validation.strategy.uniqueticker.message = Ticker already in use, try a dif
 acme.validation.strategy.startmomentinfuture.message = The start date must be in the future
 acme.validation.strategy.endmomentinfuture.message = The end date must be in the future
 acme.validation.strategy.invalidinterval.message = The end date must be before the start date
+
+#donation
+acme.validation.donation.not-eur.message = Currency is not correct. It must be EUR
+
+#last issues validator
+acme.validation.strategy.duplicated.message = Ticker already in use, try a different one
+acme.validation.strategy.start-past.message= Moment invalid
+acme.validation.strategy.end-past.message=Moment invalid
+acme.validation.strategy.end-before-start.message= Moment invalid, the end moment cannot be before the start moment
+spokesperson.campaign.error.no-milestones= A campaign need a minimum of 1 milestone to be published
+

@@ -44,5 +44,8 @@ public class AnySponsorshipShowService extends AbstractService<Any, Sponsorship>
 		Tuple tuple;
 		tuple = super.unbindObject(this.sponsorship, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo", "draftMode");
 		tuple.put("sponsorId", this.sponsorship.getSponsor().getId());
+		tuple.put("monthsActive", this.sponsorship.getMonthsActive());
+		tuple.put("totalMoney", this.sponsorship.getTotalMoney());
+
 	}
 }
