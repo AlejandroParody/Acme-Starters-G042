@@ -18,6 +18,7 @@ acme.validation.sponsorship.invalid-interval.message = La fecha de fin debe ser 
 acme.validation.sponsorship.past-date.message = Las fechas deben ser futuras
 acme.validation.sponsorship.no-donations.message = El patrocinio debe tener al menos una Donacion
 acme.validation.sponsorship.duplicated-ticker.message = Ya existen un patrocinio con ese identificador
+acme.validation.sponsorship.null-money.message = El valor del Dinero no puede ser nulo
 
 #donation
 acme.validation.donation.not-eur.message = La divisa no es correcta. Debe ser EUR
