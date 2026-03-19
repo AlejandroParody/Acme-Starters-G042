@@ -10,6 +10,8 @@
 	<acme:form-moment code="any.sponsorship.form.label.startMoment" path="startMoment"/>
 	<acme:form-moment code="any.sponsorship.form.label.endMoment" path="endMoment"/>
 	<acme:form-url code="any.sponsorship.form.label.moreInfo" path="moreInfo"/>
+	<acme:form-textbox code="sponsor.sponsorship.form.label.monthsActive" path="monthsActive" readonly="true"/>
+	<acme:form-textbox code="sponsor.sponsorship.form.label.totalMoney" path="totalMoney" readonly="true"/>
 
 	<acme:button code="any.sponsorship.form.button.donations" action="/any/donation/list?sponsorshipId=${id}"/>
 	<acme:button code="any.sponsorship.form.button.sponsor" action="/any/sponsor/show?id=${sponsorId}"/>

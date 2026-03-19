@@ -91,7 +91,8 @@ public class Sponsorship extends AbstractEntity {
 
 	@Transient
 	public Money getTotalMoney() {
-		Money res = null;
+		Money res = new Money();
+
 		Double totalMoney = this.repo.calculateTotalMoney(this.getId());
 
 		if (totalMoney == null)

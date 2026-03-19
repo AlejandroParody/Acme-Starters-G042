@@ -14,6 +14,9 @@ sponsor.sponsorship.form.label.startMoment = Fecha de inicio:
 sponsor.sponsorship.form.label.endMoment = Fecha de fin:
 sponsor.sponsorship.form.label.moreInfo = Más información:
 sponsor.sponsorship.form.label.published = Publicado:
+sponsor.sponsorship.form.label.monthsActive = Meses activos:
+sponsor.sponsorship.form.label.totalMoney = Dinero total:
+
 
 sponsor.sponsorship.form.placeholder.ticker = ej. AB12-miTicker
 sponsor.sponsorship.form.placeholder.name = ej. Mi patrocinio

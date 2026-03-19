@@ -13,9 +13,15 @@ acme.validation.text.message = Text must have between 1 and 255 characters.
 acme.validation.ticker.message = The format is not correct.
 
 #sponsorships
-acme.validation.sponsorship.null-draft-mode.message = The value of "draft-mode" atribute cannot be null. 
-acme.validation.sponsorship.invalid-interval.message = Time interval is incorrect.
-acme.validation.sponsorship.no-donations.message = Sponsorship must have at least one donation.
+acme.validation.sponsorship.null-draft-mode.message = The value of "draft-mode" atribute cannot be null
+acme.validation.sponsorship.invalid-interval.message = End date must be after Start Date
+acme.validation.sponsorship.past-date.message = The date cannot be in past
+acme.validation.sponsorship.no-donations.message = Sponsorship must have at least one donation
+acme.validation.sponsorship.duplicated-ticker.message = Already exist a sponsorship with this Ticker
+
+#donation
+acme.validation.donation.not-eur.message = Currency is not correct. It must be EUR
+
 #last issues validator
 acme.validation.strategy.duplicated.message = Ticker already in use, try a different one
 acme.validation.strategy.start-past.message= Moment invalid

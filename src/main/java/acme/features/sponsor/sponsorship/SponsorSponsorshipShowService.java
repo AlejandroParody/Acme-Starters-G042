@@ -43,6 +43,8 @@ public class SponsorSponsorshipShowService extends AbstractService<Sponsor, Spon
 
 		tuple.put("published", !this.sponsorship.getDraftMode());
 		tuple.put("sponsorId", this.sponsorship.getSponsor().getId());
+		tuple.put("monthsActive", this.sponsorship.getMonthsActive());
+		tuple.put("totalMoney", this.sponsorship.getTotalMoney());
 
 		super.getResponse().addData(tuple);
 	}
