@@ -57,7 +57,7 @@ public class FundraiserStrategyUpdateService extends AbstractService<Fundraiser,
 	public void unbind() {
 		Tuple tuple;
 
-		tuple = super.unbindObject(this.strategy, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo");
+		tuple = super.unbindObject(this.strategy, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo", "monthsActive", "expectedPercentage");
 
 		tuple.put("published", !this.strategy.getDraftMode());
 

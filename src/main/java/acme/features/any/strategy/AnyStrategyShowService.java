@@ -41,7 +41,7 @@ public class AnyStrategyShowService extends AbstractService<Any, Strategy> {
 	@Override
 	public void unbind() {
 		Tuple tuple;
-		tuple = super.unbindObject(this.strategy, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo");
+		tuple = super.unbindObject(this.strategy, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo", "monthsActive", "expectedPercentage");
 		tuple.put("fundraiserId", this.strategy.getFundraiser().getId());
 		super.getResponse().addData(tuple);
 	}

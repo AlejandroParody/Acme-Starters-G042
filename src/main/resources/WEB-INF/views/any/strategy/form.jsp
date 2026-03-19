@@ -14,6 +14,9 @@
 
     <acme:form-url path="moreInfo" code="any.strategy.form.label.moreInfo"/>
     
+    <acme:form-double code="any.strategy.form.label.monthsActive" path="monthsActive" readonly="true"/>
+    <acme:form-double code="any.strategy.form.label.expectedPercentage" path="expectedPercentage" readonly="true"/>
+    
     <acme:button code="any.strategy.form.button.tactics" action="/any/tactic/list?strategyId=${id}"/>
     <acme:button code="any.strategy.form.button.fundraiser" action="/any/fundraiser/show?id=${fundraiserId}"/>
 </acme:form>
