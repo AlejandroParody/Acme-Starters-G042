@@ -21,3 +21,10 @@ acme.validation.sponsorship.duplicated-ticker.message = Already exist a sponsors
 
 #donation
 acme.validation.donation.not-eur.message = Currency is not correct. It must be EUR
+
+#last issues validator
+acme.validation.strategy.duplicated.message = Ticker already in use, try a different one
+acme.validation.strategy.start-past.message= Moment invalid
+acme.validation.strategy.end-past.message=Moment invalid
+acme.validation.strategy.end-before-start.message= Moment invalid, the end moment cannot be before the start moment
+spokesperson.campaign.error.no-milestones= A campaign need a minimum of 1 milestone to be published
