@@ -16,3 +16,10 @@ acme.validation.ticker.message = El formato es incorrecto.
 acme.validation.sponsorship.null-draft-mode.message = El valor del atributo "draft-mode" no puede ser nulo.
 acme.validation.sponsorship.invalid-interval.message = El intervalo de tiempo es incorrecto.
 acme.validation.sponsorship.no-donations.message = El patrocinio debe tener al menos una Donacion.
+
+#last issues validator
+acme.validation.strategy.duplicated.message = El ticker ya está en uso, prueba con uno diferente.
+acme.validation.strategy.start-past.message = Fecha inválida
+acme.validation.strategy.end-past.message = Fecha inválida
+acme.validation.strategy.end-before-start.message = Fecha inválida, la fecha de finalización no puede ser anterior a la de inicio.
+spokesperson.campaign.error.no-milestones = Una campaña necesita al menos 1 hito para ser publicada.

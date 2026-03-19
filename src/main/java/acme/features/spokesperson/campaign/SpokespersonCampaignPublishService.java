@@ -42,6 +42,8 @@ public class SpokespersonCampaignPublishService extends AbstractService<Spokespe
 
 	@Override
 	public void validate() {
+		int numberOfMilestones = this.repository.countMilestonesByCampaignId(this.campaign.getId());
+		super.state(numberOfMilestones > 0, "ticker", "spokesperson.campaign.error.no-milestones");
 		super.validateObject(this.campaign);
 	}
 
