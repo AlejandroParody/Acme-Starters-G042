@@ -42,6 +42,13 @@ public class SponsorSponsorshipShowService extends AbstractService<Sponsor, Spon
 		tuple = super.unbindObject(this.sponsorship, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo");
 
 		tuple.put("published", !this.sponsorship.getDraftMode());
+
+		//Internalization
+		String language = super.getRequest().getLocale().getLanguage();
+		String falseValue = "es".equalsIgnoreCase(language) ? "Si" : "Yes";
+		String trueValue = "No";
+
+		tuple.put("publishedTag", this.sponsorship.getDraftMode() ? trueValue : falseValue);
 		tuple.put("sponsorId", this.sponsorship.getSponsor().getId());
 		tuple.put("monthsActive", this.sponsorship.getMonthsActive());
 		tuple.put("totalMoney", this.sponsorship.getTotalMoney());

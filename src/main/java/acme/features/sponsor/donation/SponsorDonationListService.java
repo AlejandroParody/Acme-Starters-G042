@@ -40,8 +40,10 @@ public class SponsorDonationListService extends AbstractService<Sponsor, Donatio
 		sponsorship = this.repository.findSponsorshipById(sponsorshipId);
 		this.donations = this.repository.findDonationsBySponsorshipId(sponsorshipId);
 
-		super.getResponse().addGlobal("sponsorshipId", sponsorshipId);
-		super.getResponse().addGlobal("published", !sponsorship.getDraftMode());
+		if (sponsorship != null) {
+			super.getResponse().addGlobal("sponsorshipId", sponsorshipId);
+			super.getResponse().addGlobal("published", !sponsorship.getDraftMode());
+		}
 	}
 
 	@Override

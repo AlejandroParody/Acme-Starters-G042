@@ -17,7 +17,7 @@
         <jstl:when test="${acme:anyOf(_command, 'show|update|delete|publish') && published == 'false'}">
             <acme:form-textbox code="sponsor.sponsorship.form.label.monthsActive" path="monthsActive" readonly="true"/>
 	    	<acme:form-textbox code="sponsor.sponsorship.form.label.totalMoney" path="totalMoney" readonly="true"/>
-            <acme:form-textbox code="sponsor.sponsorship.form.label.published" path="published" readonly="true"/>
+            <acme:form-textbox code="sponsor.sponsorship.form.label.published" path="publishedTag" readonly="true"/>
             <acme:button code="sponsor.sponsorship.form.button.donations" action="/sponsor/donation/list?sponsorshipId=${id}"/>
             <acme:submit code="sponsor.sponsorship.form.button.update" action="/sponsor/sponsorship/update"/>
             <acme:submit code="sponsor.sponsorship.form.button.delete" action="/sponsor/sponsorship/delete"/>
@@ -27,7 +27,7 @@
         <jstl:when test="${_command == 'show' && published == 'true'}">
             <acme:form-textbox code="sponsor.sponsorship.form.label.monthsActive" path="monthsActive" readonly="true"/>
 	    	<acme:form-textbox code="sponsor.sponsorship.form.label.totalMoney" path="totalMoney" readonly="true"/>
-            <acme:form-textbox code="sponsor.sponsorship.form.label.published" path="published" readonly="true"/>
+            <acme:form-textbox code="sponsor.sponsorship.form.label.published" path="publishedTag" readonly="true"/>
             <acme:button code="sponsor.sponsorship.form.button.donations" action="/sponsor/donation/list?sponsorshipId=${id}"/>
 
         </jstl:when>
