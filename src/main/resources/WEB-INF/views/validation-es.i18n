@@ -38,6 +38,7 @@ acme.validation.campaign.duplicated.message = El ticker ya está en uso, prueba 
 acme.validation.campaign.start-past.message = La fecha de inicio debe ser una fecha futura.
 acme.validation.campaign.end-past.message = La fecha de finalización debe ser una fecha futura.
 acme.validation.campaign.invalid-interval.message = Fecha inválida: la fecha de fin no puede ser anterior a la de inicio.
+acme.validation.campaign.end-before-start.message=La fecha de inicio no puede ser despues de la fecha de fin
 
 #donation
 acme.validation.donation.not-eur.message = La divisa no es correcta. Debe ser EUR
