@@ -6,6 +6,8 @@ spokesperson.campaign.list.label.name = Nombre
 spokesperson.campaign.list.label.draftMode = Borrador
 spokesperson.campaign.list.label.startMoment = Fecha de inicio
 spokesperson.campaign.list.button.create = Nueva campaña
+spokesperson.campaign.form.label.monthsActive = Meses activos
+spokesperson.campaign.form.label.effort= Esfuerzo
 
 spokesperson.campaign.form.label.ticker = Código:
 spokesperson.campaign.form.label.name = Nombre:
