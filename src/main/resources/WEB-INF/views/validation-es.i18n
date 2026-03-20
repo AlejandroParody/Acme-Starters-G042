@@ -12,6 +12,12 @@ acme.validation.header.message = El encabezado debe contener entre 1 y 75 caract
 acme.validation.text.message = El texto debe contener entre 1 y 255 caracteres.
 acme.validation.ticker.message = El formato es incorrecto.
 
+#inventions
+acme.validation.invention.uniqueticker.message = La referencia debe ser única
+acme.validation.invention.startmomentinfuture.message = La fecha de inicio debe ser en el futuro
+acme.validation.invention.invalidinterval.message = La fecha de fin debe ser posterior a la de inicio
+acme.validation.invention.hasparts.message = La invención debe tener al menos una parte para ser publicada
+
 #sponsorships
 
 acme.validation.sponsorship.null-draft-mode.message = El valor del atributo "draft-mode" no puede ser nulo.

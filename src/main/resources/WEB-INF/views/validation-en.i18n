@@ -12,6 +12,12 @@ acme.validation.header.message = Header must have between 1 and 75 characters.
 acme.validation.text.message = Text must have between 1 and 255 characters.
 acme.validation.ticker.message = The format is not correct.
 
+#inventions
+acme.validation.invention.uniqueticker.message = Ticker must be unique
+acme.validation.invention.startmomentinfuture.message = Start date must be in the future
+acme.validation.invention.invalidinterval.message = End date must be after start date
+acme.validation.invention.hasparts.message = Invention must have at least one part to be published
+
 #sponsorships
 
 acme.validation.sponsorship.null-draft-mode.message = The value of "draft-mode" atribute cannot be null. 
