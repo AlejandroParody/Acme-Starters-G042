@@ -76,8 +76,13 @@ public class SpokespersonCampaignPublishService extends AbstractService<Spokespe
 		Tuple tuple;
 
 		tuple = super.unbindObject(this.campaign, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo", "monthsActive", "effort");
+		String language = super.getRequest().getLocale().getLanguage();
+		boolean isPublished = !this.campaign.getDraftMode();
 
-		tuple.put("published", !this.campaign.getDraftMode());
+		String publishedLabel = "es".equalsIgnoreCase(language) ? isPublished ? "Sí" : "No" : isPublished ? "Yes" : "No";
+
+		tuple.put("published", isPublished);
+		tuple.put("publishedLabel", publishedLabel);
 
 		super.getResponse().addData(tuple);
 	}

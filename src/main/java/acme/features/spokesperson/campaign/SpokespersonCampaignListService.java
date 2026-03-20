@@ -6,6 +6,7 @@ import java.util.Collection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.client.components.models.Tuple;
 import acme.client.services.AbstractService;
 import acme.entities.campaign.Campaign;
 import acme.realms.Spokesperson;
@@ -16,7 +17,7 @@ public class SpokespersonCampaignListService extends AbstractService<Spokesperso
 	@Autowired
 	private SpokespersonCampaignRepository	repository;
 
-	private Collection<Campaign>			Campaigns;
+	private Collection<Campaign>			campaigns;
 
 
 	@Override
@@ -33,11 +34,26 @@ public class SpokespersonCampaignListService extends AbstractService<Spokesperso
 		int spokespersonId;
 
 		spokespersonId = super.getRequest().getPrincipal().getActiveRealm().getId();
-		this.Campaigns = this.repository.findCampaignsBySpokespersonId(spokespersonId);
+		this.campaigns = this.repository.findCampaignsBySpokespersonId(spokespersonId);
 	}
 
 	@Override
 	public void unbind() {
-		super.unbindObjects(this.Campaigns, "ticker", "name", "startMoment", "draftMode");
+		for (final Campaign campaign : this.campaigns) {
+			Tuple tuple;
+
+			tuple = super.unbindObject(campaign, "ticker", "name", "startMoment", "draftMode");
+
+			// Localise draftMode as Yes/No (or Sí/No for Spanish)
+			String language = super.getRequest().getLocale().getLanguage();
+			Boolean draft = campaign.getDraftMode();
+			String draftLabel;
+			if ("es".equalsIgnoreCase(language))
+				draftLabel = Boolean.TRUE.equals(draft) ? "Sí" : "No";
+			else
+				draftLabel = Boolean.TRUE.equals(draft) ? "Yes" : "No";
+			tuple.put("draftMode", draftLabel);
+			super.getResponse().addData(tuple);
+		}
 	}
 }
