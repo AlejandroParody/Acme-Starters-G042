@@ -14,6 +14,8 @@ inventor.invention.form.label.startMoment = Fecha de inicio:
 inventor.invention.form.label.endMoment = Fecha de fin:
 inventor.invention.form.label.moreInfo = Más información: (Opcional)
 inventor.invention.form.label.published = Publicada:
+inventor.invention.form.label.monthsActive = Meses activo:
+inventor.invention.form.label.cost = Coste total:
 
 inventor.invention.form.placeholder.ticker = ej. AB12-miTicker
 inventor.invention.form.placeholder.name = ej. Mi invención

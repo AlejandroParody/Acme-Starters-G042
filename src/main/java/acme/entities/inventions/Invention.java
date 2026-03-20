@@ -23,6 +23,7 @@ import acme.client.components.validation.ValidNumber;
 import acme.client.components.validation.ValidUrl;
 import acme.client.helpers.MomentHelper;
 import acme.constraints.ValidHeader;
+import acme.constraints.ValidInvention;
 import acme.constraints.ValidText;
 import acme.constraints.ValidTicker;
 import acme.realms.Inventor;
@@ -32,6 +33,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
+@ValidInvention
 public class Invention extends AbstractEntity {
 
 	private static final long	serialVersionUID	= 1L;
@@ -81,14 +83,14 @@ public class Invention extends AbstractEntity {
 	@Mandatory
 	@ValidNumber(min = 0)
 	@Transient
-	private Double monthsActive() {
+	public Double monthsActive() {
 		Double result = MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
 		return result;
 
 	}
 
 	@Transient
-	private Money cost() {
+	public Money cost() {
 		Money result = new Money();
 		Double total = this.repository.computeTotalCost(this.getId());
 

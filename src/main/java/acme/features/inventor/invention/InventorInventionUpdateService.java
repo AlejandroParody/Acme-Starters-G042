@@ -53,10 +53,20 @@ public class InventorInventionUpdateService extends AbstractService<Inventor, In
 	@Override
 	public void unbind() {
 		Tuple tuple;
+		String published;
 
 		tuple = super.unbindObject(this.invention, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo");
 
-		tuple.put("published", !this.invention.getDraftMode());
+		if (super.getRequest().getLocale().getLanguage().equals("es"))
+			published = Boolean.TRUE.equals(this.invention.getDraftMode()) ? "No" : "Sí";
+		else
+			published = Boolean.TRUE.equals(this.invention.getDraftMode()) ? "No" : "Yes";
+
+		tuple.put("published", published);
+		tuple.put("inventorId", this.invention.getInventor().getId());
+		tuple.put("monthsActive", this.invention.monthsActive());
+		tuple.put("cost", this.invention.cost());
+		tuple.put("draftMode", this.invention.getDraftMode());
 
 		super.getResponse().addData(tuple);
 	}

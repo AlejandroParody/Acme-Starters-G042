@@ -2,28 +2,33 @@ key,ticker,name,description,startMoment,endMoment,moreInfo,draftMode,key:spokesp
 # template
 #campaign-001,"","","","","","","",""
 #text error
-campaign-002,ABCD-123456,"",Lo,2012/07/02 00:00,2025/01/08 00:01,http://a.b,1,spokesperson-002
-campaign-003,ABXD-123453,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",Lo,2012/07/02 00:00,2025/01/08 00:01,http://a.b,1,spokesperson-002
-campaign-004,AZCD-123452,Lo,"",2012/07/02 00:00,2025/01/08 00:01,http://a.b,1,spokesperson-002
-campaign-005,ABCD-122451,Lo,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",2012/07/02 00:00,2025/01/08 00:01,http://a.b,1,spokesperson-002
-campaign-006,ABCR-123454,Lo,Lo,2012/07/02 00:00,2025/01/08 00:01,http://,1,spokesperson-002
-campaign-007,ABPR-123456,Lo,Lo,2012/07/02 00:00,2025/01/08 00:01,ftp://,1,spokesperson-002
-campaign-019,ABPR-123456,Lo,Lo,2012/07/02 00:00,2025/01/08 00:01,http://a,1,spokesperson-002
-campaign-020,ABPR-123456,Lo,Lo,2012/07/02 00:00,2025/01/08 00:01,ftp://a,1,spokesperson-002
-campaign-021,ABPR-123456,Lo,Lo,2012/07/02 00:00,2025/01/08 00:01,"http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/x",1,spokesperson-002
+campaign-002,ABCD-123456,"",Lo,2026/01/08 0:00,2200/12/31 23:59,http://a.b,1,spokesperson-002
+campaign-003,ABXD-123453,"Lorem ipsum dolor sit amet...",Lo,2026/01/08 0:00,2200/12/31 23:59,http://a.b,1,spokesperson-002
+campaign-004,AZCD-123452,Lo,"",2026/01/08 0:00,2200/12/31 23:59,http://a.b,1,spokesperson-002
+campaign-005,ABCD-122451,Lo,"Lorem ipsum dolor sit amet...",2026/01/08 0:00,2200/12/31 23:59,http://a.b,1,spokesperson-002
+campaign-006,ABCR-123454,Lo,Lo,2026/01/08 0:00,2200/12/31 23:59,http://,1,spokesperson-002
+campaign-007,ABPR-123456,Lo,Lo,2026/01/08 0:00,2200/12/31 23:59,ftp://,1,spokesperson-002
 
-#startmoments errors
-campaign-008,ABPR-123499,Lo,Lo,"",2025/01/08 00:01,http://a.b,1,spokesperson-002
-campaign-009,ABPR-093221,Lo,Lo,1999/12/31 23:59,2025/01/08 00:01,http://a.b,1,spokesperson-002
-campaign-010,ABPR-093239,Lo,Lo,2025/01/01 00:01,2025/01/08 00:01,http://a.b,1,spokesperson-002
-#endmoments errors
-campaign-011,POPR-093329,Lo,Lo,2012/07/02 00:00,"",http://a.b,1,spokesperson-002
-campaign-012,ABPQ-093529,Lo,Lo,2012/07/02 00:00,2025/01/07 23:59,http://a.b,1,spokesperson-002
-campaign-013,AGPQ-093329,Lo,Lo,2012/07/02 00:00,2201/01/01 00:01,http://a.b,1,spokesperson-002
-#ticker error
-campaign-014,"",Lo,Lo,2012/07/02 00:00,2025/01/08 00:01,http://a.b,1,spokesperson-002
-campaign-015,ergieigrv,Lo,Lo,2012/07/02 00:00,2025/01/08 00:01,http://a.b,1,spokesperson-002
-#draftmode error
-campaign-016,AGPQ-093777,Lo,Lo,2012/07/02 00:00,2025/01/08 00:01,http://a.b,,spokesperson-002
-#key error
-campaign-018,AGPQ-093997,Lo,Lo,2012/07/02 00:00,2025/01/08 00:01,http://a.b,1,""
+#startmoments errors & edge cases
+campaign-008,ABPR-123499,Lo,Lo,"",2200/12/31 23:59,http://a.b,1,spokesperson-002
+campaign-009,ABPR-093221,Lo,Lo,2022/09/01 10:00,2200/12/31 23:59,http://a.b,1,spokesperson-002
+campaign-010,ABPR-093239,Lo,Lo,2201/01/01 0:01,2200/12/31 23:59,http://a.b,1,spokesperson-002
+campaign-s13,AA07-111111,Lo,Lo,1999/12/31 23:58,1999/12/31 23:59,http://a.b,1,spokesperson-002
+campaign-s14,AA07-222222,Lo,Lo,1999/12/31 23:59,2000/01/01 00:00,http://a.b,1,spokesperson-002
+campaign-s15,AA07-333333,Lo,Lo,2000/01/01 0:00,2000/01/01 00:01,http://a.b,1,spokesperson-002
+campaign-s16,AA07-444444,Lo,Lo,2200/12/31 23:58,2200/12/31 23:59,http://a.b,1,spokesperson-002
+campaign-s17,AA07-555555,Lo,Lo,2200/12/31 23:59,2201/01/01 00:00,http://a.b,1,spokesperson-002
+campaign-s18,AA07-666666,Lo,Lo,2201/01/01 00:00,2201/01/01 00:01,http://a.b,1,spokesperson-002
+
+#endmoments errors & edge cases
+campaign-011,POPR-093329,Lo,Lo,2026/01/08 0:00,"",http://a.b,1,spokesperson-002
+campaign-012,ABPQ-093529,Lo,Lo,2026/01/08 0:00,2022/09/01 10:00,http://a.b,1,spokesperson-002
+campaign-013,AGPQ-093329,Lo,Lo,2026/01/08 0:00,2026/01/06 23:59,http://a.b,1,spokesperson-002
+campaign-s22,AA10-777777,Lo,Lo,2200/12/31 23:59,2201/01/01 00:00,http://a.b,1,spokesperson-002
+campaign-s23,AA10-888888,Lo,Lo,2201/01/01 0:00,2201/01/01 0:01,http://a.b,1,spokesperson-002
+
+#ticker, moreInfo & other errors
+campaign-014,"",Lo,Lo,2026/01/08 0:00,2200/12/31 23:59,http://a.b,1,spokesperson-002
+campaign-015,ergieigrv,Lo,Lo,2026/01/08 0:00,2200/12/31 23:59,http://a.b,1,spokesperson-002
+campaign-016,AGPQ-093777,Lo,Lo,2026/01/08 0:00,2200/12/31 23:59,http://a.b,,spokesperson-002
+campaign-018,AGPQ-093997,Lo,Lo,2026/01/08 0:00,2200/12/31 23:59,http://a.b,1,""

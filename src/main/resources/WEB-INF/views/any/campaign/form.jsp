@@ -10,7 +10,8 @@
 	<acme:form-moment code="any.campaign.form.label.startMoment" path="startMoment"/>
 	<acme:form-moment code="any.campaign.form.label.endMoment" path="endMoment"/>
 	<acme:form-url code="any.campaign.form.label.moreInfo" path="moreInfo"/>
-
+    <acme:form-double code="spokesperson.campaign.form.label.monthsActive" path="monthsActive" readonly="true"/>
+   	 <acme:form-double code="spokesperson.campaign.form.label.effort" path="effort" readonly="true"/>
 	<acme:button code="any.campaign.form.button.milestones" action="/any/milestone/list?campaignId=${id}"/>
 	<acme:button code="any.campaign.form.button.spokesperson" action="/any/spokesperson/show?id=${spokespersonId}"/>
 </acme:form>

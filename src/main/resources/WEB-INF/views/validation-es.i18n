@@ -12,6 +12,12 @@ acme.validation.header.message = El encabezado debe contener entre 1 y 75 caract
 acme.validation.text.message = El texto debe contener entre 1 y 255 caracteres.
 acme.validation.ticker.message = El formato es incorrecto.
 
+#inventions
+acme.validation.invention.uniqueticker.message = La referencia debe ser única
+acme.validation.invention.startmomentinfuture.message = La fecha de inicio debe ser en el futuro
+acme.validation.invention.invalidinterval.message = La fecha de fin debe ser posterior a la de inicio
+acme.validation.invention.hasparts.message = La invención debe tener al menos una parte para ser publicada
+
 #sponsorships
 
 acme.validation.sponsorship.null-draft-mode.message = El valor del atributo "draft-mode" no puede ser nulo.
@@ -30,6 +36,14 @@ acme.validation.strategy.uniqueticker.message = Este ticker ya está en uso, pru
 acme.validation.strategy.startmomentinfuture.message = La fecha de inicio no puede ser en el pasado
 acme.validation.strategy.endmomentinfuture.message = La fecha del final no puede ser en el pasado
 acme.validation.strategy.invalidinterval.message = La fecha del final tiene que ser posterior a la de inicio
+
+
+#campaign
+acme.validation.campaign.hasmilestone.message = La campaña debe tener al menos 1 hito (milestone).
+acme.validation.campaign.duplicated.message = El ticker ya está en uso, prueba con uno diferente.
+acme.validation.campaign.start-past.message = La fecha de inicio debe ser una fecha futura.
+acme.validation.campaign.end-past.message = La fecha de finalización debe ser una fecha futura.
+acme.validation.campaign.invalid-interval.message = Fecha inválida: la fecha de fin no puede ser anterior a la de inicio.
 
 #donation
 acme.validation.donation.not-eur.message = La divisa no es correcta. Debe ser EUR
