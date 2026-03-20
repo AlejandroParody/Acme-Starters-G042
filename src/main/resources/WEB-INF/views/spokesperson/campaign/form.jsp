@@ -15,6 +15,8 @@
             <acme:submit code="spokesperson.campaign.form.button.create" action="/spokesperson/campaign/create"/>
         </jstl:when>
         <jstl:when test="${acme:anyOf(_command, 'show|update|delete|publish') && published == 'false'}">
+                            <acme:form-double code="spokesperson.campaign.form.label.monthsActive" path="monthsActive" readonly="true"/>
+   	 		<acme:form-double code="spokesperson.campaign.form.label.effort" path="effort" readonly="true"/>
             <acme:form-textbox code="spokesperson.campaign.form.label.published" path="published" readonly="true"/>
             <acme:button code="spokesperson.campaign.form.button.milestones" action="/spokesperson/milestone/list?campaignId=${id}"/>
             <acme:submit code="spokesperson.campaign.form.button.update" action="/spokesperson/campaign/update"/>

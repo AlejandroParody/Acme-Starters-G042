@@ -73,15 +73,21 @@ public class Campaign extends AbstractEntity {
 	@Mandatory
 	@ValidNumber(min = 0)
 	@Transient
-	private Double monthsActive() {
-		Double result = MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
-		return result;
+	public Double getMonthsActive() {
+		if (this.startMoment == null || this.endMoment == null)
+			return 0.0;
+		if (!MomentHelper.isFuture(this.startMoment) || !MomentHelper.isFuture(this.endMoment))
+			return 0.0;
+		if (!this.endMoment.after(this.startMoment))
+			return 0.0;
+		double duration = MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
+		return Math.round(duration * 100.0) / 100.0;
 
 	}
 
 	@Transient
 	public Double getEffort() {
-		Double result = this.repository.computeAverageEffort(this.getId());
+		Double result = this.repository.computeEffort(this.getId());
 
 		if (result == null)
 			result = 0.0;
