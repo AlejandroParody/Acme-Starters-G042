@@ -44,12 +44,11 @@ public class StrategyValidator extends AbstractValidator<ValidStrategy, Strategy
 		if (strategy.getStartMoment() != null && strategy.getEndMoment() != null)
 			super.state(context, MomentHelper.isAfterOrEqual(strategy.getEndMoment(), strategy.getStartMoment()), "endMoment", "acme.validation.strategy.invalidinterval.message");
 
-		if (strategy.getDraftMode() != null)
-			if (strategy.getDraftMode().equals(Boolean.FALSE)) {
-				boolean hasTactics;
-				hasTactics = this.repository.existsById(strategy.getId());
-				super.state(context, hasTactics, "*", "acme.validation.strategy.hasTactics.message");
-			}
+		if (strategy.getDraftMode().equals(Boolean.FALSE)) {
+			boolean hasTactics;
+			hasTactics = this.repository.existsById(strategy.getId());
+			super.state(context, hasTactics, "*", "acme.validation.strategy.hasTactics.message");
+		}
 
 		result = !super.hasErrors(context);
 		return result;
