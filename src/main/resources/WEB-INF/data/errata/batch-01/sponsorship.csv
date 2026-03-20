@@ -38,6 +38,8 @@ sponsorship-24,AA00-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum 
 sponsorship-25,AA00-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",2026/06/01 00:00,,http://lorem.com/ipsum,true,sponsor-01
 sponsorship-26,AA00-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",2026/06/01 00:00,2201/01/01 0:01,http://lorem.com/ipsum,true,sponsor-01
 sponsorship-27,AA00-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",1999/12/31 23:58,1999/12/31 23:59,http://lorem.com/ipsum,true,sponsor-01
+# invalid time interval
+sponsorship-43,AA00-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",2026/06/01 00:00,2025/06/01 00:00,http://lorem.com/ipsum,true,sponsor-01
 # more info
 sponsorship-28,AA00-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",2026/06/01 00:00,2026/08/01 00:00,,true,sponsor-01
 sponsorship-29,AA00-abcde,"Lorem ipsum dolor sit amet, consectetu","Lorem ipsum dolor sit amet, consectetu",2026/06/01 00:00,2026/08/01 00:00,"",true,sponsor-01

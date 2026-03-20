@@ -23,3 +23,11 @@ user-account-spokesperson-02,true,"UserIdentity{name: '', surname: '', email: ''
 user-account-spokesperson-03,true,"UserIdentity{name: 'Juan', surname: 'Spokesperson', email: 'spokesperson1@acme.com'}","",spokesperson1
 # Username
 user-account-s-04,true,"UserIdentity{name: 'Juan', surname: 'Inventor', email: 'inventor1@acme.com'}",inventor1,""
+# Base
+user-account-sponsor-01,true,"UserIdentity{name: 'Juan', surname: 'Sponsor', email: 'sponsor@acme.com'}","",""
+# Identity
+user-account-sponsor-02,true,"UserIdentity{name: '', surname: '', email: ''}",sponsor1,sponsor1
+# Password
+user-account-sponsor-03,true,"UserIdentity{name: 'Juan', surname: 'Sponsor', email: 'sponsor@acme.com'}","",sponsor1
+# Username
+user-account-sponsor-04,true,"UserIdentity{name: 'Juan', surname: 'Sponsor', email: 'sponsor@acme.com'}",sponsor1,""
