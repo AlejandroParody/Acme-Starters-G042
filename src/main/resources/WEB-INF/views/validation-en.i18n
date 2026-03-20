@@ -29,7 +29,7 @@ acme.validation.strategy.hastactic.message = Strategy has to have at least 1 tac
 acme.validation.strategy.uniqueticker.message = Ticker already in use, try a different one
 acme.validation.strategy.startmomentinfuture.message = The start date must be in the future
 acme.validation.strategy.endmomentinfuture.message = The end date must be in the future
-acme.validation.strategy.invalidinterval.message = The end date must be before the start date
+acme.validation.strategy.invalidinterval.message = The end date must be after the start date
 
 #donation
 acme.validation.donation.not-eur.message = Currency is not correct. It must be EUR
