@@ -37,6 +37,12 @@ acme.validation.strategy.startmomentinfuture.message = The start date must be in
 acme.validation.strategy.endmomentinfuture.message = The end date must be in the future
 acme.validation.strategy.invalidinterval.message = The end date must be after the start date
 
+#campaign
+acme.validation.campaign.hasmilestone.message = Campaign has to have at least 1 milestone
+acme.validation.campaign.duplicated.message = Ticker already in use, try a different one
+acme.validation.campaign.start-past.message= The start date must be in the future
+acme.validation.campaign.end-past.message = The end date must be in the future
+acme.validation.campaign.end-before-start.message=Moment invalid, the end moment cannot be before the start moment
 #donation
 acme.validation.donation.not-eur.message = Currency is not correct. It must be EUR
 
@@ -45,5 +51,4 @@ acme.validation.strategy.duplicated.message = Ticker already in use, try a diffe
 acme.validation.strategy.start-past.message= Moment invalid
 acme.validation.strategy.end-past.message=Moment invalid
 acme.validation.strategy.end-before-start.message= Moment invalid, the end moment cannot be before the start moment
-spokesperson.campaign.error.no-milestones= A campaign need a minimum of 1 milestone to be published
 

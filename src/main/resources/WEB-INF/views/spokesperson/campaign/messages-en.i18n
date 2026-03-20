@@ -6,7 +6,9 @@ spokesperson.campaign.list.label.name = Name
 spokesperson.campaign.list.label.draftMode = Draft
 spokesperson.campaign.list.label.startMoment = Start date
 spokesperson.campaign.list.button.create = New campaign
-
+spokesperson.campaign.form.label.monthsActive = Months Active
+spokesperson.campaign.form.label.effort= Effort
+ 
 spokesperson.campaign.form.label.ticker = Ticker:
 spokesperson.campaign.form.label.name = Name:
 spokesperson.campaign.form.label.description = Description:

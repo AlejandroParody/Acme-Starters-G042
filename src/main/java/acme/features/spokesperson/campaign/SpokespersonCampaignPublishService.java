@@ -46,21 +46,21 @@ public class SpokespersonCampaignPublishService extends AbstractService<Spokespe
 	@Override
 	public void validate() {
 		int numberOfMilestones = this.repository.countMilestonesByCampaignId(this.campaign.getId());
-		super.state(numberOfMilestones > 0, "ticker", "spokesperson.campaign.error.no-milestones");
+		super.state(numberOfMilestones > 0, "*", "acme.validation.campaign.hasmilestone.message");
 		Campaign existing = this.repository.findOneByTicker(this.campaign.getTicker());
 		boolean isNotDuplicate = existing == null || existing.getId() == this.campaign.getId();
-		super.state(isNotDuplicate, "ticker", "acme.validation.strategy.duplicated.message");
+		super.state(isNotDuplicate, "ticker", "acme.validation.campaign.duplicated.message");
 
 		Date now = MomentHelper.getCurrentMoment();
 
 		if (this.campaign.getStartMoment() != null)
-			super.state(this.campaign.getStartMoment().after(now), "startMoment", "acme.validation.strategy.start-past.message");
+			super.state(this.campaign.getStartMoment().after(now), "startMoment", "acme.validation.campaign.start-past.message");
 
 		if (this.campaign.getEndMoment() != null)
-			super.state(this.campaign.getEndMoment().after(now), "endMoment", "acme.validation.strategy.end-past.message");
+			super.state(this.campaign.getEndMoment().after(now), "endMoment", "acme.validation.campaign.end-past.message");
 
 		if (this.campaign.getStartMoment() != null && this.campaign.getEndMoment() != null)
-			super.state(this.campaign.getEndMoment().after(this.campaign.getStartMoment()), "endMoment", "acme.validation.strategy.end-before-start.message");
+			super.state(this.campaign.getEndMoment().after(this.campaign.getStartMoment()), "endMoment", "acme.validation.campaign.end-before-start.message");
 
 		super.validateObject(this.campaign);
 	}
@@ -75,7 +75,7 @@ public class SpokespersonCampaignPublishService extends AbstractService<Spokespe
 	public void unbind() {
 		Tuple tuple;
 
-		tuple = super.unbindObject(this.campaign, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo");
+		tuple = super.unbindObject(this.campaign, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo", "monthsActive", "effort");
 
 		tuple.put("published", !this.campaign.getDraftMode());
 
