@@ -79,8 +79,12 @@ public class Sponsorship extends AbstractEntity {
 	public Double getMonthsActive() {
 		if (this.startMoment == null || this.endMoment == null)
 			return 0.0;
-		double rounded = MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
-		return Math.round(rounded * 100.0) / 100.0;
+		if (!MomentHelper.isFuture(this.startMoment) || !MomentHelper.isFuture(this.endMoment))
+			return 0.0;
+		if (!this.endMoment.after(this.startMoment))
+			return 0.0;
+		double res = MomentHelper.computeDifference(this.startMoment, this.endMoment, ChronoUnit.MONTHS);
+		return Math.round(res * 100.0) / 100.0;
 	}
 
 
